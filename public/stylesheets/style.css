@@ -1,0 +1,219 @@
+@font-face {
+  src: url(/fonts/CabrionLight.otf);
+  font-family: 'Cabrion';
+}
+body {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #F5F5F5;
+  font-family: 'Cabrion';
+  height: 100%;
+}
+
+a {
+  color: #00B7FF;
+}
+h1{
+  text-align: left;
+  font-weight: 500;
+  font-size: 70px;
+  color: black;
+}
+h2{
+  font-weight: 900;
+  font-size: 3rem;
+  color: black;
+}
+.do-text{
+  font-weight: 900;
+  font-size: xx-large;
+  color: black;
+}
+/* Main_images */
+.hero-container{
+  height: 70vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+  padding-right: 80px;
+  padding-left: 80px;
+}
+.hero-img{
+  background: url(/images/home_page/home_page_main.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  transition: transform 1s;
+}
+.hero-img:hover {
+  transform: scale(1.05);  
+}
+
+/* Special Padding-left and Padding-right */
+.pl-300{
+  padding-left: 300px !important;
+}
+.pr-200{
+  padding-right: 100px !important;
+}
+.pd-0{
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+.pl-90{
+  padding-left: 90px;
+}
+.pt-100{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.pt-250{
+  padding-top: 250px;
+  padding-bottom: 250px;
+}
+.left-box{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 140px;
+}
+.right-box{
+  padding-right: 60px;
+  padding-top: 60px;
+}
+/* overlay-containers */
+.container {
+  position: relative;
+  width: 50%;
+}
+.overlay {
+  position: absolute;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 40%;
+  left: 16%;
+  right: 0;
+  height: 10%;
+  margin-top: -100px;
+  transition: .5s ease;
+}
+.pl-300:hover .overlay {
+  width: 5%;
+  left: 50%;
+}
+.pl-300:hover .sliding-up {
+  animation: slideInUp; 
+  animation-duration: 0.7s;
+}
+
+/* Home_bg_anim */
+.bg-sec{
+  height: 90vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.bg-text{
+  color: white;
+  font-size: 35px;
+  line-height: 50px;
+  font-weight: 600;
+  overflow-y: hidden;
+  max-height: 45px;
+  transition: max-height 0.3s ease-out;
+  padding-right: 120px;
+}
+.bg-text-holder{
+  padding-top: 320px;
+  margin-left: 150px;
+}
+.button {
+  width: 300px;
+  height: 60px;
+  display: block;
+  border: none;
+  background: linear-gradient(to left, rgb(40, 224, 55) 50%, rgba(255, 255, 255, 0) 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  transition: all .3s ease-out;
+}
+.outer{
+  text-align: center;
+}
+.btn-text{
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 15px;
+}
+
+
+.bg-section-11 {
+  background:url(/images/home_page/bg_1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  background-position-y: -585px;
+}
+.bg-section-11:hover .bg-text{
+  max-height: 160px;
+  transition: max-height 0.3s ease-in;
+}
+.bg-section-11:hover .button{
+  background-position: right bottom;
+}
+
+
+.bg-section-12 {
+  background-image: url(/images/home_page/bg_2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  background-position-y: -400px;
+}
+.bg-section-12:hover .bg-text{
+  max-height: 160px;
+  transition: max-height 0.3s ease-in;
+}
+.bg-section-12:hover .button{
+  background-position: right bottom;
+}
+.outer-2{
+  transition: padding 0.3s;
+}
+.bg-section-12:hover .outer-2{
+  padding-top: 55px;
+  transition: 0.3s;
+}
+
+
+.bg-section-13 {
+  background-image: url(/images/home_page/bg_3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  background-position-y: -365px;
+}
+.bg-section-13:hover .bg-text{
+  max-height: 160px;
+  transition: max-height 0.3s ease-in;
+}
+.bg-section-13:hover .button{
+  background-position: right bottom;
+}
+.outer-3{
+  transition: padding 0.3s;
+}
+.bg-section-13:hover .outer-3{
+  padding-top: 55px;
+  transition: 0.3s;
+}
