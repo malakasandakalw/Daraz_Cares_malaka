@@ -376,3 +376,52 @@ h4.bottom-btn-text{
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+/* stories */
+.stories-hero{
+  /* background: url(/images/home_page/home_page_main.png); */
+  background-color: rgba(0, 0, 0, 0.356);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.story-overlay{
+  background-image: linear-gradient(10deg,  #0b0c3e, #0927af00);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin-left: 150px;
+  width: 84.5%;
+}
+h5.story{
+  color: #ffffff;
+  font-weight: 900;
+  font-size: xxx-large;
+  padding-top: 15%;
+  position: relative;
+}
+p.story{
+  color: #ffffff;
+  font-size: x-large;
+  padding-left: 20%;
+  padding-right: 20%;
+  position: relative;
+}
+
+
+
+.story-sec{
+  background-color: #e52f1c;
+  color: white;
+  margin-left: 7px !important;
+  margin-right: 5px !important;
+  width: 48.1% !important;
+  overflow: hidden;
+}
+.stories-bottom-btn{
+  
+}

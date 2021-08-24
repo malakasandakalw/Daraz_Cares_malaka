@@ -18,4 +18,8 @@ router.get('/careers', function(req, res, next) {
   res.render('careers', { title: 'Careers' });
 });
 
+router.get('/stories', function(req, res, next) {
+  res.render('stories', { title: 'Stories and News' });
+});
+
 module.exports = router;
