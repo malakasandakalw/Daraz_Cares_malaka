@@ -271,14 +271,13 @@ h2{
   background-color: black;
   color: white;
 }
-.projects-row{
-  height: 80vh;
-  margin-top: 20px;
-}
 .w-48{
   width: 48%;
-  /* margin-left: 5px;
-  margin-right: 5px; */
+  height: 80vh;
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+
 }
 .pro-name{
   width: 30%;
