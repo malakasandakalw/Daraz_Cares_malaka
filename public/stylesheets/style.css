@@ -259,3 +259,89 @@ h2{
   padding-top: 55px;
   transition: 0.3s;
 }
+
+
+
+/* projects_page */
+.container-projects{
+  padding-left: 150px;
+  padding-right: 150px;
+}
+.black-bg{
+  background-color: black;
+  color: white;
+}
+.projects-row{
+  height: 80vh;
+  margin-top: 20px;
+}
+.w-48{
+  width: 48%;
+  /* margin-left: 5px;
+  margin-right: 5px; */
+}
+.pro-name{
+  width: 30%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  position: relative;
+  margin-top: -44px;
+}
+.project-bg-1, .project-bg-2, .project-bg-3{
+  display: block;
+  height: 100%;
+  overflow: hidden;
+}
+.inner-bg{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  display: block;
+  transition: transform 0.3s;
+}
+.inner-1{
+  background-image: url(/images/projects/sl.jpg);
+}
+.inner-2{
+  background-image: url(/images/projects/bangla.jpg);
+}
+.inner-3{
+  background-image: url(/images/projects/myn.jpg);
+}
+.inner-4{
+  background-image: url(/images/projects/sl.jpg);
+}
+
+.project-bg-1:hover .inner-1{
+  transform: scale(1.08);  
+}
+.project-bg-2:hover .inner-2{
+  transform: scale(1.08);  
+}
+.project-bg-3:hover .inner-3{
+  transform: scale(1.08);  
+}
+.project-bg-4:hover .inner-4{
+  transform: scale(1.08);  
+}
+.project-des{
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 230px;
+}
+h3{
+  font-size: xxx-large;
+  font-weight: 700;
+}
+h4{
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.desc-text{
+  font-size: 22px;
+  line-height: 1.8;
+}
