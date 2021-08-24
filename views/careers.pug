@@ -1,0 +1,41 @@
+extends layout
+
+block content
+  style. 
+      .inner-c-1{
+          background-image: url(/images/careers/img1.JPG);
+        }
+      .inner-c-2{
+        background-image: url(/images/careers/img2.jpg);
+        }
+      
+      .career-bg-1:hover .inner-c-1{
+        transform: scale(1.08); 
+        }
+      .career-bg-2:hover .inner-c-2{
+        transform: scale(1.08); 
+        }
+      
+        
+  .container-fluid.container-projects
+    .row.projects-row
+        .col-md-6.red-bg.w-48
+            .project-des
+                h3 Careers
+                p.desc-text
+                    | With Rise Up, Our efforts to support local communities go beyond education - we also strive to create new job opportunities that enable our sellers and partners to prosper.
+        .col-md-6.w-48
+            .career-bg-1.career-bg
+                .inner-c-1.inner-bg 
+        .col-md-6.w-48
+            .career-bg-2.career-bg
+                .inner-c-2.inner-bg  
+        .col-md-6.red-bg.w-48
+            .project-des
+                p.desc-text
+                    | To date, we have created over 100,000 jobs for the entrepreneurs who run their businesses on our platform.
+                p.desc-text     
+                    | Local tems of 3,000 DEX Heroes accommadate and support our logistic operations.
+            .bottom-btn   
+                h4.bottom-btn-text Job Opportunities
+                    i.fas.fa-arrow-right.arrow-careers 

@@ -203,8 +203,6 @@ h2{
 .bg-section-11:hover .arrow-1{
   width: 70px;
 }
-
-
 .bg-section-12 {
   background-image: url(/images/home_page/bg_2.jpg);
   background-position: center;
@@ -261,23 +259,25 @@ h2{
 }
 
 
-
 /* projects_page */
 .container-projects{
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-left: 170px;
+  padding-right: 135px;
 }
 .black-bg{
   background-color: black;
   color: white;
+  margin-left: 7px !important;
+  margin-right: 5px !important;
+  width: 48% !important;
 }
 .w-48{
-  width: 48%;
+  width: 49.5%;
   height: 80vh;
   margin-top: 20px;
-  margin-left: 5px;
-  margin-right: 5px;
-
+  margin-left: -5px;
+  margin-right: -5px;
+  overflow: hidden;
 }
 .pro-name{
   width: 30%;
@@ -300,31 +300,7 @@ h2{
   display: block;
   transition: transform 0.3s;
 }
-.inner-1{
-  background-image: url(/images/projects/sl.jpg);
-}
-.inner-2{
-  background-image: url(/images/projects/bangla.jpg);
-}
-.inner-3{
-  background-image: url(/images/projects/myn.jpg);
-}
-.inner-4{
-  background-image: url(/images/projects/nepal.jpg);
-}
 
-.project-bg-1:hover .inner-1{
-  transform: scale(1.08);  
-}
-.project-bg-2:hover .inner-2{
-  transform: scale(1.08);  
-}
-.project-bg-3:hover .inner-3{
-  transform: scale(1.08);  
-}
-.project-bg-4:hover .inner-4{
-  transform: scale(1.08);  
-}
 .project-des{
   padding-left: 120px;
   padding-right: 120px;
@@ -343,4 +319,60 @@ h4{
 .desc-text{
   font-size: 22px;
   line-height: 1.8;
+}
+
+
+/* Carreers page */
+.red-bg{
+  background-color: #e52f1c;
+  color: white;
+  margin-left: 7px !important;
+  margin-right: 5px !important;
+  width: 48.1% !important;
+  overflow: hidden;
+  }
+.career-bg{
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  }
+.bottom-btn{
+  width: 104%;
+  margin-top: 250px;
+  padding-left: 140px;
+  margin-left: -12px;
+  color: #ffffff;
+  position: relative;
+  background-size: 200% 200%;
+  background-image: 
+  linear-gradient(to top, #ffffff 50%, transparent 50%);
+  transition: background-position 300ms, color 300ms ease;
+  font-weight: 700;
+  }
+.arrow-careers{
+    margin-left:50%;
+  }   
+.bottom-btn:hover{
+  background-image: 
+  linear-gradient(to top, #ffffff 50%, transparent 50%);
+  background-position: 0 100%;
+  transition: background-position 300ms, color 300ms ease;
+  }
+.bottom-btn:hover .bottom-btn-text{
+  color:#e52f1c;
+  }
+.bottom-btn:hover .arrow-careers{
+  color:#e52f1c;
+  }
+.bottom-btn:hover h4.bottom-btn-text{
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  }
+h4.bottom-btn-text{
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
