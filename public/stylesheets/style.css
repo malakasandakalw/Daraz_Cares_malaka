@@ -304,7 +304,6 @@ h2{
 .project-des{
   padding-left: 120px;
   padding-right: 120px;
-  padding-top: 230px;
 }
 h3{
   font-size: xxx-large;
@@ -332,6 +331,14 @@ h4{
   width: 48.1% !important;
   overflow: hidden;
   }
+.blue-bg{
+  background-color: #25a5d8;
+  color: white;
+  margin-left: 7px !important;
+  margin-right: 5px !important;
+  width: 48.1% !important;
+  overflow: hidden;
+}
 .career-bg{
   display: block;
   height: 100%;
@@ -339,7 +346,6 @@ h4{
   }
 .bottom-btn{
   width: 104%;
-  margin-top: 250px;
   padding-left: 140px;
   margin-left: -12px;
   color: #ffffff;
@@ -349,6 +355,9 @@ h4{
   linear-gradient(to top, #ffffff 50%, transparent 50%);
   transition: background-position 300ms, color 300ms ease;
   font-weight: 700;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   }
 .arrow-careers{
     margin-left:50%;
@@ -604,4 +613,92 @@ p.last-story-sec{
 .story-sub-sec-4{
   padding-left: 7px !important;
   padding-right: 0px !important;
+}
+
+
+.skill-hero{
+  background-image: url(/images/skillup/img-13.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin-left: 150px;
+  width: 84.5%;
+}
+.skill-overlay{
+  background-image: linear-gradient(0deg, #25a5d8 0%, rgb(37 165 216 / 59%) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.btn-skillup:hover .btn-text-blue {
+  color: #25a5d8;
+}
+.arrow-skillup {
+  margin-left:50%;
+}
+.btn-skillup:hover .arrow-skillup {
+  color: #25a5d8;
+  margin-left:50%;
+}
+.skillup-des {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+.relative-pos{
+  position: relative;
+}
+.btn-pos{
+  position: absolute;
+  bottom: 0;
+}
+.vertical-align-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}    
+.purple-bg{
+  background-color: #5b449c;
+  color: white;
+  margin-left: 7px !important;
+  margin-right: 5px !important;
+  width: 48.1% !important;
+  overflow: hidden;
+}
+.university-hero{
+  background-image: url(/images/university/img-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin-left: 150px;
+  width: 84.5%;
+}
+.university-overlay {
+  background-image: linear-gradient(0deg, #5b449c 0%, rgb(91 68 156 / 26%) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.btn-university:hover .btn-text-blue {
+  color: #5b449c;
+}
+.arrow-university {
+  margin-left:50%;
+}
+.btn-university:hover .arrow-university {
+  color: #5b449c;
+  margin-left:50%;
 }

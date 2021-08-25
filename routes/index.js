@@ -22,4 +22,11 @@ router.get('/stories', function(req, res, next) {
   res.render('stories', { title: 'Stories and News' });
 });
 
+router.get('/skillup', function(req, res, next) {
+  res.render('skillup', { title: 'Skill Up' });
+});
+
+router.get('/university', function(req, res, next) {
+  res.render('university', { title: 'University' });
+});
 module.exports = router;
