@@ -319,6 +319,7 @@ h4{
 .desc-text{
   font-size: 22px;
   line-height: 1.8;
+  padding-top: 5%;
 }
 
 
@@ -351,8 +352,7 @@ h4{
   color: #ffffff;
   position: relative;
   background-size: 200% 200%;
-  background-image: 
-  linear-gradient(to top, #ffffff 50%, transparent 50%);
+  background-image:linear-gradient(to top, #ffffff 50%, transparent 50%);
   transition: background-position 300ms, color 300ms ease;
   font-weight: 700;
   position: absolute;
@@ -383,8 +383,6 @@ h4{
 h4.bottom-btn-text{
   font-size: 25px;
   font-weight: bold;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 /* stories */
@@ -409,9 +407,11 @@ h5.story{
 p.story{
   color: #ffffff;
   font-size: x-large;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 22%;
+  padding-right: 22%;
+  padding-top: 2%;
   position: relative;
+  line-height: 1.5;
 }
 
 
@@ -701,4 +701,73 @@ p.last-story-sec{
 .btn-university:hover .arrow-university {
   color: #5b449c;
   margin-left:50%;
+}
+.stories-bottom-btn{
+  width: 104%;
+  padding-left: 140px;
+  margin-left: -12px;
+  color: #ffffff;
+  position: relative;
+  background-size: 200% 200%;
+  background-image:linear-gradient(to top, #ffffff 50%, transparent 50%);
+  transition: background-position 300ms, color 300ms ease;
+  font-weight: 700;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  }
+
+
+
+  .skillup-bg {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+}
+.university-bg {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+}
+.community-bg{
+  display: block;
+  height: 100%;
+  overflow: hidden;
+}
+.community-hero{
+  background-image: url(/images/university/img-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin-left: 150px;
+  width: 84.5%;
+}
+.community-overlay {
+  background-image: linear-gradient(0deg, #5b449c 0%, rgb(91 68 156 / 26%) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.green-bg{
+  background-color: #5daf46;
+  color: white;
+  margin-left: 7px !important;
+  margin-right: 5px !important;
+  width: 48.1% !important;
+  overflow: hidden;
+}
+.community-overlay {
+  background-image: linear-gradient(0deg, #5daf46 0%, rgb(93 175 70 / 29%) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }

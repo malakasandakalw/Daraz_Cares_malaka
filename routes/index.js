@@ -29,4 +29,9 @@ router.get('/skillup', function(req, res, next) {
 router.get('/university', function(req, res, next) {
   res.render('university', { title: 'University' });
 });
+
+router.get('/community', function(req, res, next) {
+  res.render('community', { title: 'Community' });
+});
+
 module.exports = router;
