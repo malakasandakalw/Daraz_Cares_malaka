@@ -274,7 +274,7 @@ h2{
 .w-48{
   width: 49.5%;
   height: 80vh;
-  margin-top: 20px;
+  margin-top: 13px;
   margin-left: -5px;
   margin-right: -5px;
   overflow: hidden;
@@ -309,6 +309,7 @@ h2{
 h3{
   font-size: xxx-large;
   font-weight: 700;
+  letter-spacing: 5px;
 }
 h4{
   font-size: 20px;
@@ -415,7 +416,6 @@ p.story{
 
 
 .story-sec-1{
-  background-color: #5daf46;
   color: white;
   margin-left: 7px !important;
   margin-right: 5px !important;
@@ -423,7 +423,7 @@ p.story{
   overflow: hidden;
 }
 .story-sec-2{
-  background-color: #21a3da;
+  /* background-color: #21a3da; */
   color: white;
   margin-left: 7px !important;
   margin-right: 5px !important;
@@ -431,12 +431,72 @@ p.story{
   overflow: hidden;
 }
 .story-sec-3{
-  background-color: #e52f1c;
+  /* background-color: #e52f1c; */
   color: white;
   margin-left: 7px !important;
   margin-right: 5px !important;
   width: 48.1% !important;
   overflow: hidden;
+}
+.bg-1-img{
+  background-image: url(/images/stories/img1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.bg-1{
+  background-color: #5daf46; 
+  color: white;
+  top:100%;
+  position: relative;
+  transition:all 0.3s ;
+  height: 100%;
+}
+.bg-2-img{
+  background-image: url(/images/stories/img2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.bg-2{
+  background-color:  #21a3da;
+  color: white;
+  top:100%;
+  position: relative;
+  transition:all 0.3s ;
+  height: 100%;
+}
+.bg-3-img{
+  background-image: url(/images/stories/img3.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.bg-3{
+  background-color: #e52f1c; 
+  color: white;
+  top:100%;
+  position: relative;
+  transition:all 0.3s ;
+  height: 100%;
+}
+.story-sec-1:hover .bg-1{
+  top:-100%;
+  transition:all 0.3s ;
+}
+.story-sec-2:hover .bg-2{
+  top:-100%;
+  transition:all 0.3s ;
+}
+.story-sec-3:hover .bg-3{
+  top:-100%;
+  transition:all 0.3s ;
 }
 .stories-bottom-btn{
   margin-top: 0px;
@@ -446,9 +506,13 @@ p.stories-sec{
   line-height: 2;
   padding-top: 10%;
 }
+p.last-story-sec{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
 .w-48-new{
   width: 49.5%;
-  margin-top: 20px;
+  margin-top: 13px;
   margin-left: -5px;
   margin-right: -5px;
   overflow: hidden;
@@ -460,23 +524,32 @@ p.stories-sec{
   padding-bottom: 190px;
 }
 .story-sub-sec{
-  width: 50%;
+  width: 49%;
+  height: 49%;
+  color: white;
+  padding: 6%;
+
 }
 .story-sub-sec-1 {
-  background-color: green;
+  background-color: #9ac939;
+  margin-bottom: 13px;
 }
 .story-sub-sec-2 {
-  background-color: greenyellow;
+  background-color: #50c7ea;
+  margin-left: 13px;
+  margin-bottom: 13px;
 }
 .story-sub-sec-3 {
-  background-color: gray;
+  background-color: #f79f3b;
 }
 .story-sub-sec-4 {
-  background-color: blue;
+  background-color: #5b449c;
+  margin-left: 13px;
 }
 .row.sub-secs{
-  padding-left: 14px;
+  padding-left: 13px;
   padding-right: 10px;
+  height: 100%;
 }
 
 .story-sec-last {
@@ -490,11 +563,67 @@ p.stories-sec{
   margin-top: 20px;
 }
 .stories-sec-last-bg{
-  background: url(/images/home_page/home_page_main.png);
+  background: url(/images/stories/last.png);
   background-color: rgba(0, 0, 0, 0.356);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
+}
+.white-text{
+  color: white;
+}
+.stories-last-text{
+  padding-top:7%;
+  padding-left: 4%;
+  padding-right: 4%;
+  opacity: 0;
+  transition: all 0.3s;
+  position: absolute;
+}
+.btn-story {
+  width: 300px;
+  display: inline-block;
+  border: none;
+  background: linear-gradient(to right, #5daf46  50%, rgba(255, 255, 255, 0) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .3s ease-out;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  border-radius: 0px;
+  border: none;
+  
+}
+.btn-story:hover{
+  background-position: left bottom;
+  width: 310px;
+  color: white;
+}
+.stories-sec-last-bg:hover .stories-last-text{
+  opacity: 1;
+  transition: all 0.3s;
+}
+.stories-last-overlay{
+  background-size: 200% 100%;
+  height: 100%;
+  width: 84%;
+  position: absolute;
+  background-position: right bottom;
+  transition: all .3s ease-out;
+}
+.stories-sec-last-bg:hover .stories-last-overlay{
+  background-position: left bottom;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.568) 0%, rgba(0,0,0,0.23853291316526615) 25%);
+  transition: all 0.3s;
+}
+.slideup{
+  margin-top: 100%;
+  transition: all 0.5s;
+}
+.stories-sec-last-bg:hover .slideup{
+  margin-top: 0%;
+  transition: all 0.5s;
 }
