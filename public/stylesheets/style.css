@@ -484,27 +484,25 @@ p.last-story-sec{
   padding-bottom: 190px;
 }
 .story-sub-sec{
-  width: 49%;
-  height: 49%;
   color: white;
-  padding: 6%;
-
 }
-.story-sub-sec-1 {
+.st-sub-sec{
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 15%;
+  height: 100%;
+}
+.sub-sec-1 {
   background-color: #9ac939;
-  margin-bottom: 13px;
 }
-.story-sub-sec-2 {
+.sub-sec-2 {
   background-color: #50c7ea;
-  margin-left: 13px;
-  margin-bottom: 13px;
 }
-.story-sub-sec-3 {
+.sub-sec-3 {
   background-color: #f79f3b;
 }
-.story-sub-sec-4 {
+.sub-sec-4 {
   background-color: #5b449c;
-  margin-left: 13px;
 }
 .row.sub-secs{
   padding-left: 13px;
@@ -588,4 +586,22 @@ p.last-story-sec{
   padding-right: 7px !important;
   padding-top: 7px !important;
   padding-bottom: 7px !important;
+}
+.story-sub-sec-1{
+  padding-left: 0px !important;
+  padding-right: 7px !important;
+  padding-bottom: 14px !important;
+}
+.story-sub-sec-2{
+  padding-left: 7px !important;
+  padding-right: 0px !important;
+  padding-bottom: 14px !important;
+}
+.story-sub-sec-3{
+  padding-left: 0px !important;
+  padding-right: 7px !important;
+}
+.story-sub-sec-4{
+  padding-left: 7px !important;
+  padding-right: 0px !important;
 }
