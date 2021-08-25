@@ -409,23 +409,14 @@ p.story{
 
 .story-sec-1{
   color: white;
-  margin-left: 7px !important;
-  margin-right: 5px !important;
-  width: 48.1% !important;
   overflow: hidden;
 }
 .story-sec-2{
   color: white;
-  margin-left: 7px !important;
-  margin-right: 5px !important;
-  width: 48.1% !important;
   overflow: hidden;
 }
 .story-sec-3{
   color: white;
-  margin-left: 7px !important;
-  margin-right: 5px !important;
-  width: 48.1% !important;
   overflow: hidden;
 }
 
@@ -587,4 +578,14 @@ p.last-story-sec{
 .stories-sec-last-bg:hover .slideup{
   margin-top: 0%;
   transition: all 0.5s;
+}
+.container-stories{
+  padding-left: 150px;
+  padding-right: 150px;
+}
+.pad-default{
+  padding-left: 7px !important;
+  padding-right: 7px !important;
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
 }
