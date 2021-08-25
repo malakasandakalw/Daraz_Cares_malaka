@@ -379,15 +379,7 @@ h4.bottom-btn-text{
 }
 
 /* stories */
-.stories-hero{
-  /* background: url(/images/home_page/home_page_main.png); */
-  background-color: rgba(0, 0, 0, 0.356);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-}
+
 .story-overlay{
   background-image: linear-gradient(10deg,  #0b0c3e, #0927af00);
   position: absolute;
@@ -423,7 +415,6 @@ p.story{
   overflow: hidden;
 }
 .story-sec-2{
-  /* background-color: #21a3da; */
   color: white;
   margin-left: 7px !important;
   margin-right: 5px !important;
@@ -431,21 +422,13 @@ p.story{
   overflow: hidden;
 }
 .story-sec-3{
-  /* background-color: #e52f1c; */
   color: white;
   margin-left: 7px !important;
   margin-right: 5px !important;
   width: 48.1% !important;
   overflow: hidden;
 }
-.bg-1-img{
-  background-image: url(/images/stories/img1.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-}
+
 .bg-1{
   background-color: #5daf46; 
   color: white;
@@ -454,14 +437,7 @@ p.story{
   transition:all 0.3s ;
   height: 100%;
 }
-.bg-2-img{
-  background-image: url(/images/stories/img2.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-}
+
 .bg-2{
   background-color:  #21a3da;
   color: white;
@@ -470,14 +446,7 @@ p.story{
   transition:all 0.3s ;
   height: 100%;
 }
-.bg-3-img{
-  background-image: url(/images/stories/img3.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-}
+
 .bg-3{
   background-color: #e52f1c; 
   color: white;
@@ -562,15 +531,7 @@ p.last-story-sec{
   padding-left: 150px;
   margin-top: 20px;
 }
-.stories-sec-last-bg{
-  background: url(/images/stories/last.png);
-  background-color: rgba(0, 0, 0, 0.356);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-}
+
 .white-text{
   color: white;
 }
