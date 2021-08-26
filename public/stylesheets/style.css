@@ -124,6 +124,7 @@ h2{
 	width: auto;
 	padding-left: 10px;
 	padding-right: 10px;
+	border-color: #5daf46;
 }
 
 .btn-error{
@@ -132,6 +133,11 @@ h2{
 	width: auto;
 	padding-left: 10px;
 	padding-right: 10px;
+	border-color: red;
+}
+
+.bg-grey{
+	background-color: #efefef;
 }
 
 /* Home_bg_anim */
@@ -355,11 +361,24 @@ h4{
   width: 48.1% !important;
   overflow: hidden;
 }
+.purple-bg-dark{
+  background-color: #2a2c52;
+  color: white;
+  margin-left: 7px !important;
+  margin-right: 5px !important;
+  width: 48.1% !important;
+  overflow: hidden;
+  }
 .career-bg{
   display: block;
   height: 100%;
   overflow: hidden;
   }
+  .life-bg{
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    }
 .bottom-btn{
   width: 104%;
   padding-left: 140px;
@@ -918,7 +937,8 @@ footer{
   font-size: 140px;
 }
 .donations-count{
-  padding: 20%;
+  padding-top: 20%;
+  padding-bottom: 20%;
 }
 .donations-count-value{
   font-size: 75px;
@@ -933,10 +953,47 @@ footer{
   font-weight: 600;
   font-family: monospace;
 }
-
-
-
-
+.pt-default{
+  padding-top: 13px;
+}
+.inner-col-4{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  width: 32%;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+.col-4-inner-row{
+  padding-right: 15px;
+}
+.vid-thumbnail{
+  background-image: url(/images/university/img-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin-left: 150px;
+  width: 84.5%;
+}
+#play-btn{
+  font-size: 130px;
+  color: white;
+  background: limegreen;
+  border-radius: 100px;
+}
+/* p.donations-count-value{
+  overflow: hidden;
+  width: 30%;
+  transition: all 0.3s;
+}
+p.donations-count-value:hover {
+  width: 100%;
+  transition: all 0.3s;
+} */
 
 @media (max-width:1400px) {
   .hero-container {

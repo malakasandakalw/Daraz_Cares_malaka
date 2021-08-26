@@ -1,10 +1,53 @@
 extends layout
 
 block content
-  .container-fluid
-  .hero-container
-    i.fas.fa-play-circle
-    .hero-img.hero-img-life-at-daraz
+  style. 
+      .vid-thumbnail{
+          background-image: url(/images/life_at_daraz/hero.jpg);
+        }
+      .inner-l-1{
+          background-image: url(/images/life_at_daraz/IMG_04011.jpg);
+        }
+      .inner-l-2{
+        background-image: url(/images/life_at_daraz/IMG-20190824-WA0002.jpg);
+        }
       
-  
+      .life-bg-1:hover .inner-l-1{
+        transform: scale(1.08); 
+        }
+      .life-bg-2:hover .inner-l-2{
+        transform: scale(1.08); 
+        }
       
+  .container-fluid    
+    .hero-container
+        .text-center.vid-thumbnail.vertical-align-text
+            .video-ply-btn
+              button.btn.btn-primary(type='button' data-toggle='modal' data-target='#exampleModalCenter')
+                i.fas.fa-play-circle#play-btn
+              #exampleModalCenter.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
+                .modal-dialog.modal-dialog-centered(role='document')
+                  .modal-content
+                    .modal-header
+                      button.close(type='button' data-dismiss='modal' aria-label='Close')
+                        span(aria-hidden='true') ×
+                    .modal-body
+                      iframe(width='560' height='315' src='https://www.youtube.com/embed/-3oE1-AXZXU' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+  .container-fluid.container-projects
+    .careers-content
+      .row.projects-row
+          .col-md-6.purple-bg-dark.w-48.vertical-align-text
+              .project-des
+                  h3 Life at Daraz
+                  p.desc-text
+                      | As part of our Daraz Cares programme, we introduced Skill Up to provide education opportunities to our large blue collar workforce and individuals from disadvantaged backgrounds and equip them with the skills needed for success.We have partnered with established academic institutions across the region, such as Horizon University in Sri Lanka, to deliver credible and well-recognised courses to participants.
+          .col-md-6.w-48
+              .life-bg-1.life-bg
+                  .inner-l-1.inner-bg 
+          .col-md-6.w-48
+              .life-bg-2.life-bg
+                  .inner-l-2.inner-bg  
+          .col-md-6.purple-bg-dark.w-48.relative-pos.vertical-align-text
+              .project-des
+                  p.desc-text
+                      | Our focus is to provide access to entry-level business management and marketing courses to equip beneficiaries with basic entrepreneurial skills that will help elevate their careers past the prospects currently present.
