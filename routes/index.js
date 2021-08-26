@@ -34,4 +34,8 @@ router.get('/community', function(req, res, next) {
   res.render('community', { title: 'Community' });
 });
 
+router.get('/donations', function(req, res, next) {
+  res.render('donations', { title: 'Donations' });
+});
+
 module.exports = router;
