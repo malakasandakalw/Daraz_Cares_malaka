@@ -1,14 +1,49 @@
 extends layout
 
 block content
-  .container-fluid
-  .hero-container
-    .hero-img-home.hero-image-home
+  style. 
+      .hero-image-home{
+        background: url(/images/home_page/home-new.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        transition: transform 0.3s;
+      }
+      .bg-section-11 {
+        background:url(/images/home_page/bg_1-new.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+      }  
+      .bg-section-12 {
+        background-image: url(/images/home_page/bg_2-new.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+      }
+      .bg-section-13 {
+        background-image: url(/images/home_page/bg_3-new.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+      } 
+      .home-hero-bg:hover .hero-image-home{
+        transform: scale(1.08); 
+        }
+  .hero-container.w-100
+    .home-hero-bg 
+        .hero-image-home.inner-bg 
   .col-md-12.pl-300.pr-200
-    h1
-      | Inspiring communities through the
-      .container
-      h1 Power of commerce. 
+    h1.home-heading
+      | Inspiring communities through the Power of commerce. 
       .overlay
     .pt-100 
       .row.animate__animated.sliding-up
