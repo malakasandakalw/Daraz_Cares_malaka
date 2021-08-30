@@ -1030,6 +1030,92 @@ iframe{
   outline: 0;
   box-shadow: none;
 }
+
+.timeline-head{
+  padding-top: 20%;
+  padding-bottom: 20%;
+  position: fixed;
+  color: black;
+  letter-spacing: 2px;
+}
+/* 00000000000000000000000000000000000000000000000000000000000000000000000000000 */
+
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+ul.timeline:before {
+  content: '';
+  background: #797979;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 4px;
+  height: 125%;
+  z-index: 400;
+}
+ul.timeline > li {
+  margin: 20px 0;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+ul.timeline > li:before {
+  content: ' ';
+  background: #797979;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  left: 24px;
+  width: 15px;
+  height: 15px;
+  z-index: 400;
+}
+.accordion-button{
+  background-color: transparent;
+  font-weight: bold;
+  color: black;
+  padding: 0px;
+  transition: all 0.3s !important;
+  border: none;
+  box-shadow:none;
+  font-size: 22px;
+  border: none;
+}
+.accordion-item{
+  background-color: transparent;
+}
+.accordion-body{
+  color: black;
+  font-weight: bold;
+  padding:0px;
+  font-size: 22px;
+  line-height: 2;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.accordion-button::after {
+  display: none;
+}
+.accordion-button:not(.collapsed){
+  color: #5daf46;
+  font-size: 25px;
+  background: transparent;
+  transition: all 0.3s !important;
+  box-shadow:none;
+}
+.accordion-button:focus{
+  border: none;
+  box-shadow:none;
+}
+.timeline-hr{
+  margin-left: 30px;
+}
+#btn1:focus.timeline-hr{
+  background-color: black !important;
+  
+}
+/* 00000000000000000000000000000000000000000000000000000000000000000000000000000 */
 @media (max-width:1400px) {
   .hero-container {
     height: 70vh;

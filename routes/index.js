@@ -38,4 +38,8 @@ router.get('/donations', function(req, res, next) {
   res.render('donations', { title: 'Donations' });
 });
 
+router.get('/bangla_timeline', function(req, res, next) {
+  res.render('bangla_timeline', { title: 'timeline' });
+});
+
 module.exports = router;
