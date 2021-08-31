@@ -261,8 +261,8 @@ h2{
   background-color: black;
   color: white;
   margin-left: 7px !important;
-  margin-right: 5px !important;
-  width: 48% !important;
+  margin-right: 7px !important;
+  width: 48.5% !important;
 }
 .w-48{
   width: 49.5%;
@@ -327,7 +327,7 @@ h4{
   background-color: #e52f1c;
   color: white;
   margin-left: 7px !important;
-  margin-right: 5px !important;
+  margin-right: 7px !important;
   width: 48.1% !important;
   overflow: hidden;
   }
@@ -335,7 +335,7 @@ h4{
   background-color: #25a5d8;
   color: white;
   margin-left: 7px !important;
-  margin-right: 5px !important;
+  margin-right: 7px !important;
   width: 48.1% !important;
   overflow: hidden;
 }
@@ -343,7 +343,7 @@ h4{
   background-color: #2a2c52;
   color: white;
   margin-left: 7px !important;
-  margin-right: 5px !important;
+  margin-right: 7px !important;
   width: 48.1% !important;
   overflow: hidden;
   }
@@ -673,6 +673,7 @@ p.last-story-sec{
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s;
 }    
 .purple-bg{
   background-color: #5b449c;
@@ -891,7 +892,7 @@ footer{
   background-color: #fe6601;
   color: white;
   margin-left: 7px !important;
-  margin-right: 5px !important;
+  margin-right: 7px !important;
   width: 48.1% !important;
   overflow: hidden;
 }
@@ -1070,6 +1071,7 @@ ul.timeline > li:before {
   width: 15px;
   height: 15px;
   z-index: 400;
+  transition: all 0.3s;
 }
 .accordion-button{
   background-color: transparent;
@@ -1115,8 +1117,28 @@ ul.timeline > li:before {
   background-color: black !important;
   
 }
+.move-top{
+  display: flex;
+  justify-content: center;
+  align-items: unset;
+  transition: all 0.3s;
+}
+#list-item{
+  border-top: 2px solid #5daf4600;
+  transition: all 0.3s;
+}
+.border-on{
+  border-top: 2px solid #5daf46 !important;
+  transition: all 0.3s;
+}
+.border-on::before{
+  background: #5daf46 !important;
+  margin-top: -30px !important;
+  transition: all 0.3s;
+}
+    
 /* 00000000000000000000000000000000000000000000000000000000000000000000000000000 */
-@media (max-width:1400px) {
+@media (max-width:1440px) {
   .hero-container {
     height: 70vh;
     width: 100%;
@@ -1125,6 +1147,89 @@ ul.timeline > li:before {
     margin-bottom: 20px;
     padding-right: 50px;
     padding-left: 50px;
+  }
+  .container-projects{
+    padding-left: 137px;
+  }
+  .desc-text{
+    font-size: 18px;
+  }
+  .skillup-des{
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+  h4.bottom-btn-text{
+    font-size: 22px;
+  }
+  .arrow-skillup{
+    margin-left: 35%;
+  }
+  .bottom-btn{
+    padding-left: 105px;
+    margin-left: 0px;
+  }
+  .bottom-btn:hover h4.bottom-btn-text{
+    font-size: 22px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
+    .arrow-skillup{
+      margin-left: 35%;
+    }
+    .btn-skillup:hover .arrow-skillup{
+      margin-left: 35%;
+    }
+    .skill-hero{
+      margin-left: 120px;
+      width: 82.5%;
+  }
+  .blue-bg{
+    width: 47.5% !important;
+  }
+  p.story{
+    font-size: large;
+  }
+  .red-bg{
+    width: 47.5% !important;
+  }
+  .arrow-careers{
+    margin-left: 35%;
+  }
+  .btn-donations:hover .arrow-skillup{
+    margin-left: 35%;
+  }
+  .orange-bg{
+    width: 47.5% !important;
+  }
+  #icon-orange{
+    font-size: 125px;
+  }
+  .donations-count-value{
+    font-size: 60px;
+  }
+  .donations-count-text{
+    font-size: 25px;
+  }
+  .inner-col-4{
+    width: 31.7%;
+  }
+  .purple-bg{
+    width: 47.5% !important;
+  }
+  .green-bg{
+    width: 47.5% !important;
+  }
+  .purple-bg-dark{
+    width: 47.5% !important;
+  }
+  .black-bg{
+    width: 47.5% !important;
+  }
+  h3{
+    font-size: xx-large;
+  }
+  .story-sec-last{
+    height: 67vh;
   }
 }
 @media (max-width:1300px) {
@@ -1140,12 +1245,106 @@ ul.timeline > li:before {
 }
 @media (max-width:1200px) {
   .hero-container {
-    height: 70vh;
+    height: 65vh;
     width: 100%;
     overflow: hidden;
     position: relative;
     margin-bottom: 20px;
     padding-right: 50px;
     padding-left: 50px;
+  }
+  .container-projects{
+    padding-left: 115px;
+    padding-right: 95px;
+  }
+  .w-48{
+    height: 65vh;
+  }
+  .skillup-des{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .desc-text{
+    font-size: 17px;
+  }
+  .arrow-skillup{
+    margin-left: 35%;
+  }
+  .bottom-btn{
+    padding-left: 60px;
+  }
+  .btn-skillup:hover .arrow-skillup{
+    margin-left: 35%;
+  }
+  h4.bottom-btn-text{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .bottom-btn:hover h4.bottom-btn-text{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
+  .skill-hero{
+    margin-left: 97px;
+    width: 83.5%;
+  }
+  p.story{
+    font-size: large;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+@media(max-width:1024px){
+  .container-projects{
+    padding-left: 80px;
+    padding-right: 60px;
+  }
+  .blue-bg {
+    width: 46.8% !important;
+  }
+  .red-bg{
+    width: 46.8% !important;
+  }
+  .purple-bg{
+    width: 46.8% !important;
+  }
+  .green-bg{
+    width: 46.8% !important;
+  }
+  .purple-bg-dark{
+    width: 46.8% !important;
+  }
+  .black-bg{
+    width: 46.8% !important;
+  }
+  .orange-bg{
+    width: 46.8% !important;
+  }
+  .project-des{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .donations-des{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  #icon-orange{
+    font-size: 100px;
+  }
+  .donations-count-value{
+    font-size: 45px;
+  }
+  .donations-count-text{
+    font-size: 22px;
+  }
+  .container-stories{
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .story-sec-last{
+    padding-left: 75px;
+    padding-right: 75px;
   }
 }
