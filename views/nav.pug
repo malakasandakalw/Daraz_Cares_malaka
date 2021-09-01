@@ -1,9 +1,50 @@
 nav.navbar.fixed-top.navbar-expand-lg.navbar-light.bg-light
-    .container-fluid
-      a.navbar-brand(href='#') Navbar w/ text
-      button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarText' aria-controls='navbarText' aria-expanded='false' aria-label='Toggle navigation')
-        span.navbar-toggler-icon
+    .container-fluid.navbar-
+      a.navbar-brand(href='#') 
+        img#logo_main(src="/images/logo/logo-new.png", alt="")
       #navbarText.collapse.navbar-collapse
         ul.navbar-nav.me-auto.mb-2.mb-lg-0
-        span
-          | Navbar text with an inline element 
+          // Button trigger modal
+          button.btn(type='button' data-bs-toggle='modal' data-bs-target='#exampleModal')
+            i.fas.fa-bars
+          // Modal
+          #exampleModal.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+            .modal-dialog.navbar-modal
+              .modal-content.white-bg
+                .modal-header
+                  button.btn-close.nav-close-btn(type='button' data-bs-dismiss='modal' aria-label='Close')
+                .modal-body.nav-modal
+                  .row 
+                    .col-md-4
+                      h8.nav-list-head EXPLORE
+                      ul.nav-list
+                        li.pt-pb
+                          a(href="").nav-item-list  Life at Daraz
+                        li.pt-pb
+                          a(href="").nav-item-list Project
+                        li.pt-pb
+                          a(href="").nav-item-list Careers
+                        li.pt-pb
+                          a(href="").nav-item-list Stories + News  
+                    .col-md-4 
+                      h8.nav-list-head CONNECT
+                      ul.nav-list
+                        li.pt-pb
+                          a(href="").nav-item-list Newsletter
+                        li.pt-pb
+                          a(href="").nav-item-list Linkedin
+                        li.pt-pb
+                          a(href="").nav-item-list Youtube
+                        li.pt-pb
+                          a(href="").nav-item-list Instagram 
+                        li.pt-pb
+                          a(href="").nav-item-list Facebook 
+                    .col-md-4
+                      h8.nav-list-head EXPLORE
+                      ul.nav-list
+                        li.pt-pb
+                          a(href="").nav-item-list Contact
+                        li.pt-pb
+                          a(href="").nav-item-list Privacy + Terms
+                        li.pt-pb
+                          a(href="").nav-item-list Daraz 

@@ -36,9 +36,9 @@ h2{
   width: 100%;
   overflow: hidden;
   position: relative;
-  margin-bottom: 20px;
   padding-right: 150px;
   padding-left: 150px;
+  margin-top: 5%;
 }
 .hero-container-home{
   height: 70vh !important;
@@ -256,6 +256,7 @@ h2{
 .container-projects{
   padding-left: 165px;
   padding-right: 118px;
+  margin-bottom: 14px;
 }
 .black-bg{
   background-color: black;
@@ -641,7 +642,7 @@ p.last-story-sec{
   width: 84.5%;
 }
 .skill-overlay{
-  background-image: linear-gradient(0deg, #25a5d8 0%, rgb(37 165 216 / 59%) 100%);
+  background-image: linear-gradient(0deg, #13303c 0%, rgb(37 165 216 / 59%) 100%);
   position: absolute;
   top: 0;
   left: 0;
@@ -673,7 +674,6 @@ p.last-story-sec{
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.3s;
 }    
 .purple-bg{
   background-color: #5b449c;
@@ -865,6 +865,25 @@ footer{
   width: 100%;
   margin-left: 150px;
   width: 84.5%;
+}
+.stories-hero{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin-left: 150px;
+  width: 84.5%;
+}
+.bg-1-img, .bg-2-img,.bg-3-img{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
 .donations-overlay{
   background-image: linear-gradient(0deg, #fe6601 0%, rgb(254 102 1 / 35%) 100%);
@@ -1118,10 +1137,7 @@ ul.timeline > li:before {
   
 }
 .move-top{
-  display: flex;
-  justify-content: center;
-  align-items: unset;
-  transition: all 0.3s;
+  margin-top: -50px !important;
 }
 #list-item{
   border-top: 2px solid #5daf4600;
@@ -1136,7 +1152,70 @@ ul.timeline > li:before {
   margin-top: -30px !important;
   transition: all 0.3s;
 }
-    
+#logo_main{
+  max-width: 15%;
+}    
+.navbar-{
+  padding-left: 8.5%;
+  padding-right: 8%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.modal-backdrop{
+  z-index: 0;
+}
+.white-bg{
+  background-color: white !important;
+}
+h8.nav-list-head{
+  font-size: xx-large;
+  color: #5daf46;
+  letter-spacing: 2px;
+
+}
+.nav-list{
+  list-style:none;
+  padding-left:0px;
+  font-size: x-large;
+  padding-top: 20px;
+}
+.pt-pb{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 60px;
+}
+.modal-content.white-bg{
+  width: 140%;
+}
+.modal-body.nav-modal{
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+.nav-close-btn{
+  font-size: x-large;
+  color: #5daf46;
+}
+.navbar-modal{
+  top: 2%;
+  margin-right: 18%;
+}
+.fa-bars{
+  font-size: 30px;
+  color: #5daf46;
+}
+.nav-item-list{
+  text-decoration: none;
+  color: #000;
+}
+.nav-item-list:hover{
+  color: #5daf46;
+  font-weight: 600;
+}
+#footer-logo{
+  max-width: 100%;
+}
 /* 00000000000000000000000000000000000000000000000000000000000000000000000000000 */
 @media (max-width:1440px) {
   .hero-container {
@@ -1147,19 +1226,58 @@ ul.timeline > li:before {
     margin-bottom: 20px;
     padding-right: 50px;
     padding-left: 50px;
+    
+  }
+  .w-100{
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .home-heading {
+    width: 95%;
+}
+.pl-300 {
+  padding-left: 220px !important;
+}
+.overlay{
+  width: 55%;
+  left: 15%;
+}
+.bg-text-holder{
+  margin-left: 70px;
+}
+  .container-stories{
+    padding-right: 140px;
+    padding-left: 140px;
+    margin-top: -102px;
+  }
+  .story-sec-last{
+    padding-right: 75px;
+  }
+  .cr-page{
+    margin-top: 4% !important;
+  }
+  .navbar-{
+    padding-right: 9%;
   }
   .container-projects{
     padding-left: 137px;
+    margin-top: -110px;
   }
   .desc-text{
     font-size: 18px;
   }
-  .skillup-des{
+  .skillup-des, .project-des, .donations-des{
     padding-left: 90px;
     padding-right: 90px;
   }
   h4.bottom-btn-text{
-    font-size: 22px;
+    font-size: 20px;
+  }
+  .don-arrow{
+    margin-left: 25% !important;
+  }
+  .btn-donations:hover .don-arrow{
+    margin-left: 25% !important;
   }
   .arrow-skillup{
     margin-left: 35%;
@@ -1167,11 +1285,13 @@ ul.timeline > li:before {
   .bottom-btn{
     padding-left: 105px;
     margin-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
   .bottom-btn:hover h4.bottom-btn-text{
     font-size: 22px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     }
     .arrow-skillup{
       margin-left: 35%;
@@ -1179,9 +1299,10 @@ ul.timeline > li:before {
     .btn-skillup:hover .arrow-skillup{
       margin-left: 35%;
     }
-    .skill-hero{
+    .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero{
       margin-left: 120px;
       width: 82.5%;
+      height: 85%;
   }
   .blue-bg{
     width: 47.5% !important;
@@ -1230,6 +1351,39 @@ ul.timeline > li:before {
   }
   .story-sec-last{
     height: 67vh;
+    padding-left: 140px;
+    padding-right: 140px;
+    margin-top: 7px;
+    
+  }
+  .empty-col-1{
+    width: 10%;
+  }
+  .empty-col-2{
+    width: 0%;
+  }
+  .footer-sec-btn{
+    width: 50%;
+  }
+  .footer-main-text{
+    font-size: 22px;
+  }
+  #form-input{
+    font-size: 22px;
+  }
+  .footer-sub-text{
+    font-size: 18px;
+  }
+  footer {
+    padding-left: 137px;
+    padding-right: 118px;
+    margin-bottom: -100px;
+  }
+  .footer-input{
+    height: 50px;
+  }
+  .w-48{
+    height: 70vh;
   }
 }
 @media (max-width:1300px) {
@@ -1256,6 +1410,7 @@ ul.timeline > li:before {
   .container-projects{
     padding-left: 115px;
     padding-right: 95px;
+    margin-top: -160px;
   }
   .w-48{
     height: 65vh;
@@ -1283,23 +1438,47 @@ ul.timeline > li:before {
   .bottom-btn:hover h4.bottom-btn-text{
     font-size: 20px;
     font-weight: bold;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     }
-  .skill-hero{
-    margin-left: 97px;
-    width: 83.5%;
+  .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero{
+    margin-left: 62px;
+    width: 86.5%;
+    height: 75%;
   }
   p.story{
     font-size: large;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 15%;
+    padding-right: 15%;
   }
+  h5.story{
+    font-size: 40px;
+  }
+  
 }
 @media(max-width:1024px){
-  .container-projects{
+  .container-projects {
     padding-left: 80px;
     padding-right: 60px;
+    margin-top: -150px;
+}
+  .hero-container{
+    height: 60vh;
+  }
+  h1{
+    font-size: 65px;
+  }
+  h2{
+    font-size: 2.5rem;
+  }
+  .do-text{
+    font-size: 2rem;
+  }
+  .arrow-1,.arrow-2,.arrow-3{
+    height: 50px;
+  }
+  .button{
+    height: 50px;
   }
   .blue-bg {
     width: 46.8% !important;
@@ -1342,9 +1521,274 @@ ul.timeline > li:before {
   .container-stories{
     padding-left: 80px;
     padding-right: 80px;
+    margin-top: -140px;
   }
   .story-sec-last{
     padding-left: 75px;
     padding-right: 75px;
+  }
+  footer {
+    padding-left: 80px;
+    padding-right: 85px;
+    margin-bottom: -100px;
+  }
+  .btn-story{
+    font-size: 20px;
+  }
+  .fa-arrow-right{
+    font-size: 20px;
+  }
+  .arrow-3{
+    padding: 9px;
+  }
+  .footer-main-text{
+    font-size: 20px;
+  }
+  #form-input{
+    font-size: 19px;
+  }
+  .footer-sub-text {
+    font-size: 16px;
+  }
+  #logo_main{
+    max-width: 20%;
+  }
+  .left-box {
+    padding-left: 0px;
+  }
+  .right-box {
+    padding-right: 0px;
+  }
+}
+
+@media(max-width:768px){
+  .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero,.stories-hero{
+    height: 55%;
+    width: 93.5%;
+    margin-left: 22px;
+  }
+  .res-6{
+    width: 100%;
+  }
+  .story-sec-last{
+    padding-left: 38px;
+    padding-right: 33px;
+    height: 55vh;
+  }
+  .stories-last-text{
+    width: 50%;
+  }
+  .btn-story{
+    width: 230px;
+    height: 50px;
+  }
+  .btn-story:hover{
+    width: 230px;
+  }
+  .cr-page{
+    margin-top: 14% !important;
+  }
+  .inner-col-4{
+    width: 31%;
+  }
+  #icon-orange {
+    font-size: 90px;
+}
+.donations-count-value {
+  font-size: 35px;
+}
+  h5.story{
+    font-size: 33px;
+  }
+  p.story{
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: larger;
+  }
+  .container-projects{
+    margin-top: -250px;
+    padding-left: 40px;
+    padding-right: 20px;
+  }
+  .container-stories{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .w-48{
+    height: 55vh;
+    width: 98.5% !important;
+  }
+  .inner-bg{
+    height: 55vh;
+  }
+  .w-res{
+    width: 95% !important;
+  }
+  .desc-text{
+    font-size: 20px;
+  }
+  .arrow-skillup, .arrow-university{
+    margin-left: 65%;
+  }
+  .uni-arrow-2{
+    margin-left: 55%;
+  }
+  .btn-skillup:hover .arrow-skillup{
+    margin-left: 65%;
+  }
+  .btn-university:hover .arrow-university{
+    margin-left: 65%;
+  }
+  .btn-university:hover .uni-arrow-2{
+    margin-left: 55%;
+  }
+  footer {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: -100px;
+  }
+  .footer-main-text{
+    font-size: 15px;
+  }
+  #form-input{
+    font-size: 13px;
+  }
+  .footer-sub-text{
+    font-size: 14px;
+  }
+  .btn-story{
+    font-size: 15px;
+  }
+  .empty-col-1{
+    width: 0%;
+  }
+  .footer-fst-btn{
+    width: 45%;
+  }
+  .footer-sec-btn{
+    width: 45%;
+  }
+  .btn-footer{
+    height: 50px;
+  }
+  .arrow-3{
+    height: 50px;
+  }
+  .pr-0{
+    padding-right: 14px;
+  }
+  #logo_main{
+    max-width: 30%;
+  }
+  .navbar-collapse{
+    display: block !important;
+  }
+  .page-content{
+    padding-top: 60px;
+  }
+}
+
+@media(max-width:425px){
+  .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero{
+    height: 45%;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .community-hero{
+    height: 55%;
+  }
+  .com-page{
+    margin-top: -270px !important;
+  }
+  .inner-col-4 {
+    width: 96.5%;
+}
+.donations-count-value {
+  font-size: 45px;
+}
+.donations-count-text {
+  font-size: 30px;
+}
+  h5.story{
+    font-size: 30px;
+  }
+  p.story{
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 15px;
+  }
+  .container-projects{
+    margin-top: -325px;
+    padding-left: 18px;
+    padding-right: 10px;
+  }
+  .w-48{
+    height: 45vh;
+    width: 98.5% !important;
+  }
+  .inner-bg{
+    height: 55vh;
+  }
+  .w-res{
+    width: 95% !important;
+  }
+  .desc-text{
+    font-size: 15px;
+  }
+  .arrow-skillup{
+    margin-left: 40%;
+  }
+  .btn-skillup:hover .arrow-skillup{
+    margin-left: 40%;
+  }
+  footer {
+    padding-left: 18px;
+    padding-right: 10px;
+    margin-bottom: -100px;
+  }
+  .footer-main-text{
+    font-size: 15px;
+  }
+  #form-input{
+    font-size: 13px;
+  }
+  .footer-sub-text{
+    font-size: 14px;
+  }
+  .btn-story{
+    font-size: 15px;
+  }
+  .empty-col-1{
+    width: 0%;
+  }
+  .footer-fst-btn{
+    width: 45%;
+  }
+  .footer-sec-btn{
+    width: 45%;
+  }
+  .btn-footer{
+    height: 50px;
+  }
+  .arrow-3{
+    height: 50px;
+  }
+  .pr-0{
+    padding-right: 5px;
+  }
+  .footer-fst-btn{
+    width: 100%;
+  }
+  .footer-sec-btn{
+    width: 100%;
+  }
+  #logo_main{
+    max-width: 30%;
+  }
+  .navbar-collapse{
+    display: block !important;
+  }
+  .page-content{
+    padding-top: 60px;
   }
 }
