@@ -32,7 +32,8 @@ h2{
 }
 /* Main_images */
 .hero-container{
-  height: 70vh;
+  /* height: 70vh; */
+  height: 650px;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -41,7 +42,8 @@ h2{
   margin-top: 5%;
 }
 .hero-container-home{
-  height: 70vh !important;
+  /* height: 70vh !important; */
+  height: 650px !important;
   display: block;
   height: 100%;
   overflow: hidden;
@@ -140,7 +142,8 @@ h2{
 
 /* Home_bg_anim */
 .bg-sec{
-  height: 90vh;
+  /* height: 90vh; */
+  height: 850px;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -267,7 +270,8 @@ h2{
 }
 .w-48{
   width: 49.5%;
-  height: 80vh;
+  /* height: 80vh; */
+  height: 750px;
   margin-top: 13px;
   margin-left: -5px;
   margin-right: -5px;
@@ -275,7 +279,8 @@ h2{
 }
 .w-100{
   width: 100%;
-  height: 70vh;
+  /* height: 70vh; */
+  height: 650px;
   overflow: hidden;
   padding-left: 160px;
 }
@@ -1219,7 +1224,8 @@ h8.nav-list-head{
 /* 00000000000000000000000000000000000000000000000000000000000000000000000000000 */
 @media (max-width:1440px) {
   .hero-container {
-    height: 70vh;
+    /* height: 70vh; */
+    height: 650px;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -1227,6 +1233,9 @@ h8.nav-list-head{
     padding-right: 50px;
     padding-left: 50px;
     
+  }
+  .skillup-content{
+    margin-top: 0px;
   }
   .w-100{
     padding-left: 70px;
@@ -1261,7 +1270,7 @@ h8.nav-list-head{
   }
   .container-projects{
     padding-left: 137px;
-    margin-top: -110px;
+    margin-top: -115px;
   }
   .desc-text{
     font-size: 18px;
@@ -1383,12 +1392,25 @@ h8.nav-list-head{
     height: 50px;
   }
   .w-48{
-    height: 70vh;
+    /* height: 70vh; */
+    height: 650px;
   }
 }
+@media (max-width: 1400px){
+  .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero {
+    width: 81.5%;
+  }
+}
+@media (max-width: 1340px){
+  .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero {
+    width: 81%;
+  }
+}
+
 @media (max-width:1300px) {
   .hero-container {
-    height: 70vh;
+    /* height: 70vh; */
+    height: 650px;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -1396,10 +1418,16 @@ h8.nav-list-head{
     padding-right: 50px;
     padding-left: 50px;
   }
+  .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero {
+    margin-left: 120px;
+    width: 80.5%;
+    height: 85%;
+}
 }
 @media (max-width:1200px) {
   .hero-container {
-    height: 65vh;
+    /* height: 65vh; */
+    height: 600px;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -1413,7 +1441,8 @@ h8.nav-list-head{
     margin-top: -160px;
   }
   .w-48{
-    height: 65vh;
+    /* height: 65vh; */
+    height: 600px;
   }
   .skillup-des{
     padding-left: 30px;
@@ -1442,8 +1471,8 @@ h8.nav-list-head{
     padding-bottom: 10px;
     }
   .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero{
-    margin-left: 62px;
-    width: 86.5%;
+    margin-left: 99px;
+    width: 82.5%;
     height: 75%;
   }
   p.story{
@@ -1456,14 +1485,27 @@ h8.nav-list-head{
   }
   
 }
+@media(max-width:1100px){
+  .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero{
+    margin-left: 97px;
+    width: 81.5%;
+    height: 75%;
+  }
+}
 @media(max-width:1024px){
   .container-projects {
     padding-left: 80px;
     padding-right: 60px;
     margin-top: -150px;
-}
+  }
+  .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero{
+    margin-left: 62px;
+    width: 86.5%;
+    height: 75%;
+  }
   .hero-container{
-    height: 60vh;
+    /* height: 60vh; */
+    height: 550px;
   }
   h1{
     font-size: 65px;
@@ -1560,8 +1602,7 @@ h8.nav-list-head{
     padding-right: 0px;
   }
 }
-
-@media(max-width:768px){
+@media(max-width:868px){
   .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero,.stories-hero{
     height: 55%;
     width: 93.5%;
@@ -1570,10 +1611,17 @@ h8.nav-list-head{
   .res-6{
     width: 100%;
   }
+  .stories-last-overlay{
+    width: 90.5%;
+  }
+  .stories-hero{
+    margin-top: 8%;
+  }
   .story-sec-last{
     padding-left: 38px;
     padding-right: 33px;
-    height: 55vh;
+    /* height: 55vh; */
+    height: 500px;
   }
   .stories-last-text{
     width: 50%;
@@ -1613,13 +1661,156 @@ h8.nav-list-head{
   .container-stories{
     padding-left: 40px;
     padding-right: 40px;
+    margin-top: -180px;
   }
   .w-48{
     height: 55vh;
     width: 98.5% !important;
   }
+  .story-sub-sec-4{
+    margin-left: 0px !important;
+  }
   .inner-bg{
+    /* height: 55vh; */
+    height: 500px;
+  }
+  .w-res{
+    width: 95% !important;
+  }
+  .desc-text{
+    font-size: 20px;
+  }
+  .arrow-skillup, .arrow-university{
+    margin-left: 65%;
+  }
+  .uni-arrow-2{
+    margin-left: 55%;
+  }
+  .btn-skillup:hover .arrow-skillup{
+    margin-left: 65%;
+  }
+  .btn-university:hover .arrow-university{
+    margin-left: 65%;
+  }
+  .btn-university:hover .uni-arrow-2{
+    margin-left: 55%;
+  }
+  footer {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: -100px;
+  }
+  .footer-main-text{
+    font-size: 15px;
+  }
+  #form-input{
+    font-size: 13px;
+  }
+  .footer-sub-text{
+    font-size: 14px;
+  }
+  .btn-story{
+    font-size: 15px;
+  }
+  .empty-col-1{
+    width: 0%;
+  }
+  .footer-fst-btn{
+    width: 45%;
+  }
+  .footer-sec-btn{
+    width: 45%;
+  }
+  .btn-footer{
+    height: 50px;
+  }
+  .arrow-3{
+    height: 50px;
+  }
+  .pr-0{
+    padding-right: 14px;
+  }
+  #logo_main{
+    max-width: 30%;
+  }
+  .navbar-collapse{
+    display: block !important;
+  }
+  .page-content{
+    padding-top: 60px;
+  }
+}
+@media(max-width:768px){
+  .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero,.stories-hero{
+    height: 55%;
+    width: 93.5%;
+    margin-left: 22px;
+  }
+  .res-6{
+    width: 100%;
+  }
+  .stories-last-overlay{
+    width: 90.5%;
+  }
+  .stories-hero{
+    margin-top: 8%;
+  }
+  .story-sec-last{
+    padding-left: 38px;
+    padding-right: 33px;
+    /* height: 55vh; */
+    height: 500px;
+  }
+  .stories-last-text{
+    width: 50%;
+  }
+  .btn-story{
+    width: 230px;
+    height: 50px;
+  }
+  .btn-story:hover{
+    width: 230px;
+  }
+  .cr-page{
+    margin-top: 14% !important;
+  }
+  .inner-col-4{
+    width: 31%;
+  }
+  #icon-orange {
+    font-size: 90px;
+}
+.donations-count-value {
+  font-size: 35px;
+}
+  h5.story{
+    font-size: 33px;
+  }
+  p.story{
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: larger;
+  }
+  .container-projects{
+    margin-top: -250px;
+    padding-left: 40px;
+    padding-right: 20px;
+  }
+  .container-stories{
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: -180px;
+  }
+  .w-48{
     height: 55vh;
+    width: 98.5% !important;
+  }
+  .story-sub-sec-4{
+    margin-left: 0px !important;
+  }
+  .inner-bg{
+    /* height: 55vh; */
+    height: 500px;
   }
   .w-res{
     width: 95% !important;
@@ -1723,11 +1914,13 @@ h8.nav-list-head{
     padding-right: 10px;
   }
   .w-48{
-    height: 45vh;
+    /* height: 45vh; */
+    height: 400px;
     width: 98.5% !important;
   }
   .inner-bg{
-    height: 55vh;
+    /* height: 55vh; */
+    height: 500px;
   }
   .w-res{
     width: 95% !important;
