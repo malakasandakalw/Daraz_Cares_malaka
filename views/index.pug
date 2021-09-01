@@ -12,7 +12,7 @@ block content
         transition: transform 0.3s;
       }
       .bg-section-11 {
-        background:url(/images/home_page/bg_1-new.jpg);
+        background:url(/images/home_page/bg_new_1.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -20,7 +20,7 @@ block content
         width: 100%;
       }  
       .bg-section-12 {
-        background-image: url(/images/home_page/bg_2-new.jpg);
+        background-image: url(/images/home_page/bg_new_2.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -28,7 +28,7 @@ block content
         width: 100%;
       }
       .bg-section-13 {
-        background-image: url(/images/home_page/bg_3-new.jpg);
+        background-image: url(/images/home_page/bg_new_3.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -41,19 +41,22 @@ block content
   .hero-container.w-100
     .home-hero-bg 
         .hero-image-home.inner-bg 
-  .col-md-12.pl-300.pr-200
-    h1.home-heading
-      | Inspiring communities through the Power of commerce. 
-      .overlay
-    .pt-100 
-      .row.animate__animated.sliding-up
-        .col-md-4.left-box
-          h2  
+  .row.w-101 
+      .col-md-2 
+      .col-md-8 
+        h1.home-heading-1 Inspiring communities through the Power of commerce. 
+          .overlay
+      .col-md-2
+  .row.w-101.animate__animated.sliding-up 
+      .col-md-3 
+      .col-md-3
+        h2  
             | What
             br
-            | We do 
-        .col-md-6.right-box 
-          p.do-text We support the education needs of local communities, equipping them with the skills needed to become active contributor of the society.
+            | We do
+      .col-md-4
+        p.do-text-1 We support the education needs of local communities, equipping them with the skills needed to become active contributor of the society.
+      .col-md-1
   .container-fluid.pd-0
     .bg-sec 
       .bg-section-11 
@@ -62,7 +65,9 @@ block content
           .outer.outer-1
             button.btn.button Explore Program 
             button.btn.arrow.arrow-1
-              i.fas.fa-arrow-right           
+              i.fas.fa-arrow-right  
+      .pro-name-home.pro-1   
+                h4 DC X SKILLUP         
     .bg-sec 
       .bg-section-12 
         .col-md-6.bg-text-holder 
@@ -71,7 +76,8 @@ block content
             button.btn.button Explore Donations
             button.btn.arrow.arrow-2
               i.fas.fa-arrow-right 
-            
+      .pro-name-home.pro-2   
+                h4 DC X DONATIONS      
     .bg-sec 
       .bg-section-13 
         .col-md-6.bg-text-holder 
@@ -80,4 +86,6 @@ block content
             button.btn.button Explore Community
             button.btn.arrow.arrow-3
               i.fas.fa-arrow-right 
+      .pro-name-home.pro-3   
+                h4 DC X COMMUNITY
       

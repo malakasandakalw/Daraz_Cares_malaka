@@ -29,6 +29,7 @@ h2{
   font-weight: 900;
   font-size: xx-large;
   color: black;
+  padding-right: 150px;
 }
 /* Main_images */
 .hero-container{
@@ -61,10 +62,25 @@ h2{
 }
 .home-heading{
   width: 80%;
+  margin-top: 50px;
+}
+.home-heading-1{
+  width: 100%;
+  margin-top: 50px;
+}
+.w-101:hover .overlay {
+  background-color: transparent;
+  width: 0%;
+  left: 50%;
+}
+.do-text-1{
+  font-weight: 900;
+  font-size: xx-large;
+  color: black;
 }
 /* Special Padding-left and Padding-right */
 .pl-300{
-  padding-left: 300px !important;
+  padding-left: 400px !important;
 }
 .pr-200{
   padding-right: 100px !important;
@@ -103,7 +119,7 @@ h2{
   background-color:#5daf46;
   overflow: hidden;
   width: 40%;
-  left: 16%;
+  left: 21%;
   right: 0;
   height: 10%;
   margin-top: -80px;
@@ -282,7 +298,16 @@ h2{
   /* height: 70vh; */
   height: 650px;
   overflow: hidden;
-  padding-left: 160px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+.w-101{
+  padding-left: 120px;
+  padding-right: 120px;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .pro-name{
   width: 30%;
@@ -292,6 +317,25 @@ h2{
   position: relative;
   margin-top: -44px;
 }
+.pro-name-home{
+  width: 10%;
+  color: white;
+  text-align: center;
+  position: relative;
+  margin-top: -44px;
+  left: 8%;
+}
+
+.pro-1{
+  background-color: #25a5d8;
+}
+.pro-2{
+  background-color: #fe6601;
+}
+.pro-3{
+  background-color: #5fb20e;
+}
+
 .pro-bg{
   display: block;
   height: 100%;
@@ -1241,7 +1285,24 @@ h8.nav-list-head{
   width: 0%;
   transition: all 0.3s;
 }
+.careers-content{
+  margin-top: 5%;
+}
+.projects-content{
+  margin-top: 5%;
+}
 /* 00000000000000000000000000000000000000000000000000000000000000000000000000000 */
+@media (max-width:1850px){
+  .overlay{
+    left: 19%;
+  }
+  .pl-300{
+    padding-left: 350px !important;
+  }
+  .home-heading{
+    width: 87%;
+  }
+}
 @media (max-width:1750px){
   .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero{
     width: 82%;
@@ -1275,6 +1336,23 @@ h8.nav-list-head{
   .od-3{
     width: 80%;
     }
+  .bg-sec{
+    /* height: 90vh; */
+    height: 780px;
+  }
+  .w-100{
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+  .home-heading{
+    width: 87%;
+  }
+  .overlay{
+    left: 20%;
+  }
+  .pl-300{
+    padding-left: 350px !important;
+  }
 }
 @media (max-width:1600px){
   .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero{
@@ -1288,6 +1366,16 @@ h8.nav-list-head{
   }
   .btn-donations:hover .don-arrow{
     margin-left: 10% !important;
+  }
+  .pl-300 {
+    padding-left: 248px !important;
+  }
+  .overlay {
+    left: 15%;
+    width: 45%;
+  }
+  .home-heading {
+    width: 95%;
   }
   
 }
@@ -1314,7 +1402,7 @@ h8.nav-list-head{
     width: 95%;
 }
 .pl-300 {
-  padding-left: 220px !important;
+  padding-left: 175px !important;
 }
 .overlay{
   width: 55%;
@@ -1465,6 +1553,12 @@ h8.nav-list-head{
     /* height: 70vh; */
     height: 650px;
   }
+  .timeline-head {
+    padding-top: 35%;
+  }
+  .home-heading {
+    width: 100%;
+}
 }
 @media (max-width: 1400px){
   .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero {
@@ -1523,6 +1617,9 @@ h8.nav-list-head{
     width: 80.5%;
     height: 85%;
 }
+.timeline-head {
+  padding-top: 45%;
+}
 }
 @media (max-width:1200px) {
   .hero-container {
@@ -1540,6 +1637,9 @@ h8.nav-list-head{
     padding-left: 111px;
     padding-right: 118px;
     margin-top: 7px;
+  }
+  .timeline-head {
+    padding-top: 45%;
   }
   .project-des{
     padding-left: 30px;
@@ -1791,6 +1891,9 @@ h8.nav-list-head{
   .od-3{
     width: 85%;
     }
+    .timeline-head {
+      padding-top: 55%;
+    }
 }
 @media(max-width:990px){
   .navbar-collapse{
@@ -1810,6 +1913,18 @@ h8.nav-list-head{
   .life-content{
     margin-top: 120px;
   }
+  .careers-content {
+    margin-top: -4%;
+  }
+  h3 {
+    font-size: xx-large;
+  }
+  .timeline-head{
+    padding-top: 70%;
+  }
+  .projects-content {
+    margin-top: -4%;
+  }
   .res-6{
     width: 100%;
   }
@@ -1818,6 +1933,9 @@ h8.nav-list-head{
   }
   .stories-last-overlay{
     width: 90.5%;
+  }
+  h5.story{
+    padding-top: 10%;
   }
   .stories-hero{
     margin-top: 8%;
@@ -2085,10 +2203,13 @@ h8.nav-list-head{
 @media (max-width: 660px){
   .inner-col-4 {
     width: 30.7%;
-}
-.donations-count-value {
-  font-size: 30px;
-}
+  }
+  .donations-count-value {
+    font-size: 30px;
+  }
+  #com-head{
+    padding-top: 10%;
+  }
 }
 
 @media(max-width:550px){
