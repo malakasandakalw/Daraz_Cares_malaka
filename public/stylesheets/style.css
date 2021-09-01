@@ -946,14 +946,14 @@ footer{
 .donations-count-value{
   font-size: 75px;
   color:#fe6601;
-  font-weight: 600;
+  font-weight: 400;
   font-family: monospace;
   letter-spacing: 10px;
 }
 .donations-count-text{
   font-size: 30px;
   color:#fe6601;
-  font-weight: 600;
+  font-weight: 400;
   font-family: monospace;
 }
 .pt-default{
@@ -965,6 +965,7 @@ footer{
   width: 32%;
   margin-left: 7px;
   margin-right: 7px;
+  overflow-x: hidden;
 }
 .col-4-inner-row{
   padding-right: 15px;
@@ -1221,6 +1222,25 @@ h8.nav-list-head{
 #footer-logo{
   max-width: 100%;
 }
+.overlay-don{
+  height: 90px;
+  background: white;
+  width: 70%;
+  margin-top: -106px;
+  float: right;
+  position: relative;
+  transition: all 0.3s;
+}
+.od-2{
+  width: 60%;
+  }
+.od-3{
+  width: 75%;
+  }
+.col-4-inner-row:hover .overlay-don{
+  width: 0%;
+  transition: all 0.3s;
+}
 /* 00000000000000000000000000000000000000000000000000000000000000000000000000000 */
 @media (max-width:1750px){
   .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero{
@@ -1233,7 +1253,28 @@ h8.nav-list-head{
     padding-left: 165px;
     padding-right: 142px;
     margin-bottom: 14px;
-}
+  }
+  .don-arrow {
+    margin-left: 25%;
+  }
+  .btn-donations:hover .don-arrow{
+    margin-left: 25% !important;
+  }
+  .overlay-don{
+    height: 90px;
+    background: white;
+    width: 75%;
+    margin-top: -106px;
+    float: right;
+    position: relative;
+    transition: all 0.3s;
+  }
+  .od-2{
+    width: 60%;
+    }
+  .od-3{
+    width: 80%;
+    }
 }
 @media (max-width:1600px){
   .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero{
@@ -1242,6 +1283,13 @@ h8.nav-list-head{
   .orange-bg, .purple-bg-dark, .black-bg, .green-bg, .purple-bg, .red-bg {
     width: 47.7% !important;
   }
+  .don-arrow {
+    margin-left: 10%;
+  }
+  .btn-donations:hover .don-arrow{
+    margin-left: 10% !important;
+  }
+  
 }
 @media (max-width:1440px) {
   .hero-container {
@@ -1422,11 +1470,41 @@ h8.nav-list-head{
   .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero {
     width: 81.5%;
   }
+  .overlay-don{
+    height: 90px;
+    background: white;
+    width: 75%;
+    margin-top: -106px;
+    float: right;
+    position: relative;
+    transition: all 0.3s;
+  }
+  .od-2{
+    width: 60%;
+    }
+  .od-3{
+    width: 80%;
+    }
 }
 @media (max-width: 1340px){
   .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero {
     width: 81%;
   }
+  .overlay-don{
+    height: 70px;
+    background: white;
+    width: 78%;
+    margin-top: -85px;
+    float: right;
+    position: relative;
+    transition: all 0.3s;
+  }
+  .od-2{
+    width: 62%;
+    }
+  .od-3{
+    width: 85%;
+    }
 }
 
 @media (max-width:1300px) {
@@ -1552,6 +1630,21 @@ h8.nav-list-head{
   .empty-col-2{
     width: 5%;
   }
+  .overlay-don{
+    height: 70px;
+    background: white;
+    width: 78%;
+    margin-top: -85px;
+    float: right;
+    position: relative;
+    transition: all 0.3s;
+  }
+  .od-2{
+    width: 62%;
+    }
+  .od-3{
+    width: 85%;
+    }
   
 }
 @media(max-width:1100px){
@@ -1559,6 +1652,12 @@ h8.nav-list-head{
     margin-left: 97px;
     width: 81.5%;
     height: 75%;
+  }
+  .inner-col-4{
+    width: 31.3%;
+  }
+  .donations-count-value{
+    font-size: 50px;
   }
 }
 @media(max-width:1024px){
@@ -1677,6 +1776,21 @@ h8.nav-list-head{
   .right-box {
     padding-right: 0px;
   }
+  .overlay-don{
+    height: 50px;
+    background: white;
+    width: 78%;
+    margin-top: -57px;
+    float: right;
+    position: relative;
+    transition: all 0.3s;
+  }
+  .od-2{
+    width: 62%;
+    }
+  .od-3{
+    width: 85%;
+    }
 }
 @media(max-width:990px){
   .navbar-collapse{
@@ -1968,6 +2082,15 @@ h8.nav-list-head{
     padding-top: 60px;
   }
 }
+@media (max-width: 660px){
+  .inner-col-4 {
+    width: 30.7%;
+}
+.donations-count-value {
+  font-size: 30px;
+}
+}
+
 @media(max-width:550px){
   .desc-text {
     font-size: 17px;
@@ -1984,6 +2107,9 @@ h8.nav-list-head{
   .btn-university:hover .uni-arrow-2{
     margin-left: 50%;
   }
+  .inner-col-4 {
+    width: 96.5%;
+}
 }
 
 @media(max-width:425px){
