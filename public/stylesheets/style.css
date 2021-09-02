@@ -2625,6 +2625,22 @@ a{
   .page-content{
     padding-top: 60px;
   }
+  .footer-ul{
+    padding-left: 0px;
+  }
+  #footer-logo{
+    max-width: 45%;
+  }
+  .fl-col{
+    text-align: left;
+    padding-top: 25px;
+  }
+  .contact-num{
+    padding-left: 5%;
+  }
+  .contact-email{
+    padding-left: 6%;
+  }
 }
 @media (max-width: 660px){
   .inner-col-4 {
@@ -2645,6 +2661,12 @@ a{
   .fl-col{
     text-align: left;
     padding-top: 25px;
+  }
+  .contact-num{
+    padding-left: 5%;
+  }
+  .contact-email{
+    padding-left: 6%;
   }
 }
 
