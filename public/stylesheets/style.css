@@ -620,12 +620,13 @@ p.last-story-sec{
 }
 
 .story-sec-last {
-  height: 70vh;
+  /* height: 70vh; */
+  height: 650px;
   width: 100%;
   overflow: hidden;
   position: relative;
   margin-bottom: 20px;
-  padding-right: 150px;
+  padding-right: 145px;
   padding-left: 162px;
   margin-top: 20px;
 }
@@ -668,7 +669,7 @@ p.last-story-sec{
 .stories-last-overlay{
   background-size: 200% 100%;
   height: 100%;
-  width: 84%;
+  width: 83.7%;
   position: absolute;
   background-position: right bottom;
   transition: all .3s ease-out;
@@ -1370,6 +1371,9 @@ a{
   .overlay{
     left: 21%;
   }
+  .stories-last-overlay{
+    width: 82.7%;
+  }
   .pl-300{
     padding-left: 350px !important;
   }
@@ -1470,6 +1474,9 @@ a{
   .pro-name-home {
     width: 13%;
 }
+.stories-last-overlay {
+  width: 82%;
+}
 }
 @media (max-width:1650px){
   h1{
@@ -1486,6 +1493,9 @@ a{
     width: 86%;
     font-size: 23px;
   }
+  .stories-last-overlay {
+    width: 80%;
+}
 }
 @media (max-width:1600px){
   .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero{
@@ -1545,6 +1555,12 @@ a{
   } */
   
 }
+@media (max-width:1500px){
+  .stories-last-overlay {
+    width: 79%;
+  }
+}
+
 @media (max-width:1440px) {
   .hero-container {
     /* height: 70vh; */
@@ -1556,6 +1572,9 @@ a{
     padding-right: 50px;
     padding-left: 50px;
     
+  }
+  .stories-last-overlay{
+    width: 81.2%;
   }
   .tl-pd{
     padding-left: 250px;
@@ -1737,9 +1756,9 @@ a{
     font-size: xx-large;
   }
   .story-sec-last{
-    height: 67vh;
-    padding-left: 140px;
-    padding-right: 140px;
+    height: 600px;
+    padding-left: 135px;
+    padding-right: 135px;
     margin-top: 7px;
     
   }
@@ -1803,10 +1822,21 @@ a{
       width: 45%;
       left: 17%;
   }
+  .stories-last-text{
+    padding-right: 0%;
+  }
+}
+@media (max-width: 1380px){
+  .stories-last-overlay {
+    width: 80.5%;
+}
 }
 @media (max-width: 1340px){
   .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero {
     width: 81%;
+  }
+  .stories-last-overlay {
+    width: 79%;
   }
   .w-101 {
     padding-left: 167px;
@@ -1885,6 +1915,9 @@ a{
     width: 59%;
     left: 11%;
   }
+  .stories-last-overlay {
+    width: 78.5%;
+  }
 }
 @media (max-width:1200px) {
   .hero-container {
@@ -1933,7 +1966,8 @@ a{
     font-size: xx-large;
   }
   p.stories-sec{
-    line-height: 1.7;
+    line-height: 1.5;
+    padding-top: 0%;
   }
   .stories-last-text{
     width: 50% !important;
@@ -2051,11 +2085,19 @@ a{
     margin-top: -195px !important;
 }
 }
+@media(max-width:1150px){
+  .stories-last-overlay{
+    width: 80%;
+  }
+}
 @media(max-width:1100px){
   .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero{
     margin-left: 97px;
     width: 81.5%;
     height: 75%;
+  }
+  .stories-last-overlay{
+    width: 78%;
   }
   .inner-col-4{
     width: 31.3%;
@@ -2093,6 +2135,9 @@ a{
     padding-left: 80px;
     padding-right: 60px;
     margin-top: -150px;
+  }
+  .stories-last-overlay{
+    width: 85.5%;
   }
   .tl-pd{
     padding-left: 100px;
@@ -2299,6 +2344,17 @@ a{
   .bs-2-new:hover{
     width: 82% !important;
   }
+  .st-sub-sec{
+    padding-top: 5%;
+  }
+  .stories-last-overlay{
+    width: 84.5%;
+  }
+}
+@media(max-width:900px){
+  .stories-last-overlay{
+    width: 83.5%;
+  }
 }
 @media(max-width:868px){
   .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero,.stories-hero{
@@ -2336,7 +2392,7 @@ a{
     margin-top: -265px !important;
   }
   .stories-last-overlay{
-    width: 90.5%;
+    width: 91.5%;
   }
   h5.story{
     padding-top: 10%;
@@ -2499,6 +2555,24 @@ a{
   .btn-col{
     width: 50%;
   }
+  .story-sub-sec-1{
+    padding-right: 0px !important;
+    height: 250px;
+  }
+  .story-sub-sec-2{
+    padding-left: 0px !important;
+    height: 250px;
+  }
+  .story-sub-sec-3{
+    padding-right: 0px !important;
+    padding-top: 0px;
+    height: 250px;
+  }
+  .story-sub-sec-4{
+    padding-left: 0px !important;
+    padding-top: 14px;
+    height: 250px;
+  }
   .tl-head{
     justify-content: unset;
     padding-left: 10%;
@@ -2577,11 +2651,12 @@ a{
   .story-sec-last{
     padding-left: 38px;
     padding-right: 33px;
+    margin-top: 420px;
     /* height: 55vh; */
     height: 500px;
   }
   .stories-last-text{
-    width: 50%;
+    width: 65% !important;
   }
   .btn-story{
     width: 230px;
@@ -2719,6 +2794,15 @@ a{
   .inner-col-4 {
     width: 30.7%;
   }
+  .btn-story {
+    width: 220px;
+    height: 50px;
+    text-align: left;
+    font-size: 16px !important;
+  }
+  .stories-last-overlay {
+    width: 88.5%;
+  }
   .donations-count-value {
     font-size: 30px;
   }
@@ -2759,6 +2843,9 @@ a{
   .btn-university:hover .uni-arrow-2{
     margin-left: 50%;
   }
+  .stories-last-overlay {
+    width: 87%;
+  }
   .inner-col-4 {
     width: 96.5%;
   }
@@ -2775,14 +2862,31 @@ a{
   .contact-email{
     padding-left: 6%;
   }
+  .stories-last-text {
+    width: 70% !important;
+  }
+  .container-stories{
+    margin-top: -210px;
+    padding-right: 27px;
+  }
+  .story-sec-last{
+    padding-right: 20px;
+  }
 }
-
+@media(max-width:520px){
+  .stories-last-overlay {
+    width: 85.5%;
+}
+}
 @media(max-width:425px){
   .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero{
     height: 45%;
     width: 100%;
     margin-left: 0px;
   }
+  .stories-last-overlay {
+    width: 84%;
+}
   .community-hero{
     height: 55%;
   }
@@ -2956,5 +3060,14 @@ h1 {
 .bg-section-13:hover .button {
   background-position: right bottom;
   width: 220px;
+  }
+  .container-stories{
+    margin-top: -280px;
+    padding-left: 19px;
+    padding-right: 18px;
+  }
+  .story-sec-last {
+    padding-right: 10px;
+    padding-left: 15px;
 }
 }
