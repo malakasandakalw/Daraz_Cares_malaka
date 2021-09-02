@@ -1559,6 +1559,15 @@ a{
   .stories-last-overlay {
     width: 79%;
   }
+  .od-2 {
+    width: 65%;
+  }
+  .od-3 {
+    width: 85% !important;
+  }
+  .overlay-don{
+    width: 80%;
+  }
 }
 
 @media (max-width:1440px) {
@@ -2328,6 +2337,9 @@ a{
   .fa-bars{
     float: right;
     margin-top: -38px;
+  }
+  .overlay-don{
+    margin-top: -70px;
   }
   h1 {
     font-size: 53px;
