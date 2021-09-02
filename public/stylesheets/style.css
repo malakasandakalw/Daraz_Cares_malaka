@@ -1431,6 +1431,9 @@ a{
   .pl-300{
     padding-left: 350px !important;
   }
+  .pro-name-home {
+    width: 13%;
+}
 }
 @media (max-width:1650px){
   h1{
@@ -1492,6 +1495,9 @@ a{
   }
   .bs-2-new:hover{
     width: 85% !important;
+  }
+  .pro-name-home {
+    width: 15%;
   }
   /* .bs-1{
     width: 85%;
@@ -1842,6 +1848,9 @@ a{
     margin-bottom: 20px;
     padding-right: 50px;
     padding-left: 50px;
+  }
+  .pro-name-home {
+    width: 25%;
   }
   h1{
     font-size: 61px
