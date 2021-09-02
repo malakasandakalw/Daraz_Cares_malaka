@@ -2235,7 +2235,7 @@ a{
   .container-stories{
     padding-left: 80px;
     padding-right: 80px;
-    margin-top: -140px;
+    margin-top: -150px;
   }
   .story-sec-last{
     padding-left: 75px;
@@ -2444,7 +2444,7 @@ a{
   .container-stories{
     padding-left: 40px;
     padding-right: 40px;
-    margin-top: -180px;
+    margin-top: -200px;
   }
   .w-48{
     width: 98% !important;
@@ -2803,6 +2803,11 @@ a{
   .stories-last-overlay {
     width: 88.5%;
   }
+  .container-stories {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: -215px;
+}
   .donations-count-value {
     font-size: 30px;
   }
@@ -2947,6 +2952,12 @@ a{
     padding-left: 18px;
     padding-right: 10px;
   }
+  .life-details {
+    margin-top: -325px !important;
+}
+  .life-content {
+    margin-top: 60px;
+}
   .w-48{
     /* height: 45vh; */
     height: 400px;
@@ -3040,7 +3051,7 @@ h1 {
     width: 50%;
 }
   .page-content{
-    padding-top: 60px;
+    padding-top: 30px;
   }
   .bg-text-holder {
     padding-top: 220px;
