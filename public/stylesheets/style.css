@@ -2,6 +2,18 @@
   src: url(/fonts/CabrionLight.otf);
   font-family: 'Cabrion';
 }
+.bs-1-new{
+  width: 50% !important;
+}
+.bs-1-new:hover{
+  width: 50% !important;
+}
+.bs-2-new{
+  width: 50% !important;
+}
+.bs-2-new:hover{
+  width: 50% !important;
+}
 body {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -24,12 +36,6 @@ h2{
   font-weight: 900;
   font-size: 3rem;
   color: black;
-}
-.do-text{
-  font-weight: 900;
-  font-size: xx-large;
-  color: black;
-  padding-right: 150px;
 }
 /* Main_images */
 .hero-container{
@@ -68,15 +74,22 @@ h2{
   width: 100%;
   margin-top: 50px;
 }
-.w-101:hover .overlay {
+.hover-:hover .overlay {
   background-color: transparent;
   width: 0%;
   left: 50%;
 }
+.hover-:hover .hid-box{
+  top: 0;
+}
 .do-text-1{
   font-weight: 900;
-  font-size: xx-large;
+  font-size: 2rem;
   color: black;
+  line-height: 1.5;
+}
+.home-text{
+  padding-right: 60px;
 }
 /* Special Padding-left and Padding-right */
 .pl-300{
@@ -118,7 +131,7 @@ h2{
   position: absolute;
   background-color:#5daf46;
   overflow: hidden;
-  width: 40%;
+  width: 42%;
   left: 21%;
   right: 0;
   height: 10%;
@@ -264,6 +277,7 @@ h2{
 }
 .outer-3{
   transition: padding 0.3s;
+  padding-top: 20px;
 }
 .bg-section-13:hover .outer-3{
   padding-top: 55px;
@@ -306,8 +320,10 @@ h2{
   padding-right: 120px;
   overflow: hidden;
   width: 100%;
-  padding-top: 100px;
   padding-bottom: 100px;
+}
+.w-1{
+  padding-top: 0px;
 }
 .pro-name{
   width: 30%;
@@ -838,11 +854,17 @@ p.last-story-sec{
   list-style: none;
   text-align: left;
 }
-.btn-footer{
-  width: 75%;
+.bs-2{
+  width: 85%;
 }
-.btn-footer:hover{
-  width: 75%;
+.bs-1{
+  width: 65%;
+}
+.bs-1:hover{
+  width: 65%;
+}
+.bs-2:hover{
+  width: 85%;
 }
 .bg-dark{
   background-color: black !important;
@@ -879,10 +901,14 @@ footer{
   padding-left: 170px;
   padding-right: 137px;
   margin-bottom: -100px;
+  padding-top: 7%;
 }
 .footer-input{
   width: 65%;
   height: 60px;
+}
+.r-btn{
+  text-align: left;
 }
 .submit{
   width: 31%;
@@ -916,9 +942,9 @@ footer{
   width: 84.5%;
 }
 .stories-hero{
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
   position: absolute;
   top: 0;
   left: 0;
@@ -1264,7 +1290,8 @@ h8.nav-list-head{
   font-weight: 600;
 }
 #footer-logo{
-  max-width: 100%;
+  max-width: 65%;
+  float: left;
 }
 .overlay-don{
   height: 90px;
@@ -1291,10 +1318,24 @@ h8.nav-list-head{
 .projects-content{
   margin-top: 5%;
 }
+.box {
+  height: 400px;
+  overflow: hidden;
+}
+.hid-box {
+  top: 100%;
+  position: relative;
+  transition: all .3s ease-out;
+  height: 100%;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
 /* 00000000000000000000000000000000000000000000000000000000000000000000000000000 */
 @media (max-width:1850px){
   .overlay{
-    left: 19%;
+    left: 21%;
   }
   .pl-300{
     padding-left: 350px !important;
@@ -1302,11 +1343,38 @@ h8.nav-list-head{
   .home-heading{
     width: 87%;
   }
+  h1{
+    font-size: 68px;
+  }
+  .bs-2{
+    width: 88%;
+    font-size: 23px;
+  }
+}
+@media (max-width:1800px){
+  h1{
+    font-size: 67px;
+  }
 }
 @media (max-width:1750px){
   .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero{
     width: 82%;
   }
+  .bs-1-new{
+    width: 50% !important;
+  }
+  .bs-1-new:hover{
+    width: 50% !important;
+  }
+  .bs-2-new{
+    width: 65% !important;
+  }
+  .bs-2-new:hover{
+    width: 65% !important;
+  }
+  .home-text {
+    padding-right: 90px;
+}
   .orange-bg, .purple-bg-dark, .black-bg, .green-bg, .purple-bg, .red-bg {
     width: 48% !important;
   }
@@ -1330,6 +1398,9 @@ h8.nav-list-head{
     position: relative;
     transition: all 0.3s;
   }
+  h1{
+    font-size: 61px;
+  }
   .od-2{
     width: 60%;
     }
@@ -1344,19 +1415,48 @@ h8.nav-list-head{
     padding-left: 90px;
     padding-right: 90px;
   }
+  .w-101 {
+    padding-left: 90px;
+    padding-right: 80px;
+  }
   .home-heading{
     width: 87%;
   }
   .overlay{
     left: 20%;
+    width: 45%;
+    height: 9%;
+    margin-top:-65px;;
   }
   .pl-300{
     padding-left: 350px !important;
   }
 }
+@media (max-width:1650px){
+  h1{
+    font-size: 59px;
+  }
+  .home-text {
+    padding-right: 120px;
+  }
+  .bs-1{
+    width: 80%;
+    font-size: 23px;
+  }
+  .bs-2{
+    width: 86%;
+    font-size: 23px;
+  }
+}
 @media (max-width:1600px){
   .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero{
     width: 80.5%;
+  }
+  .do-text-1{
+    font-size: 1.9rem;
+  }
+  h1{
+    font-size: 60px;
   }
   .orange-bg, .purple-bg-dark, .black-bg, .green-bg, .purple-bg, .red-bg {
     width: 47.7% !important;
@@ -1371,12 +1471,36 @@ h8.nav-list-head{
     padding-left: 248px !important;
   }
   .overlay {
-    left: 15%;
-    width: 45%;
+    left: 18%;
+    width: 47%;
   }
   .home-heading {
     width: 95%;
   }
+  .w-101 {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  .bs-1-new{
+    width: 50% !important;
+  }
+  .bs-1-new:hover{
+    width: 50% !important;
+  }
+  .bs-2-new{
+    width: 85% !important;
+  }
+  .bs-2-new:hover{
+    width: 85% !important;
+  }
+  /* .bs-1{
+    width: 85%;
+    font-size: 20px;
+  }
+  .bs-2{
+    width: 85%;
+    font-size: 20px;
+  } */
   
 }
 @media (max-width:1440px) {
@@ -1390,6 +1514,44 @@ h8.nav-list-head{
     padding-right: 50px;
     padding-left: 50px;
     
+  }
+  .bs-1-new{
+    width: 50% !important;
+  }
+  .bs-1-new:hover{
+    width: 50% !important;
+  }
+  .bs-2-new{
+    width: 75% !important;
+  }
+  .bs-2-new:hover{
+    width: 75% !important;
+  }
+  .w-101 {
+    padding-left: 200px;
+    padding-right: 90px;
+  }
+  .do-text-1 {
+    font-weight: 900;
+    font-size: 2.1rem;
+    color: black;
+    line-height: 1.5;
+  }
+  .bs-1,.bs-2{
+    height: 49px;
+  }
+  /* .home-empty-col-1 {
+    width: 10%;
+  } */
+  .home-empty-col-2{
+    width: 10%;
+  } 
+  .home-main-head {
+    width: 100%;
+    padding-left: 50px;
+  }
+  .pro-name-home{
+    width: 15%;
   }
   .skillup-content{
     margin-top: 0px;
@@ -1405,8 +1567,15 @@ h8.nav-list-head{
   padding-left: 175px !important;
 }
 .overlay{
-  width: 55%;
-  left: 15%;
+  width: 45%;
+  left: 16%;
+}
+.home-text{
+  padding-right: 0px;
+  width: 43%;
+}
+.home-empty-col-3{
+  width: 5%;
 }
 .bg-text-holder{
   margin-left: 70px;
@@ -1579,11 +1748,19 @@ h8.nav-list-head{
   .od-3{
     width: 80%;
     }
+    .overlay {
+      width: 45%;
+      left: 17%;
+  }
 }
 @media (max-width: 1340px){
   .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero {
     width: 81%;
   }
+  .w-101 {
+    padding-left: 167px;
+    padding-right: 90px;
+}
   .overlay-don{
     height: 70px;
     background: white;
@@ -1593,6 +1770,13 @@ h8.nav-list-head{
     position: relative;
     transition: all 0.3s;
   }
+  .overlay {
+    width: 59%;
+    left: 15%;
+}
+.home-empty-col-3{
+  width: 10%;
+}
   .od-2{
     width: 62%;
     }
@@ -1612,14 +1796,41 @@ h8.nav-list-head{
     padding-right: 50px;
     padding-left: 50px;
   }
+  .w-101{
+    padding-left: 185px;
+  }
   .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero {
     margin-left: 120px;
     width: 80.5%;
     height: 85%;
 }
+.home-main-head{
+  padding-left: 0px;
+}
 .timeline-head {
   padding-top: 45%;
 }
+.bs-1-new{
+  width: 60% !important;
+}
+.bs-1-new:hover{
+  width: 60% !important;
+}
+.bs-2-new{
+  width: 88% !important;
+}
+.bs-2-new:hover{
+  width: 88% !important;
+}
+}
+@media (max-width:1250px){
+  .w-101 {
+    padding-left: 150px;
+  }
+  .overlay {
+    width: 59%;
+    left: 11%;
+  }
 }
 @media (max-width:1200px) {
   .hero-container {
@@ -1631,6 +1842,19 @@ h8.nav-list-head{
     margin-bottom: 20px;
     padding-right: 50px;
     padding-left: 50px;
+  }
+  h1{
+    font-size: 61px
+  }
+  .w-101 {
+    padding-left: 150px;
+}
+  .navbar-modal {
+    top: 1%;
+    margin-right: 28%;
+}
+  .home-main-head{
+    padding-left: 30px;
   }
   .story-sec-last {
     height: 600px;
@@ -1745,7 +1969,27 @@ h8.nav-list-head{
   .od-3{
     width: 85%;
     }
-  
+    .bg-text-holder {
+      margin-left: 50px;
+    }
+    .bs-1-new {
+      font-size: 23px;
+    }
+    .bs-1-new:hover {
+      font-size: 23px;
+    }
+  .bs-2-new {
+    font-size: 23px ;
+    width: 86% !important;
+  }
+  .bs-2-new:hover {
+    font-size: 23px;
+    width: 86% !important;
+  }
+  .overlay {
+    width: 61%;
+    left: 15%;
+  }
 }
 @media(max-width:1100px){
   .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero{
@@ -1756,9 +2000,18 @@ h8.nav-list-head{
   .inner-col-4{
     width: 31.3%;
   }
+  .w-101 {
+    padding-left: 90px;
+  }
   .donations-count-value{
     font-size: 50px;
+  }h1 {
+    font-size: 58px;
   }
+  .overlay {
+    width: 61%;
+    left: 9%;
+}
 }
 @media(max-width:1024px){
   .container-projects {
@@ -1774,6 +2027,27 @@ h8.nav-list-head{
   .life-details{
     margin-top: -155px !important;
   }
+  .hero-image-home{
+    height: 85%;
+  }
+  .bs-1-new {
+    font-size: 20px;
+  }
+  .bs-1-new:hover {
+    font-size: 20px;
+  }
+.bs-2-new {
+  font-size: 20px ;
+  width: 86% !important;
+}
+.bs-2-new:hover {
+  font-size: 20px;
+  width: 86% !important;
+}
+  .navbar-modal{
+    top: 1%;
+    margin-right: 24%;
+  }
   .hero-container{
     /* height: 60vh; */
     height: 550px;
@@ -1783,13 +2057,13 @@ h8.nav-list-head{
     padding-right: 30px;
   }
   h1{
-    font-size: 65px;
+    font-size: 60px;
   }
   h2{
     font-size: 2.5rem;
   }
   .do-text{
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .arrow-1,.arrow-2,.arrow-3{
     height: 50px;
@@ -1894,6 +2168,35 @@ h8.nav-list-head{
     .timeline-head {
       padding-top: 55%;
     }
+    .w-101 {
+      padding-left: 65px;
+      padding-right: 60px;
+      padding-bottom: 0px;
+    }
+    .overlay {
+      width: 70%;
+      left: 8%;
+      height: 8%;
+      margin-top: -65px;
+    }
+    .bg-text{
+      font-size: 30px;
+    }
+    .pro-name-home {
+      width: 25%;
+    }
+    .box{
+      height: 450px;
+    }
+    .do-text-1{
+      font-size: 1.8rem;
+    }
+    .home-empty-col-3{
+      width: 10%;
+    }
+    .home-text{
+      width: 45%;
+    }
 }
 @media(max-width:990px){
   .navbar-collapse{
@@ -1903,12 +2206,35 @@ h8.nav-list-head{
     float: right;
     margin-top: -38px;
   }
+  h1 {
+    font-size: 53px;
+  }
+  .bs-1-new{
+    width: 55% !important;
+  }
+  .bs-1-new:hover{
+    width: 55% !important;
+  }
+  .bs-2-new{
+    width: 82% !important;
+  }
+  .bs-2-new:hover{
+    width: 82% !important;
+  }
 }
 @media(max-width:868px){
   .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero,.stories-hero{
     height: 55%;
     width: 93.5%;
     margin-left: 22px;
+  }
+  .w-101 {
+    padding-left: 45px;
+    padding-right: 35px;
+    padding-bottom: 0px;
+}
+  h1 {
+    font-size: 50px;
   }
   .life-content{
     margin-top: 120px;
@@ -2068,6 +2394,65 @@ h8.nav-list-head{
     width: 93.5%;
     margin-left: 22px;
   }
+  .bs-1-new{
+    width: 80% !important;
+  }
+  .bs-1-new:hover{
+    width: 80% !important;
+  }
+  .bs-2-new{
+    width: 80% !important;
+  }
+  .bs-2-new:hover{
+    width: 80% !important;
+  }
+  .w-100{
+    height: 350px;
+  }
+  .navbar-modal {
+    top: 1%;
+    margin-right: 30%;
+}
+  h1 {
+    font-size: 50px;
+  }
+  .hid-box{
+    top:0%;
+  }
+  .home-empty-col-3{
+    display: none;
+  }
+  .home-empty-col-4{
+    display: none;
+  }
+  .do-text-1{
+    font-size: 1.5rem;
+  }
+  .home-sub-head {
+    width: 45%;
+  }
+  .home-text{
+    width: 55%;
+  }
+  .box{
+    height: 400px;
+  }
+  .w-101{
+    padding-bottom: 10px;
+  }
+  .bg-text-holder{
+    margin-left:50px;
+    width: 100%;
+  }
+  .bg-text{
+    font-size: 25px;
+  }
+  .pro-name-home{
+    width: 30%;
+  }
+  .overlay{
+    display: none;
+  }
   .res-6{
     width: 100%;
   }
@@ -2161,7 +2546,7 @@ h8.nav-list-head{
     margin-bottom: -100px;
   }
   .footer-main-text{
-    font-size: 15px;
+    font-size: 17px;
   }
   #form-input{
     font-size: 13px;
@@ -2210,6 +2595,9 @@ h8.nav-list-head{
   #com-head{
     padding-top: 10%;
   }
+  .pro-name-home {
+    width: 40%;
+}
 }
 
 @media(max-width:550px){
@@ -2241,6 +2629,17 @@ h8.nav-list-head{
   }
   .community-hero{
     height: 55%;
+  }
+  .pt-pb {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 60px;
+  }
+  h8.nav-list-head{
+    font-size: x-large;
+  }
+  .nav-list{
+    font-size: large;
   }
   .com-page{
     margin-top: -270px !important;
@@ -2330,12 +2729,55 @@ h8.nav-list-head{
     width: 100%;
   }
   #logo_main{
-    max-width: 30%;
+    max-width: 40%;
   }
+  .w-100 {
+    height: 300px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .w-101 {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .home-main-head {
+    padding-left: 15px;
+}
+h1 {
+  font-size: 40px;
+}
+.do-text-1 {
+  font-size: 1.2rem;
+}
   .navbar-collapse{
     display: block !important;
   }
+  .bg-sec{
+    height: 650px;
+  }
+  .pro-name-home {
+    width: 50%;
+}
   .page-content{
     padding-top: 60px;
   }
+  .bg-text-holder {
+    padding-top: 220px;
+}
+.button{
+  width: 220px;
+  font-size: 20px;
+}
+.bg-section-11:hover .button {
+  background-position: right bottom;
+  width: 220px;
+}
+.bg-section-12:hover .button {
+  background-position: right bottom;
+  width: 220px;
+}
+.bg-section-13:hover .button {
+  background-position: right bottom;
+  width: 220px;
+}
 }

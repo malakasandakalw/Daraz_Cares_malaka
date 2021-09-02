@@ -41,51 +41,59 @@ block content
   .hero-container.w-100
     .home-hero-bg 
         .hero-image-home.inner-bg 
-  .row.w-101 
-      .col-md-2 
-      .col-md-8 
-        h1.home-heading-1 Inspiring communities through the Power of commerce. 
-          .overlay
-      .col-md-2
-  .row.w-101.animate__animated.sliding-up 
-      .col-md-3 
-      .col-md-3
-        h2  
-            | What
-            br
-            | We do
-      .col-md-4
-        p.do-text-1 We support the education needs of local communities, equipping them with the skills needed to become active contributor of the society.
-      .col-md-1
+  .hover-
+    .row.w-101.w-1 
+        .col-md-2.home-empty-col-1 
+        .col-md-8.home-main-head 
+          h1.home-heading-1 Inspiring communities through the Power of commerce.
+            .overlay
+        .col-md-2.home-empty-col-2
+    .row.w-101.animate__animated.sliding-up 
+        .col-md-2.home-empty-col-3
+        .col-md-4.home-sub-head  
+          .box 
+            .hid-box.vertical-align-text       
+              h2  
+                  | What
+                  br
+                  | We do
+        .col-md-4.home-text
+          .box 
+            .hid-box.vertical-align-text 
+              p.do-text-1 We support the education needs of local communities, equipping them with the skills needed to become active contributor of the society.
+        .col-md-1.home-empty-col-4 
   .container-fluid.pd-0
     .bg-sec 
       .bg-section-11 
         .col-md-6.bg-text-holder 
           p.bg-text Educating Daraz employees and people within our communities which lead to economic growth and improved job opportunities.
-          .outer.outer-1
-            button.btn.button Explore Program 
-            button.btn.arrow.arrow-1
-              i.fas.fa-arrow-right  
+          a(href="/skillup") 
+            .outer.outer-1
+              button.btn.button Explore Program 
+              button.btn.arrow.arrow-1
+                i.fas.fa-arrow-right  
       .pro-name-home.pro-1   
                 h4 DC X SKILLUP         
     .bg-sec 
       .bg-section-12 
         .col-md-6.bg-text-holder 
           p.bg-text A place for our customers to donate and fundraise for our chosen charity partners within each market.
-          .outer.outer-2
-            button.btn.button Explore Donations
-            button.btn.arrow.arrow-2
-              i.fas.fa-arrow-right 
+          a(href="/donations") 
+            .outer.outer-2
+              button.btn.button Explore Donations
+              button.btn.arrow.arrow-2
+                i.fas.fa-arrow-right 
       .pro-name-home.pro-2   
                 h4 DC X DONATIONS      
     .bg-sec 
       .bg-section-13 
         .col-md-6.bg-text-holder 
           p.bg-text Philanthropic initiatives designed to engage Daraz employees to help benefit the wider communit.
-          .outer.outer-3
-            button.btn.button Explore Community
-            button.btn.arrow.arrow-3
-              i.fas.fa-arrow-right 
+          a(href="/community") 
+            .outer.outer-3
+              button.btn.button Explore Community
+              button.btn.arrow.arrow-3
+                i.fas.fa-arrow-right 
       .pro-name-home.pro-3   
                 h4 DC X COMMUNITY
       
