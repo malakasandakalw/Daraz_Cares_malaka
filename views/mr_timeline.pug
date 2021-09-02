@@ -1,0 +1,27 @@
+extends layout
+
+block content 
+  .container-fluid.container-stories.container-timeline 
+    .row
+        .col-md-3 
+            //- h3.timeline-head Initiatives
+        .col-md-8                          
+            .list-sec
+                .list-content
+                    .row 
+                        .col-md-2.vertical-align-text.tl-head#year2018 
+                            h3#year-1 2021
+                        .col-md-8 
+                            ul.timeline
+                                li#list-item
+                                    #accordionFlushExample-1.accordion.accordion-flush
+                                        .accordion-item
+                                            h2#heading-1.accordion-header
+                                                button.accordion-button.collapsed#btn1.accordion-btn-1(onclick='myFunction()' type='button' data-bs-toggle='collapse' data-bs-target='#flush-1' aria-expanded='false' aria-controls='flush-1')
+                                                    | Shop Family Donation
+                                            #flush-1.accordion-collapse.collapse(aria-labelledby='heading-1' data-bs-parent='#accordionFlushExample-1')
+                                                .accordion-body
+                                                    | On the 27th June, Daraz Myanmar Marked the first Charity trip under Shop Cares CSR. In the past month, our employees were very lucky to be promoted and recieved bonus during this hard time in Myanmar. So we ontent to create good deeds and sharing back in the society to get blessed together for years to come. We went to the 'Myo Sat Thit' orphanage in Htantabin township, which is home to around 120 children starting from 2/3 months old to 15 years old. The weather was good on that day and we had a great time by helping the orphanage out as much as possible, also by donating good nutrition for lunch, general fees, and daily use for childre and spending time with the orphans. Total 24,007,000 MMK went to 'Myo Set This' orphanage in Htantabin, who are in desperate need of our support.
+                                                    img(src="/images/mr_timeline/mr.jpg", alt="", width="100%")
+                                hr.timeline-hr
+            

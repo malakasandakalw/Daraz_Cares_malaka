@@ -39,7 +39,19 @@ router.get('/donations', function(req, res, next) {
 });
 
 router.get('/bangla_timeline', function(req, res, next) {
-  res.render('bangla_timeline', { title: 'timeline' });
+  res.render('bangla_timeline', { title: 'Bangladesh' });
+});
+
+router.get('/sl_timeline', function(req, res, next) {
+  res.render('sl_timeline', { title: 'Sri Lanka' });
+});
+
+router.get('/mr_timeline', function(req, res, next) {
+  res.render('mr_timeline', { title: 'Mynmar' });
+});
+
+router.get('/np_timeline', function(req, res, next) {
+  res.render('np_timeline', { title: 'Nepal' });
 });
 
 module.exports = router;
