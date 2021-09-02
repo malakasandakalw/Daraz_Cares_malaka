@@ -2020,7 +2020,19 @@ a{
   .overlay {
     width: 61%;
     left: 9%;
-}
+  }
+  .bs-1-new{
+    height: 49px;
+  }
+  .bs-2-new {
+    font-size: 22px;
+    width: 86% !important;
+    height: 49px;
+  } 
+  .bs-2-new:hover {
+    font-size: 22px;
+    width: 86% !important;
+  } 
 }
 @media(max-width:1024px){
   .container-projects {
@@ -2396,12 +2408,30 @@ a{
   .page-content{
     padding-top: 60px;
   }
+  .bs-1-new{
+    font-size: 18px;
+  }
+  .bs-1-new:hover{
+    font-size: 18px;
+  }
+  .bs-2-new{
+    font-size: 18px;
+  }
+  .bs-2-new:hover{
+    font-size: 18px;
+  }
 }
 @media(max-width:768px){
   .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero,.stories-hero{
     height: 55%;
     width: 93.5%;
     margin-left: 22px;
+  }
+  .btn-col{
+    width: 50%;
+  }
+  .l-btn{
+    text-align: left;
   }
   .bs-1-new{
     width: 80% !important;
@@ -2483,6 +2513,8 @@ a{
   .btn-story{
     width: 230px;
     height: 50px;
+    text-align: left;
+    font-size: 16px !important;
   }
   .btn-story:hover{
     width: 230px;
@@ -2606,7 +2638,14 @@ a{
   }
   .pro-name-home {
     width: 40%;
-}
+  }
+  .footer-ul{
+    padding-left: 0px;
+  }
+  .fl-col{
+    text-align: left;
+    padding-top: 25px;
+  }
 }
 
 @media(max-width:550px){
@@ -2627,7 +2666,16 @@ a{
   }
   .inner-col-4 {
     width: 96.5%;
-}
+  }
+  .btn-col{
+    width: 100%;
+  }
+  .contact-num{
+    padding-left: 5%;
+  }
+  .contact-email{
+    padding-left: 6%;
+  }
 }
 
 @media(max-width:425px){
@@ -2638,6 +2686,27 @@ a{
   }
   .community-hero{
     height: 55%;
+  }
+  .bs-1-new{
+    font-size: 20px !important;
+  }
+  .bs-1-new:hover{
+    font-size: 20px !important;
+  }
+  .bs-2-new{
+    font-size: 20px !important;
+  }
+  .bs-2-new:hover{
+    font-size: 20px !important;
+  }
+  .footer-ul{
+    padding-left: 0px;
+  }
+  .fl-col{
+    text-align: left;
+  }
+  #icon-footer{
+    font-size: 20px;
   }
   .pt-pb {
     padding-top: 10px;
