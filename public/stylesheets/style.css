@@ -2,10 +2,6 @@
   src: url(/fonts/CabrionLight.otf);
   font-family: 'Cabrion';
 }
-@font-face {
-  font-family: 'Roboto Bk';
-  src: url(/fonts/Roboto-Black.otf);
-}
 .bs-1-new{
   width: 50% !important;
 }
