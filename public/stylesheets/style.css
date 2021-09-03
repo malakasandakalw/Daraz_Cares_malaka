@@ -1269,7 +1269,7 @@ ul.timeline > li:before {
   
 }
 .move-top{
-  margin-top: -50px !important;
+  align-items: unset;
 }
 #list-item{
   border-top: 2px solid #5daf4600;
