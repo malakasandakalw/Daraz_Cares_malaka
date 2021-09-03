@@ -1420,15 +1420,26 @@ a{
     width: 88%;
     font-size: 23px;
   }
+  .orange-bg, .purple-bg-dark, .black-bg, .green-bg, .purple-bg, .red-bg {
+    width: 48% !important;
+  }
 }
 @media (max-width:1800px){
   h1{
     font-size: 67px;
   }
+  .container-projects {
+    padding-left: 165px;
+    padding-right: 103px;
+    margin-bottom: 14px;
+  }
 }
 @media (max-width:1750px){
   .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero{
     width: 82%;
+  }
+  .blue-bg{
+    width:  47.8% !important;
   }
   .life-details {
     margin-top: -63px !important;
@@ -1518,6 +1529,9 @@ a{
   .home-text {
     padding-right: 120px;
   }
+  .orange-bg, .purple-bg-dark, .black-bg, .green-bg, .purple-bg, .red-bg {
+    width: 47.7% !important;
+  }
   .bs-1{
     width: 80%;
     font-size: 23px;
@@ -1528,6 +1542,11 @@ a{
   }
   .stories-last-overlay {
     width: 80%;
+  }
+  .container-projects {
+    padding-left: 165px;
+    padding-right: 123px;
+    margin-bottom: 14px;
 }
 }
 @media (max-width:1600px){
@@ -1601,6 +1620,11 @@ a{
   .overlay-don{
     width: 80%;
   }
+  .container-projects {
+    padding-left: 165px;
+    padding-right: 115px;
+    margin-bottom: 14px;
+}
 }
 
 @media (max-width:1440px) {
@@ -2128,7 +2152,10 @@ a{
   }
   .life-details {
     margin-top: -195px !important;
-}
+  }
+  .blue-bg {
+    width: 47% !important;
+  }
 }
 @media(max-width:1150px){
   .stories-last-overlay{
@@ -2322,7 +2349,7 @@ a{
     height: 50px;
     background: white;
     width: 78%;
-    margin-top: -57px;
+    margin-top: -70px;
     float: right;
     position: relative;
     transition: all 0.3s;
