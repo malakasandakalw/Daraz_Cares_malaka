@@ -64,7 +64,7 @@ a:hover{
   color: white;
 }
 .active{
-	color: #5daf46;
+	color: #5daf46 !important;
   font-weight: 600;
 }
 h1{
