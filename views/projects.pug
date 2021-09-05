@@ -1,5 +1,99 @@
 extends layout
 
+//- block content
+//-   style. 
+//-       .inner-1{
+//-         background-image: url(/images/projects/sl.jpg);
+//-         }
+//-         .inner-2{
+//-         background-image: url(/images/projects/bangla.jpg);
+//-         }
+//-         .inner-3{
+//-         background-image: url(/images/projects/myn.jpg);
+//-         }
+//-         .inner-4{
+//-         background-image: url(/images/projects/nepal.jpg);
+//-         }       
+//-       .project-bg-1:hover .inner-1{
+//-         transform: scale(1.08); 
+//-         }
+//-       .project-bg-1:hover .layer-1{ 
+//-         background-color: rgb(138 100 2 / 65%);
+//-         position: absolute;
+//-         top: 0;
+//-         left: 0;
+//-         width: 100%;
+//-         height: 100%;
+//-         }
+//-        .project-bg-2:hover .inner-2{
+//-         transform: scale(1.08);  
+//-         }
+//-        .project-bg-2:hover .layer-2{
+//-         background-color: rgba(15, 184, 105, 0.432);
+//-         position: absolute;
+//-         top: 0;
+//-         left: 0;
+//-         width: 100%;
+//-         height: 100%;
+//-         }
+//-        .project-bg-3:hover .inner-3{
+//-         transform: scale(1.08);  
+//-         }
+//-        .project-bg-3:hover .layer-3{
+//-         background-color: rgb(175 142 0 / 43%);
+//-         position: absolute;
+//-         top: 0;
+//-         left: 0;
+//-         width: 100%;
+//-         height: 100%;
+//-         }
+//-        .project-bg-4:hover .inner-4{
+//-         transform: scale(1.08);  
+//-         }
+//-        .project-bg-4:hover .layer-4{
+//-         background-color: rgb(15 5 252 / 43%);
+//-         position: absolute;
+//-         top: 0;
+//-         left: 0;
+//-         width: 100%;
+//-         height: 100%;
+//-         }
+//-   .container-fluid.container-projects.cr-page
+//-     .projects-content
+//-         .row.projects-row
+//-             .col-md-6.black-bg.w-48.vertical-align-text.w-res
+//-                 .project-des
+//-                     h3 Projects
+//-                     p.desc-text
+//-                         | With a plethora of initiatives spread across Asia,we have guided numerous individuals and small business alike,to significant success, giving these entities a better stature within the community, and a platform for them to give back
+//-             .col-md-6.w-48.pr-0
+//-                 a(href="/sl_timeline") 
+//-                     .project-bg-1.pro-bg
+//-                         .inner-1.inner-bg 
+//-                             .layer-1
+//-                     .pro-name
+//-                         h4 Sri Lanka
+//-             .col-md-6.w-48.pr-0
+//-                 a(href="/bangla_timeline", style="text-decoration: none;") 
+//-                     .project-bg-2.pro-bg
+//-                         .inner-2.inner-bg  
+//-                             .layer-2
+//-                     .pro-name
+//-                         h4 Bangladesh
+//-             .col-md-6.w-48.pr-0
+//-                 a(href="/mr_timeline") 
+//-                     .project-bg-3.pro-bg
+//-                         .inner-3.inner-bg  
+//-                             .layer-3
+//-                     .pro-name
+//-                         h4 Myanmar
+//-             .col-md-6.w-48.pr-0  
+//-                 a(href="/np_timeline") 
+//-                     .project-bg-4.pro-bg  
+//-                         .inner-4.inner-bg 
+//-                             .layer-4  
+//-                     .pro-name   
+//-                         h4 Nepal
 block content
   style. 
       .inner-1{
@@ -58,39 +152,41 @@ block content
         width: 100%;
         height: 100%;
         }
-  .container-fluid.container-projects.cr-page
-    .projects-content
+  .container.page-container#content-top
+    .skillup-content
         .row.projects-row
-            .col-md-6.black-bg.w-48.vertical-align-text.w-res
-                .project-des
-                    h3 Projects
-                    p.desc-text
-                        | With a plethora of initiatives spread across Asia,we have guided numerous individuals and small business alike,to significant success, giving these entities a better stature within the community, and a platform for them to give back
-            .col-md-6.w-48.pr-0
-                a(href="/sl_timeline") 
+          .col-md-6.black-bg-new.vertical-align-text.w-res.content-container
+              .skillup-des
+                  h3 Projects
+                  p.desc-text
+                      | We have partnered with established academic institutions across the region to deliver credible and well-recognised courses to participants. Our focus is on providing access to entry-level business management and marketing courses to equip beneficiaries with basic entrepreneurial skills that will help them to elevate their careers. All modules are available online to ensure accessibility, with Daraz bearing the cost of course creation and hosting on the platform
+
+          .col-md-6.content-container.cc-r.img-cnt
+              a(href="/sl_timeline") 
                     .project-bg-1.pro-bg
                         .inner-1.inner-bg 
                             .layer-1
                     .pro-name
                         h4 Sri Lanka
-            .col-md-6.w-48.pr-0
-                a(href="/bangla_timeline", style="text-decoration: none;") 
+          .col-md-6.content-container.cc-l.img-cnt
+              a(href="/sl_timeline") 
                     .project-bg-2.pro-bg
-                        .inner-2.inner-bg  
+                        .inner-2.inner-bg 
                             .layer-2
                     .pro-name
                         h4 Bangladesh
-            .col-md-6.w-48.pr-0
-                a(href="/mr_timeline") 
+          .col-md-6.content-container.cc-l.img-cnt
+              a(href="/sl_timeline") 
                     .project-bg-3.pro-bg
-                        .inner-3.inner-bg  
+                        .inner-3.inner-bg 
                             .layer-3
                     .pro-name
                         h4 Myanmar
-            .col-md-6.w-48.pr-0  
-                a(href="/np_timeline") 
-                    .project-bg-4.pro-bg  
+          .col-md-6.content-container.cc-l.img-cnt
+              a(href="/sl_timeline") 
+                    .project-bg-4.pro-bg
                         .inner-4.inner-bg 
-                            .layer-4  
-                    .pro-name   
+                            .layer-4
+                    .pro-name
                         h4 Nepal
+  .btm-p

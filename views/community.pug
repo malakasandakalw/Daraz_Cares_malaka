@@ -1,18 +1,74 @@
 extends layout
 
+//- block content
+//-   style. 
+//-       .community-hero{
+//-           background-image: url(/images/community/com-hero-new.jpg);
+//-         }
+//-       .inner-cc-1{
+//-           background-image: url(/images/community/img-3-new.jpg);
+//-         }
+//-       .inner-cc-2{
+//-         background-image: url(/images/community/img-1.jpeg);
+//-         }
+//-       .inner-cc-3{
+//-         background-image: url(/images/community/img-2.png);
+//-         }
+      
+//-       .community-bg-1:hover .inner-cc-1{
+//-         transform: scale(1.08); 
+//-         }
+//-       .community-bg-2:hover .inner-cc-2{
+//-         transform: scale(1.08); 
+//-         }
+//-       .community-bg-3:hover .inner-cc-3{
+//-         transform: scale(1.08); 
+//-         }
+//-   .container-fluid    
+//-     .hero-container
+//-         .text-center.community-hero
+//-             .community-overlay
+//-             h5.story#com-head Community
+//-             p.story Engaging Daraz employees to support the wider community through initiatives benefiting both the people and the infrastructure. By introducing these initiatives, we encourage all the members of these communities to get actively involved by partaking in these activities, nurturing their bond for the betterment of their vicinity.
+         
+//-   .container-fluid.container-projects.com-page
+//-     .community-content
+//-       .row.projects-row
+//-           .col-md-6.green-bg.w-48.vertical-align-text.relative-pos.w-res
+//-               .project-des
+//-                   h3 Our Commitment
+//-                   p.desc-text
+//-                       | Philanthorpic initiatives designed to engage Daraz employees to help benefit the wider community.
+//-           .col-md-6.w-48.pr-0
+//-               .community-bg-1.community-bg
+//-                   .inner-cc-1.inner-bg 
+//-           .col-md-6.w-48.pr-0
+//-               .community-bg-2.community-bg
+//-                   .inner-cc-2.inner-bg  
+//-           .col-md-6.green-bg.w-48.relative-pos.vertical-align-text.w-res
+//-               .project-des
+//-                   p.desc-text
+//-                       | Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod cupiditate, amet autem labore cum voluptate porro iste pariatur inventore voluptatem officia nihil sequi quasi ex sint! Expedita laboriosam debitis laudantium!     
+//-           .col-md-6.green-bg.w-48.vertical-align-text.relative-pos.w-res
+//-               .project-des
+//-                   p.desc-text
+//-                       | Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod cupiditate, amet autem labore cum voluptate porro iste pariatur inventore voluptatem officia nihil sequi quasi ex sint! Expedita laboriosam debitis laudantium!
+//-           .col-md-6.w-48.pr-0
+//-               .community-bg-3.community-bg
+//-                   .inner-cc-3.inner-bg 
 block content
   style. 
-      .community-hero{
-          background-image: url(/images/community/com-hero-new.jpg);
-        }
+      .hero-img{
+        background-image: url(/images/community/com-hero-new.jpg);
+      }
       .inner-cc-1{
-          background-image: url(/images/community/img-3-new.jpg);
+           background-image: url(/images/community/img-3-new.jpg);
         }
       .inner-cc-2{
-        background-image: url(/images/community/img-1.jpeg);
+          background-image: url(/images/community/img-1.jpeg);
         }
       .inner-cc-3{
-        background-image: url(/images/community/img-2.png);
+          background-image: url(/images/community/img-2.png);
         }
       
       .community-bg-1:hover .inner-cc-1{
@@ -20,39 +76,41 @@ block content
         }
       .community-bg-2:hover .inner-cc-2{
         transform: scale(1.08); 
-        }
+        }   
       .community-bg-3:hover .inner-cc-3{
         transform: scale(1.08); 
         }
-  .container-fluid    
-    .hero-container
-        .text-center.community-hero
+  .container.page-container.hero-img-container 
+    .hero-container-new
+        .text-center.hero-img
             .community-overlay
-            h5.story#com-head Community
+            h5.story Community
             p.story Engaging Daraz employees to support the wider community through initiatives benefiting both the people and the infrastructure. By introducing these initiatives, we encourage all the members of these communities to get actively involved by partaking in these activities, nurturing their bond for the betterment of their vicinity.
          
-  .container-fluid.container-projects.com-page
-    .community-content
-      .row.projects-row
-          .col-md-6.green-bg.w-48.vertical-align-text.relative-pos.w-res
-              .project-des
+  .container.page-container
+    .skillup-content
+        .row.projects-row
+          .col-md-6.green-bg-new.vertical-align-text.w-res.content-container
+              .skillup-des
                   h3 Our Commitment
                   p.desc-text
                       | Philanthorpic initiatives designed to engage Daraz employees to help benefit the wider community.
-          .col-md-6.w-48.pr-0
-              .community-bg-1.community-bg
+
+          .col-md-6.content-container.cc-r.img-cnt
+              .community-bg-1.skillup-bg
                   .inner-cc-1.inner-bg 
-          .col-md-6.w-48.pr-0
-              .community-bg-2.community-bg
+          .col-md-6.content-container.cc-l.img-cnt
+              .community-bg-2.skillup-bg
                   .inner-cc-2.inner-bg  
-          .col-md-6.green-bg.w-48.relative-pos.vertical-align-text.w-res
-              .project-des
+          .col-md-6.green-bg-new.relative-pos.vertical-align-text.w-res.content-container
+              .skillup-des
                   p.desc-text
-                      | Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod cupiditate, amet autem labore cum voluptate porro iste pariatur inventore voluptatem officia nihil sequi quasi ex sint! Expedita laboriosam debitis laudantium!     
-          .col-md-6.green-bg.w-48.vertical-align-text.relative-pos.w-res
-              .project-des
+                      | We believe our people are our greatest asset amd take pride in anabling their growth by providing them with opportunities for continuous learning
+          .col-md-6.green-bg-new.vertical-align-text.w-res.content-container
+              .skillup-des
                   p.desc-text
-                      | Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod cupiditate, amet autem labore cum voluptate porro iste pariatur inventore voluptatem officia nihil sequi quasi ex sint! Expedita laboriosam debitis laudantium!
-          .col-md-6.w-48.pr-0
-              .community-bg-3.community-bg
-                  .inner-cc-3.inner-bg 
+                      | All while establishing the professional skills they require to surpass expectations and break through the proverbial glass ceiling.
+          .col-md-6.content-container.cc-r
+              .community-bg-3.skillup-bg
+                  .inner-cc-3.inner-bg            
+  .btm-p

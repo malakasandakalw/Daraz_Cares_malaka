@@ -1,7 +1,7 @@
 extends layout
 
 block content 
-  .container-fluid.container-stories.container-timeline 
+  .container.page-container#content-top.tml-cnt
     .row
         .col-md-3 
             //- h3.timeline-head Initiatives
@@ -9,8 +9,8 @@ block content
             .list-sec
                 .list-content
                     .row 
-                        .col-md-2.vertical-align-text.tl-head#year2018 
-                            h3#year-1 2021
+                        .col-md-2.tl-head#year2018.tl
+                            h3#year-1.font-45 2021
                         .col-md-8 
                             ul.timeline
                                 li#list-item
@@ -23,5 +23,5 @@ block content
                                                 .accordion-body
                                                     | On the 27th June, Daraz Myanmar Marked the first Charity trip under Shop Cares CSR. In the past month, our employees were very lucky to be promoted and recieved bonus during this hard time in Myanmar. So we ontent to create good deeds and sharing back in the society to get blessed together for years to come. We went to the 'Myo Sat Thit' orphanage in Htantabin township, which is home to around 120 children starting from 2/3 months old to 15 years old. The weather was good on that day and we had a great time by helping the orphanage out as much as possible, also by donating good nutrition for lunch, general fees, and daily use for childre and spending time with the orphans. Total 24,007,000 MMK went to 'Myo Set This' orphanage in Htantabin, who are in desperate need of our support.
                                                     img(src="/images/mr_timeline/mr.jpg", alt="", width="100%")
-                                hr.timeline-hr
+                            hr.timeline-hr
             

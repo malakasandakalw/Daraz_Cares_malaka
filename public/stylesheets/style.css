@@ -1,3 +1,150 @@
+.page-container{
+  width: 100% !important;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  overflow: hidden;
+}
+.hero-img-container{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  margin-top: 4%;
+}
+.hero-img{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.hero-container-new{
+  height: 550px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.content-container{
+  height: 650px;
+  margin-top: 10px;
+}
+.cc-r{
+  padding-right: 0px;
+}
+.cc-l{
+  padding-left: 0px;
+}
+.blue-bg-new{
+  background-color: #25a5d8;
+  color: white;
+  overflow: hidden;
+  width: 49.1%;
+}
+.purple-bg-new{
+  background-color: #5b449c;
+  color: white;
+  overflow: hidden;
+  width: 49.1%;
+}
+.orange-bg-new{
+  background-color: #fe6601;
+  color: white;
+  overflow: hidden;
+  width: 49.1%;
+}
+.green-bg-new{
+  background-color: #5daf46;
+  color: white;
+  overflow: hidden;
+  width: 49.1%;
+}
+.dark-purple-new{
+  background-color: #2a2c52;
+  color: white;
+  overflow: hidden;
+  width: 49.1%;
+}
+.thumbnail-new{
+  margin-left: 0px !important;
+  width: 100% !important;
+}
+.red-bg-new{
+  background-color: #e52f1c;
+  color: white;
+  overflow: hidden;
+  width: 49.1%;
+}
+.black-bg-new{
+  background-color: black;
+  color: white;
+  overflow: hidden;
+  width: 49.1%;
+}
+.slsc{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.mt-10{
+  margin-top: 14px;
+}
+.nav-container{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.cmd-4{
+  padding-top: 14px;
+  padding-right: 0px;
+}
+#content-top{
+  margin-top: 3.7%;
+}
+#mono-font{
+  font-family: monospace !important;
+}
+.font-40{
+  font-size: 40px !important;
+  font-weight: 400 !important;
+}
+.font-45{
+  font-size: 35px !important;
+  font-family: sans-serif;
+}
+.btn-footer{
+  font-size: 20px !important;
+  text-align: left;
+  height: 50px;
+  font-family: sans-serif;
+}
+.footer-arrow{
+  height: 50px;
+}
+.index-btn{
+  height: 50px !important;
+  font-family: sans-serif !important;
+  font-size: 23px !important;
+}
+.f-row{
+  padding-top: 100px;
+}
+.btm-p{
+  padding-top: 14px;
+}
+.story-btn{
+  font-size: 21.5px !important;
+}
+.col-4-inner-row {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.tl-head{
+  padding-left: 80px;
+  font-size: 24px;
+}
+.tl-cnt{
+  padding-top: 7%;
+}
+
+
+
 @font-face {
   src: url(/fonts/CabrionLight.otf);
   font-family: 'Cabrion';
@@ -17,9 +164,9 @@
 #myBtn {
   position: fixed;
   bottom: 20px;
-  right: 100px;
+  right: 15%;
   z-index: 999;
-  font-size: 30px;
+  font-size: 25px;
   padding-right: 15px;
   padding-bottom: 5px;
   padding-top: 5px;
@@ -39,10 +186,11 @@ body {
   height: 100%;
 }
 .h3-sl{
-  font-size: 30px;
+  font-size: 24px;
   text-align: end;
   font-weight: 600;
   letter-spacing: 0px;
+  font-family: sans-serif;
 }
 .fa-times{
   font-size: 40px;
@@ -55,7 +203,9 @@ body {
   box-shadow: none;
 }
 .tl{
-  justify-content: flex-end !important;
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
 }
 .tl-pd{
   padding-left: 300px;
@@ -81,9 +231,10 @@ h1{
   font-family: 'Roboto', sans-serif;
 }
 h2{
-  font-weight: 900;
-  font-size: 4rem;
+  font-weight: 600;
+  font-size: 3rem;
   color: black;
+  font-family: sans-serif;
 }
 /* Main_images */
 .hero-container{
@@ -92,9 +243,6 @@ h2{
   width: 100%;
   overflow: hidden;
   position: relative;
-  padding-right: 150px;
-  padding-left: 150px;
-  margin-top: 5%;
 }
 .hero-container-home{
   /* height: 70vh !important; */
@@ -180,14 +328,14 @@ h2{
 }
 .overlay {
   position: absolute;
-  background-color:#5daf46;
-  overflow: hidden;
-  width: 42%;
-  left: 21%;
-  right: 0;
-  height: 10%;
-  margin-top: -80px;
-  transition: .5s ease;
+    background-color: #5daf46;
+    overflow: hidden;
+    width: 55%;
+    left: 9%;
+    right: 0;
+    height: 11%;
+    margin-top: -80px;
+    transition: .5s ease;
 }
 .pl-300:hover .overlay {
   background-color: transparent;
@@ -223,16 +371,17 @@ h2{
 /* Home_bg_anim */
 .bg-sec{
   /* height: 90vh; */
-  height: 850px;
+  height: 800px;
   width: 100%;
   overflow: hidden;
   position: relative;
 }
 .bg-text{
   color: white;
-  font-size: 35px;
+  font-size: 30px;
   line-height: 50px;
-  font-weight: 600;
+  font-family: sans-serif;
+  font-weight: 400;
   overflow-y: hidden;
   max-height: 45px;
   transition: max-height 0.3s ease-out;
@@ -240,7 +389,7 @@ h2{
 }
 .bg-text-holder{
   padding-top: 320px;
-  margin-left: 150px;
+  margin-left: 300px;
 }
 .button {
   width: 300px;
@@ -252,7 +401,7 @@ h2{
   transition: all .3s ease-out;
   color: white;
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 400;
   border-radius: 0px;
   border: none;
 }
@@ -282,7 +431,7 @@ h2{
 }
 .fa-arrow-right{
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
 }
 .bg-section-11:hover .bg-text{
@@ -359,16 +508,15 @@ h2{
   overflow: hidden;
 }
 .icon-img{
-  max-width: 35%;
+  max-width: 30%;
   transition: all 0.3s;
 }
 .w-100{
   width: 100%;
-  /* height: 70vh; */
   height: 650px;
   overflow: hidden;
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-left: 250px;
+  padding-right: 250px;
 }
 .w-101{
   padding-left: 120px;
@@ -376,6 +524,7 @@ h2{
   overflow: hidden;
   width: 100%;
   padding-bottom: 100px;
+  padding-top: 100px;
 }
 .w-1{
   padding-top: 0px;
@@ -394,7 +543,7 @@ h2{
   text-align: center;
   position: relative;
   margin-top: -44px;
-  left: 8%;
+  left: 16%;
 }
 
 .pro-1{
@@ -426,7 +575,7 @@ h2{
   padding-right: 120px;
 }
 h3{
-  font-size: xxx-large;
+  font-size: xx-large;
   font-weight: 700;
   letter-spacing: 5px;
 }
@@ -437,7 +586,7 @@ h4{
   padding-bottom: 10px;
 }
 .desc-text{
-  font-size: 22px;
+  font-size: 17px;
   line-height: 1.8;
   padding-top: 5%;
 }
@@ -493,7 +642,8 @@ h4{
   left: 0;
   }
 .arrow-careers{
-    margin-left:50%;
+    margin-left:0%;
+    padding-top: 10px;
   }   
 .bottom-btn:hover{
   background-image: 
@@ -508,13 +658,11 @@ h4{
   color:#e52f1c;
   }
 .bottom-btn:hover h4.bottom-btn-text{
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
-  padding-top: 20px;
-  padding-bottom: 20px;
   }
 h4.bottom-btn-text{
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -533,13 +681,13 @@ h4.bottom-btn-text{
 h5.story{
   color: #ffffff;
   font-weight: 900;
-  font-size: xxx-large;
+  font-size: 40px;
   padding-top: 15%;
   position: relative;
 }
 p.story{
   color: #ffffff;
-  font-size: x-large;
+  font-size: large;
   padding-left: 22%;
   padding-right: 22%;
   padding-top: 2%;
@@ -552,6 +700,8 @@ p.story{
 .story-sec-1{
   color: white;
   overflow: hidden;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 .story-sec-2{
   color: white;
@@ -560,6 +710,8 @@ p.story{
 .story-sec-3{
   color: white;
   overflow: hidden;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 .bg-1{
@@ -604,7 +756,7 @@ p.story{
   margin-top: 0px;
 }
 p.stories-sec{
-  font-size: large;
+  font-size: 17px;
   line-height: 2;
   padding-top: 10%;
 }
@@ -658,10 +810,6 @@ p.last-story-sec{
   width: 100%;
   overflow: hidden;
   position: relative;
-  margin-bottom: 20px;
-  padding-right: 145px;
-  padding-left: 162px;
-  margin-top: 20px;
 }
 
 .white-text{
@@ -676,7 +824,7 @@ p.last-story-sec{
   position: absolute;
 }
 .btn-story {
-  width: 300px;
+  width: 240px;
   display: inline-block;
   border: none;
   background: linear-gradient(to right, #5daf46  50%, rgba(255, 255, 255, 0) 50%);
@@ -685,14 +833,14 @@ p.last-story-sec{
   transition: all .3s ease-out;
   color: white;
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 400;
   border-radius: 0px;
   border: none;
   
 }
 .btn-story:hover{
   background-position: left bottom;
-  width: 310px;
+  width: 240px;
   color: white;
 }
 .stories-sec-last-bg:hover .stories-last-text{
@@ -702,7 +850,7 @@ p.last-story-sec{
 .stories-last-overlay{
   background-size: 200% 100%;
   height: 100%;
-  width: 83.7%;
+  width: 100%;
   position: absolute;
   background-position: right bottom;
   transition: all .3s ease-out;
@@ -777,11 +925,12 @@ p.last-story-sec{
   color: #25a5d8;
 }
 .arrow-skillup {
-  margin-left:50%;
+  /* margin-left:50%; */
+  margin-left: 0%;
 }
 .btn-skillup:hover .arrow-skillup {
   color: #25a5d8;
-  margin-left:50%;
+  margin-left:0%;
 }
 .skillup-des {
   padding-left: 120px;
@@ -831,11 +980,13 @@ p.last-story-sec{
   color: #5b449c;
 }
 .arrow-university {
-  margin-left:50%;
+  margin-left:0%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .btn-university:hover .arrow-university {
   color: #5b449c;
-  margin-left:50%;
+  margin-left:0%;
 }
 .stories-bottom-btn{
   width: 104%;
@@ -886,7 +1037,7 @@ p.last-story-sec{
   width: 84.5%;
 }
 .stories-overlay {
-  background-image: linear-gradient(0deg, #22059c 0%, rgb(26 6 142 / 45%) 100%);
+  background-image: linear-gradient(0deg, #041850 0%, rgb(26 6 142 / 45%) 100%);
   position: absolute;
   top: 0;
   left: 0;
@@ -929,26 +1080,26 @@ p.last-story-sec{
   background-color: black !important;
 }
 .footer-main-text{
-  font-size: 25px;
+  font-size: 17px;
   font-weight: 600;
 }
 .footer-sub-text{
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 2;
 }
 .footer-top{
-  padding-top: 10%;
+  padding-top: 5%;
 }
 .footer-bottom{
-  padding-bottom: 10%;
+  padding-bottom: 5%;
   padding-top: 5%;
 }
 #icon-footer{
-  font-size: 25px;
+  font-size: 17px;
 }
 .contact-li{
-  padding-left: 20%;
+  padding-left: 25%;
 }
 .contact-num{
   padding-left: 7%;
@@ -957,10 +1108,8 @@ p.last-story-sec{
   padding-left: 15%;
 }
 footer{
-  padding-left: 170px;
-  padding-right: 137px;
   margin-bottom: -100px;
-  padding-top: 7%;
+  /* padding-top: 3%; */
   position: relative;
   z-index: 500;
 }
@@ -983,9 +1132,12 @@ footer{
   border: 2px solid white;
   border-radius: 0px;
   color: white;
-  font-size: 25px;
+  font-size: 18px;
+  font-family: sans-serif;
 }
-
+#form-input::placeholder{
+  color: white;
+}
 
 
 
@@ -1036,12 +1188,20 @@ footer{
 .btn-donations:hover .btn-text-orange {
   color: #fe6601;
 }
+.btn-careers:hover .btn-text-red {
+  color: #e52f1c;
+}
+.btn-careers:hover .arrow-skillup {
+  color: #e52f1c;
+}
 .arrow-skillup {
-  margin-left:50%;
+  margin-left:0%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .btn-donations:hover .arrow-skillup {
   color: #fe6601;
-  margin-left:50%;
+  margin-left:0%;
 }
 .orange-bg{
   background-color: #fe6601;
@@ -1075,14 +1235,14 @@ footer{
   padding-bottom: 20%;
 }
 .donations-count-value{
-  font-size: 75px;
+  font-size: 55px;
   color:#fe6601;
   font-weight: 400;
   font-family: monospace;
   letter-spacing: 10px;
 }
 .donations-count-text{
-  font-size: 30px;
+  font-size: 25px;
   color:#fe6601;
   font-weight: 400;
   font-family: monospace;
@@ -1099,7 +1259,7 @@ footer{
   overflow-x: hidden;
 }
 .col-4-inner-row{
-  padding-right: 15px;
+  /* padding-right: 15px; */
 }
 .vid-thumbnail{
   background-image: url(/images/university/img-1.jpg);
@@ -1170,9 +1330,10 @@ iframe{
   position: absolute;
   right: 0%;
   font-weight: bold;
-  padding-left: 10px;
+  padding-left: 12px;
+  padding-bottom: 3px;
   font-size: 20px;
-  padding-right: 10px;
+  padding-right: 12px;
   border: none;
 }
 #life-hero:hover .video-ply-btn{
@@ -1232,13 +1393,13 @@ ul.timeline > li:before {
 }
 .accordion-button{
   background-color: transparent;
-  font-weight: bold;
+  font-weight: 550;
   color: black;
   padding: 0px;
   transition: all 0.3s !important;
   border: none;
   box-shadow:none;
-  font-size: 22px;
+  font-size: 17px;
   border: none;
 }
 .accordion-item{
@@ -1248,7 +1409,7 @@ ul.timeline > li:before {
   color: black;
   font-weight: bold;
   padding:0px;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 2;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -1306,7 +1467,7 @@ ul.timeline > li:before {
   background-color: white !important;
 }
 h8.nav-list-head{
-  font-size: xx-large;
+  font-size: 30px;
   color: #5daf46;
   letter-spacing: 2px;
 
@@ -1319,25 +1480,24 @@ h8.nav-list-head{
 }
 .pt-pb{
   padding-top: 20px;
-  padding-bottom: 20px;
   padding-right: 60px;
 }
 .modal-content.white-bg{
-  width: 140%;
+  width: 125%;
 }
 .modal-body.nav-modal{
   padding-left: 45px;
   padding-right: 45px;
-  padding-top: 30px;
-  padding-bottom: 80px;
+  padding-top: 10px;
+  padding-bottom: 60px;
 }
 .nav-close-btn{
-  font-size: x-large;
+  font-size: 25px;
   color: #5daf46;
 }
 .navbar-modal{
   top: 2%;
-  margin-right: 18%;
+  margin-right: 22.5%;
 }
 .fa-bars{
   font-size: 30px;
@@ -1346,13 +1506,14 @@ h8.nav-list-head{
 .nav-item-list{
   text-decoration: none;
   color: #000;
+  font-size: 20px;
 }
 .nav-item-list:hover{
   color: #5daf46;
   font-weight: 600;
 }
 #footer-logo{
-  max-width: 65%;
+  max-width: 50%;
   float: left;
 }
 .overlay-don{
@@ -1371,6 +1532,10 @@ h8.nav-list-head{
   width: 75%;
   }
 .col-4-inner-row:hover .overlay-don{
+  width: 0%;
+  transition: all 0.3s;
+}
+.col-4-inner-row:hover .od-3{
   width: 0%;
   transition: all 0.3s;
 }
@@ -1401,11 +1566,11 @@ a{
 }
 /* 00000000000000000000000000000000000000000000000000000000000000000000000000000 */
 @media (max-width:1850px){
-  .overlay{
+  /* .overlay{
     left: 21%;
-  }
+  } */
   .stories-last-overlay{
-    width: 82.7%;
+    width: 100%;
   }
   .pl-300{
     padding-left: 350px !important;
@@ -1414,7 +1579,7 @@ a{
     width: 87%;
   }
   h1{
-    font-size: 68px;
+    font-size: 70px;
   }
   .bs-2{
     width: 88%;
@@ -1476,20 +1641,20 @@ a{
   .overlay-don{
     height: 90px;
     background: white;
-    width: 75%;
+    width: 70%;
     margin-top: -106px;
     float: right;
     position: relative;
     transition: all 0.3s;
   }
   h1{
-    font-size: 61px;
+    font-size: 70px;
   }
   .od-2{
     width: 60%;
     }
   .od-3{
-    width: 80%;
+    width: 75%;
     }
   .bg-sec{
     /* height: 90vh; */
@@ -1506,12 +1671,12 @@ a{
   .home-heading{
     width: 87%;
   }
-  .overlay{
+  /* .overlay{
     left: 20%;
     width: 45%;
     height: 9%;
     margin-top:-65px;;
-  }
+  } */
   .pl-300{
     padding-left: 350px !important;
   }
@@ -1519,12 +1684,12 @@ a{
     width: 13%;
 }
 .stories-last-overlay {
-  width: 82%;
+  width: 100%;
 }
 }
 @media (max-width:1650px){
   h1{
-    font-size: 59px;
+    font-size: 70px;
   }
   .home-text {
     padding-right: 120px;
@@ -1541,13 +1706,17 @@ a{
     font-size: 23px;
   }
   .stories-last-overlay {
-    width: 80%;
+    width: 100%;
   }
   .container-projects {
     padding-left: 165px;
     padding-right: 123px;
     margin-bottom: 14px;
-}
+  }
+  .home-main-head{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 @media (max-width:1600px){
   .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero{
@@ -1557,7 +1726,7 @@ a{
     font-size: 1.9rem;
   }
   h1{
-    font-size: 60px;
+    font-size: 70px;
   }
   .orange-bg, .purple-bg-dark, .black-bg, .green-bg, .purple-bg, .red-bg {
     width: 47.7% !important;
@@ -1571,12 +1740,15 @@ a{
   .pl-300 {
     padding-left: 248px !important;
   }
-  .overlay {
+  /* .overlay {
     left: 18%;
     width: 47%;
-  }
+  } */
   .home-heading {
     width: 95%;
+  }
+  #content-top{
+    margin-top: 5%;
   }
   .w-101 {
     padding-left: 45px;
@@ -1609,16 +1781,16 @@ a{
 }
 @media (max-width:1500px){
   .stories-last-overlay {
-    width: 79%;
+    width: 100%;
   }
   .od-2 {
     width: 65%;
   }
   .od-3 {
-    width: 85% !important;
+    width: 85%;
   }
   .overlay-don{
-    width: 80%;
+    width: 70%;
   }
   .container-projects {
     padding-left: 165px;
@@ -1637,10 +1809,30 @@ a{
     margin-bottom: 20px;
     padding-right: 50px;
     padding-left: 50px;
-    
+  }
+  .overlay{
+    left: 15%;
+    height: 10%;
+    margin-top: -70px;
+  }
+  #content-top {
+    margin-top: 6%;
+  }
+  #myBtn{
+    right: 5%;
+  }
+  .navbar-modal {
+    top: 2%;
+    margin-right: 13.5%;
+  }
+  .overlay-don{
+    width: 70%;
+  }
+  .life-content{
+    margin-top: -80px;
   }
   .stories-last-overlay{
-    width: 81.2%;
+    width: 100%;
   }
   .tl-pd{
     padding-left: 250px;
@@ -1684,7 +1876,8 @@ a{
   } 
   .home-main-head {
     width: 100%;
-    padding-left: 50px;
+    padding-left: 120px;
+    padding-right: 120px;
   }
   .pro-name-home{
     width: 15%;
@@ -1702,10 +1895,10 @@ a{
 .pl-300 {
   padding-left: 175px !important;
 }
-.overlay{
+/* .overlay{
   width: 45%;
   left: 16%;
-}
+} */
 .home-text{
   padding-right: 0px;
   width: 43%;
@@ -1720,9 +1913,6 @@ a{
     padding-right: 140px;
     padding-left: 140px;
     margin-top: -102px;
-  }
-  .story-sec-last{
-    padding-right: 75px;
   }
   .cr-page{
     margin-top: 4% !important;
@@ -1752,7 +1942,7 @@ a{
     margin-left: 25% !important;
   }
   .arrow-skillup{
-    margin-left: 35%;
+    margin-left: 50%;
   }
   .bottom-btn{
     padding-left: 105px;
@@ -1762,14 +1952,13 @@ a{
   }
   .bottom-btn:hover h4.bottom-btn-text{
     font-size: 22px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 0px;
     }
     .arrow-skillup{
-      margin-left: 35%;
+      margin-left: 50%;
     }
     .btn-skillup:hover .arrow-skillup{
-      margin-left: 35%;
+      margin-left: 50%;
     }
     .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero{
       margin-left: 120px;
@@ -1822,11 +2011,7 @@ a{
     font-size: xx-large;
   }
   .story-sec-last{
-    height: 600px;
-    padding-left: 135px;
-    padding-right: 135px;
-    margin-top: 7px;
-    
+    height: 600px;    
   }
   .empty-col-1{
     width: 10%;
@@ -1838,10 +2023,10 @@ a{
     width: 50%;
   }
   .footer-main-text{
-    font-size: 22px;
+    font-size: 17px;
   }
   #form-input{
-    font-size: 22px;
+    font-size: 17px;
   }
   .footer-sub-text{
     font-size: 18px;
@@ -1855,7 +2040,6 @@ a{
     height: 50px;
   }
   .w-48{
-    /* height: 70vh; */
     height: 650px;
   }
   .timeline-head {
@@ -1884,25 +2068,34 @@ a{
   .od-3{
     width: 80%;
     }
-    .overlay {
-      width: 45%;
-      left: 17%;
+  .overlay {
+    width: 60%;
+    left: 10%;
   }
   .stories-last-text{
     padding-right: 0%;
   }
+  .home-main-head {
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 120px;
+}
 }
 @media (max-width: 1380px){
   .stories-last-overlay {
-    width: 80.5%;
-}
+    width: 100%;
+  }
+  .home-main-head{
+    padding-right: 100px;
+    padding-left: 100px;
+  }
 }
 @media (max-width: 1340px){
   .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero {
     width: 81%;
   }
   .stories-last-overlay {
-    width: 79%;
+    width: 100%;
   }
   .w-101 {
     padding-left: 167px;
@@ -1943,6 +2136,13 @@ a{
     padding-right: 50px;
     padding-left: 50px;
   }
+  h1{
+    font-size: 60px;
+  }
+  .home-main-head{
+    padding-right: 100px;
+    padding-left: 100px;
+  }
   .w-101{
     padding-left: 185px;
   }
@@ -1950,9 +2150,6 @@ a{
     margin-left: 120px;
     width: 80.5%;
     height: 85%;
-}
-.home-main-head{
-  padding-left: 0px;
 }
 .timeline-head {
   padding-top: 20%;
@@ -1982,10 +2179,17 @@ a{
     left: 11%;
   }
   .stories-last-overlay {
-    width: 78.5%;
+    width: 100%;
   }
 }
 @media (max-width:1200px) {
+  .life-content{
+    margin-top: -135px;
+  }
+  .home-main-head{
+    padding-right: 100px;
+    padding-left: 100px;
+  }
   .hero-container {
     /* height: 65vh; */
     height: 600px;
@@ -2010,16 +2214,10 @@ a{
 }
   .navbar-modal {
     top: 1%;
-    margin-right: 28%;
+    margin-right: 20%;
 }
-  .home-main-head{
-    padding-left: 30px;
-  }
   .story-sec-last {
     height: 600px;
-    padding-left: 111px;
-    padding-right: 118px;
-    margin-top: 7px;
   }
   .timeline-head {
     padding-top: 25%;
@@ -2042,7 +2240,7 @@ a{
     width: 50% !important;
   }
   .stories-last-overlay{
-    width: 81%;
+    width: 100%;
   }
   .stories-last-text{
     padding-top: 15%;
@@ -2077,13 +2275,13 @@ a{
     font-size: 17px;
   }
   .arrow-skillup{
-    margin-left: 35%;
+    margin-left: 50%;
   }
   .bottom-btn{
     padding-left: 60px;
   }
   .btn-skillup:hover .arrow-skillup{
-    margin-left: 35%;
+    margin-left: 50%;
   }
   h4.bottom-btn-text{
     font-size: 20px;
@@ -2093,7 +2291,6 @@ a{
     font-size: 20px;
     font-weight: bold;
     padding-top: 10px;
-    padding-bottom: 10px;
     }
   .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero{
     margin-left: 99px;
@@ -2159,12 +2356,19 @@ a{
 }
 @media(max-width:1150px){
   .stories-last-overlay{
-    width: 80%;
+    width: 100%;
   }
   .container-projects {
     padding-left: 115px;
     padding-right: 80px;
     margin-top: -168px;
+  }
+  .st-sub-head{
+    font-size: 35px !important;
+  }
+  .home-main-head {
+    padding-right: 0px;
+    padding-left: 0px;
 }
 }
 @media(max-width:1100px){
@@ -2174,7 +2378,7 @@ a{
     height: 75%;
   }
   .stories-last-overlay{
-    width: 78%;
+    width: 100%;
   }
   .inner-col-4{
     width: 31.3%;
@@ -2206,15 +2410,41 @@ a{
     font-size: 22px;
     width: 86% !important;
   } 
+  #content-top{
+    margin-top: 7%;
+  }
 }
 @media(max-width:1024px){
+  .life-content{
+    margin-top: -125px;
+  }
+  #footer-logo {
+    max-width: 60%;
+    float: left;
+}
+  #content-top {
+    margin-top: 9%;
+  }
+  .home-main-head {
+    padding-right: 0px;
+    padding-left: 20px;
+}
+  .stories-bottom-btn{
+    padding-left: 50px;
+  }
+  .blue-bg-new, .purple-bg-new,.orange-bg-new,.green-bg-new,.dark-purple-new,.red-bg-new,.black-bg-new{
+    width: 48.8%;
+  }
+  .hero-container-new{
+    height: 500px;
+  }
   .container-projects {
     padding-left: 80px;
     padding-right: 60px;
     margin-top: -150px;
   }
   .stories-last-overlay{
-    width: 85.5%;
+    width: 100%;
   }
   .tl-pd{
     padding-left: 100px;
@@ -2314,10 +2544,6 @@ a{
     padding-right: 80px;
     margin-top: -150px;
   }
-  .story-sec-last{
-    padding-left: 75px;
-    padding-right: 75px;
-  }
   footer {
     padding-left: 80px;
     padding-right: 85px;
@@ -2333,10 +2559,10 @@ a{
     padding: 9px;
   }
   .footer-main-text{
-    font-size: 20px;
+    font-size: 17px;
   }
   #form-input{
-    font-size: 19px;
+    font-size: 17px;
   }
   .footer-sub-text {
     font-size: 16px;
@@ -2353,7 +2579,7 @@ a{
   .overlay-don{
     height: 50px;
     background: white;
-    width: 78%;
+    width: 75%;
     margin-top: -70px;
     float: right;
     position: relative;
@@ -2363,7 +2589,7 @@ a{
     width: 62%;
     }
   .od-3{
-    width: 85%;
+    width: 80%;
     }
     .timeline-head {
       padding-top: 30%;
@@ -2375,8 +2601,8 @@ a{
     }
     .overlay {
       width: 70%;
-      left: 8%;
-      height: 8%;
+      left: 2%;
+      height: 10%;
       margin-top: -65px;
     }
     .bg-text{
@@ -2399,6 +2625,26 @@ a{
     }
 }
 @media(max-width:990px){
+  .hero-container-new{
+    height: 400px;
+  }
+  .home-main-head {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .overlay {
+    width: 80%;
+    left: 0%;
+    height: 10%;
+    margin-top: -60px;
+}
+  .st-sub-head{
+    font-size: 25px !important;
+    letter-spacing: 2px;
+  }
+  h5.story{
+    padding-top: 16%;
+  }
   .navbar-collapse{
     display: block !important;
   }
@@ -2408,6 +2654,13 @@ a{
   }
   .overlay-don{
     margin-top: -70px;
+    width: 80%;
+  }
+  .od-2{
+    width: 70%;
+  }
+  .od-3{
+    width: 90%;
   }
   h1 {
     font-size: 53px;
@@ -2428,15 +2681,72 @@ a{
     padding-top: 5%;
   }
   .stories-last-overlay{
-    width: 84.5%;
+    width: 100%;
+  }
+  .life-content{
+    margin-top: -100px;
+  }
+  
+.btn-footer{
+  font-size: 17px !important;
   }
 }
 @media(max-width:900px){
   .stories-last-overlay{
-    width: 83.5%;
+    width: 100%;
   }
+  #content-top {
+    margin-top: 10%;
+}
 }
 @media(max-width:868px){
+  .life-content{
+    margin-top: -180px;
+  }
+  .overlay-don{
+    margin-top: -70px;
+    width: 80%;
+  }
+  .od-2{
+    width: 65%;
+  }
+  .od-3{
+    width: 85%;
+  }
+  .st-6{
+    width: 98.5% !important;
+  }
+  .story-sec-4{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .hero-container-new{
+    height: 400px;
+  }
+  .nav-container{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .hero-img-container{
+    padding-top: 3%;
+  }
+  .content-container{
+    height: 550px;
+    width: 98.5%;
+  }
+  h5.story{
+    padding-top: 16%;
+  }
+  .cc-r{
+    padding-left: 0px ;
+  }
+  .cc-l{
+    padding-right: 0px ;
+  }
+  .img-cnt{
+    margin-bottom: 0px;
+  }
+
   .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero,.stories-hero{
     height: 55%;
     width: 93.5%;
@@ -2449,9 +2759,6 @@ a{
 }
   h1 {
     font-size: 50px;
-  }
-  .life-content{
-    margin-top: 120px;
   }
   .careers-content {
     margin-top: -4%;
@@ -2472,18 +2779,15 @@ a{
     margin-top: -265px !important;
   }
   .stories-last-overlay{
-    width: 91.5%;
+    width: 100%;
   }
   h5.story{
-    padding-top: 10%;
+    padding-top: 17%;
   }
   .stories-hero{
     margin-top: 8%;
   }
   .story-sec-last{
-    padding-left: 38px;
-    padding-right: 33px;
-    /* height: 55vh; */
     height: 500px;
   }
   .stories-last-text{
@@ -2508,13 +2812,13 @@ a{
 .donations-count-value {
   font-size: 35px;
 }
-  h5.story{
-    font-size: 33px;
-  }
+h5.story{
+  font-size: 33px;
+}
   p.story{
     padding-left: 10%;
     padding-right: 10%;
-    font-size: larger;
+    font-size: 15px;
   }
   .container-projects{
     margin-top: -264px;
@@ -2535,9 +2839,6 @@ a{
   .inner-bg{
     /* height: 55vh; */
     height: 600px;
-  }
-  .w-res{
-    width: 95% !important;
   }
   .desc-text{
     font-size: 20px;
@@ -2593,7 +2894,7 @@ a{
     padding-right: 14px;
   }
   #logo_main{
-    max-width: 30%;
+    max-width: 25%;
   }
   .navbar-collapse{
     display: block !important;
@@ -2602,19 +2903,114 @@ a{
     padding-top: 60px;
   }
   .bs-1-new{
-    font-size: 18px;
+    font-size: 16px !important;
   }
   .bs-1-new:hover{
-    font-size: 18px;
+    font-size: 16px !important;
   }
   .bs-2-new{
-    font-size: 18px;
+    font-size: 16px !important;
   }
   .bs-2-new:hover{
-    font-size: 18px;
+    font-size: 16px !important;
+  }
+  .footer-arrow {
+    font-size: 16px !important;
+  }
+  #content-top {
+    margin-top: 6%;
+  }
+  .st-sub-head {
+    font-size: 40px !important;
+    letter-spacing: 2px;
+}
+}
+@media(max-width:769px){
+  .story-sub-sec{
+    width: 98%;
   }
 }
 @media(max-width:768px){
+  .pro-name {
+    width: 30%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    position: relative;
+    margin-top: -94px;
+  }
+  .home-main-head{
+    padding-right:10px;
+  }
+  .overlay-don{
+    display: none;
+  }
+  .btm-btn-text {
+    width: 60%;
+  }
+  .btm-btn-ar{
+    width: 40%;
+  }
+  .pro-name-orange {
+    background-color: #fe6601;
+    color: white;
+}
+  .cmd-4{
+    padding-left: 12px;
+    padding-right: 0px;
+  }
+  .col-4-inner-row {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: -50px;
+}
+  .slsc{
+    margin-top: 415px;
+  }
+  .stories-bottom-btn{
+    padding-left: 50px;
+  }
+  .st-6{
+    width: 98% !important;
+  }
+  .row.sub-secs{
+    padding-right: 0px;
+  }
+  .st-m-sec-l{
+    padding-left: 0px;
+  }
+  .st-m-sec-r{
+    padding-left: 0px;
+  }
+  .page-container{
+    width: 95% !important;
+  }
+  .hero-container-new{
+    height: 400px;
+  }
+  .nav-container{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .hero-img-container{
+    padding-top: 7%;
+  }
+  .content-container{
+    height: 550px;
+    width: 98.5%;
+  }
+  h5.story{
+    padding-top: 16%;
+  }
+  .cc-r{
+    padding-left: 0px ;
+  }
+  .cc-l{
+    padding-right: 0px ;
+  }
+  .img-cnt{
+    margin-bottom: -50px;
+  }
   .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero,.stories-hero{
     height: 55%;
     width: 93.5%;
@@ -2625,9 +3021,15 @@ a{
   }
   .tl-pd {
     padding-left: 0px;
-}
+  }
+  .h3-sl{
+    text-align: left;
+  }
   .tl{
-    justify-content: center !important;
+    justify-content: left;
+  }
+  #content-top {
+    margin-top: 15%;
   }
   .timeline-head{
     position: unset;
@@ -2657,8 +3059,8 @@ a{
     height: 250px;
   }
   .tl-head{
-    justify-content: unset;
-    padding-left: 10%;
+    justify-content: left;
+    padding-left: 14%;
   }
   .l-btn{
     text-align: left;
@@ -2680,7 +3082,7 @@ a{
   }
   .navbar-modal {
     top: 1%;
-    margin-right: 30%;
+    margin-right: 22.5%;
 }
   h1 {
     font-size: 50px;
@@ -2726,16 +3128,12 @@ a{
     width: 100%;
   }
   .stories-last-overlay{
-    width: 90.5%;
+    width: 100%;
   }
   .stories-hero{
     margin-top: 8%;
   }
   .story-sec-last{
-    padding-left: 38px;
-    padding-right: 33px;
-    margin-top: 420px;
-    /* height: 55vh; */
     height: 500px;
   }
   .stories-last-text{
@@ -2745,10 +3143,13 @@ a{
     width: 230px;
     height: 50px;
     text-align: left;
-    font-size: 16px !important;
+    font-size: 20px !important;
   }
   .btn-story:hover{
     width: 230px;
+  }
+  .st-sub-head{
+    letter-spacing: 0px;
   }
   .cr-page{
     margin-top: 14% !important;
@@ -2768,7 +3169,7 @@ a{
   p.story{
     padding-left: 10%;
     padding-right: 10%;
-    font-size: larger;
+    font-size: 15px;
   }
   .container-projects{
     margin-top: -267px;
@@ -2791,11 +3192,8 @@ a{
     /* height: 55vh; */
     height: 500px;
   }
-  .w-res{
-    width: 95% !important;
-  }
   .desc-text{
-    font-size: 20px;
+    font-size: 18px;
   }
   .arrow-skillup, .arrow-university{
     margin-left: 65%;
@@ -2860,7 +3258,7 @@ a{
     padding-left: 0px;
   }
   #footer-logo{
-    max-width: 45%;
+    max-width: 85%;
   }
   .fl-col{
     text-align: left;
@@ -2871,6 +3269,25 @@ a{
   }
   .contact-email{
     padding-left: 6%;
+  }
+}
+@media (max-width: 760px){
+  #footer-logo{
+    max-width: 40%;
+    padding-bottom: 10%;
+  }
+  .btn-col {
+    width: 100%;
+  }
+  .pt-pb {
+    padding-top: 10px;
+    padding-right: 60px;
+  }
+  .nav-list{
+    padding-top: 10px;
+  }
+  .l-n{
+    padding-top: 20px;
   }
 }
 @media (max-width: 660px){
@@ -2884,7 +3301,7 @@ a{
     font-size: 16px !important;
   }
   .stories-last-overlay {
-    width: 88.5%;
+    width: 100%;
   }
   .container-stories {
     padding-left: 40px;
@@ -2916,6 +3333,10 @@ a{
 }
 
 @media(max-width:550px){
+  .content-container {
+    height: 550px;
+    width: 97.5%;
+  }
   .desc-text {
     font-size: 17px;
   }
@@ -2932,7 +3353,7 @@ a{
     margin-left: 50%;
   }
   .stories-last-overlay {
-    width: 87%;
+    width: 100%;
   }
   .inner-col-4 {
     width: 96.5%;
@@ -2957,38 +3378,115 @@ a{
     margin-top: -210px;
     padding-right: 27px;
   }
-  .story-sec-last{
-    padding-right: 20px;
-  }
 }
 @media(max-width:520px){
   .stories-last-overlay {
-    width: 85.5%;
+    width: 100%;
 }
 }
 @media(max-width:425px){
-  .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero{
+  .w-101{
+    padding-top: 0px;
+  }
+  .bottom-btn {
+    padding-left: 50px;
+  }
+  .btm-btn-text {
+    width: 60%;
+  }
+  .btm-btn-ar{
+    width: 40%;
+  } 
+  h4.bottom-btn-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+  .cmd-4{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .bg-text-holder {
+    margin-left: 20px;
+    width: 100%;
+}
+#footer-logo {
+  max-width: 50%;
+  padding-bottom: 10%;
+}
+.pro-name-home{
+  left: 5%;
+}
+  .nav-item-list {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+  .page-container{
+    width: 95% !important;
+  }
+  .story-sub-sec {
+    width: 100%;
+}
+  .hero-container-new {
+    height: 300px;
+  }
+  .row.sub-secs {
+    padding-right: 12px !important;
+  }
+  .f-row {
+    padding-top: 50px;
+  }
+  #life-hero{
+    height: 100%;
+  }
+  .st-m-sec-r{
+    padding-right: 0px;
+  }
+  .stories-bottom-btn{
+    padding-left: 50px;
+  }
+  .st-sub-head{
+    letter-spacing: 0px;
+    font-size: 35px !important;
+  }
+  .st-lst-head{
+    letter-spacing: 0px;
+    font-size: 35px !important;
+  }
+  .st-lst-btn{
+    font-size: 20px !important;
+  }
+  .stories-last-text{
+    width: 90% !important;
+  }
+  .slsc{
+    margin-top: 415px;
+  }
+  .st-m-sec-l{
+    padding-left: 0px;
+  }
+  .skill-hero, .university-hero, .donations-hero, .community-hero, .stories-hero{
     height: 45%;
     width: 100%;
     margin-left: 0px;
   }
   .stories-last-overlay {
-    width: 84%;
+    width: 100%;
 }
   .community-hero{
     height: 55%;
   }
   .bs-1-new{
-    font-size: 20px !important;
+    font-size: 16px !important;
   }
   .bs-1-new:hover{
-    font-size: 20px !important;
+    font-size: 16px !important;
   }
   .bs-2-new{
-    font-size: 20px !important;
+    font-size: 16px !important;
   }
   .bs-2-new:hover{
-    font-size: 20px !important;
+    font-size: 16px !important;
   }
   .footer-ul{
     padding-left: 0px;
@@ -3001,7 +3499,7 @@ a{
   }
   .pt-pb {
     padding-top: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     padding-right: 60px;
   }
   h8.nav-list-head{
@@ -3039,7 +3537,7 @@ a{
     margin-top: -325px !important;
 }
   .life-content {
-    margin-top: 60px;
+    margin-top: 0px;
 }
   .w-48{
     /* height: 45vh; */
@@ -3049,9 +3547,6 @@ a{
   .inner-bg{
     /* height: 55vh; */
     height: 500px;
-  }
-  .w-res{
-    width: 95% !important;
   }
   .desc-text{
     font-size: 15px;
@@ -3063,8 +3558,8 @@ a{
     margin-left: 40%;
   }
   footer {
-    padding-left: 18px;
-    padding-right: 10px;
+    padding-left: 0px;
+    padding-right: 00px;
     margin-bottom: -100px;
   }
   .footer-main-text{
@@ -3088,8 +3583,12 @@ a{
   .footer-sec-btn{
     width: 45%;
   }
+  .footer-arrow {
+    font-size: 16px !important;
+  }
   .btn-footer{
     height: 50px;
+    font-size: 16px !important;
   }
   .arrow-3{
     height: 50px;
@@ -3160,8 +3659,9 @@ h1 {
     padding-left: 19px;
     padding-right: 18px;
   }
-  .story-sec-last {
-    padding-right: 10px;
-    padding-left: 15px;
-}
+  .col-4-inner-row {
+    padding-left: 12px;
+    padding-right: 0px;
+    margin-top: -50px;
+  }
 }

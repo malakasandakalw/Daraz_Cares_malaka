@@ -1,8 +1,167 @@
 extends layout
 
+//- block content
+//-   style. 
+//-       .donations-hero{
+//-           background-image: url(/images/donations/hero-new.jpg);
+//-         }
+//-       .inner-d-1{
+//-           background-image: url(/images/donations/img-1-new.png);
+//-         }
+//-       .inner-d-2{
+//-         background-image: url(/images/donations/img-2-new.jpeg);
+//-         }
+//-       .inner-d-3{
+//-         background-image: url(/images/donations/img-3-new.jpg);
+//-         }
+//-       .inner-d-4{
+//-         background-image: url(/images/donations/img-4-new.jpg);
+//-         }
+//-       .inner-d-5{
+//-         background-image: url(/images/donations/img-5-new.jpg);
+//-         }
+//-       .inner-d-6{
+//-         background-image: url(/images/donations/img-6-new.jpg);
+//-         }
+//-       .inner-d-7{
+//-         background-image: url(/images/donations/img-7-new.jpg);
+//-         }
+//-       .inner-d-8{
+//-         background-image: url(/images/donations/img-8-new.jpg);
+//-         }
+//-       .inner-d-9{
+//-         background-image: url(/images/donations/img-9-new.jpg);
+//-         }
+//-       .donations-bg-1:hover .inner-d-1{
+//-         transform: scale(1.08); 
+//-         }
+//-       .donations-bg-2:hover .inner-d-2{
+//-         transform: scale(1.08); 
+//-         }
+//-       .donations-bg-3:hover .inner-d-3{
+//-         transform: scale(1.08); 
+//-         }
+//-       .donations-bg-4:hover .inner-d-4{
+//-         transform: scale(1.08); 
+//-         }
+//-       .donations-bg-5:hover .inner-d-5{
+//-         transform: scale(1.08); 
+//-         }
+//-       .donations-bg-6:hover .inner-d-6{
+//-         transform: scale(1.08); 
+//-         }
+//-       .donations-bg-7:hover .inner-d-7{
+//-         transform: scale(1.08); 
+//-         }
+//-       .donations-bg-8:hover .inner-d-8{
+//-         transform: scale(1.08); 
+//-         }
+//-       .donations-bg-9:hover .inner-d-9{
+//-         transform: scale(1.08); 
+//-         }
+//-   .container-fluid    
+//-     .hero-container
+//-         .text-center.donations-hero
+//-             .donations-overlay
+//-             h5.story Donations
+//-             p.story Help impact their lives and communities in a tremendous way when you donate. These individuals and groups benefit directly with your kindness and generosity.
+         
+//-   .container-fluid.container-projects
+//-     .donation-content
+//-         .row.projects-row
+//-             .col-md-6.orange-bg.w-48.vertical-align-text.relative-pos.w-res
+//-                 .donations-des
+//-                     h3 Donations
+//-                     p.desc-text
+//-                         | A place for our customers to donate and fundraise for our chosen charity partners within each market.
+//-                 a(href="") 
+//-                   .bottom-btn.btn-donations  
+//-                       h4.bottom-btn-text.btn-text-orange DONATE NOW
+//-                           i.fas.fa-arrow-right.arrow-skillup 
+//-             .col-md-6.w-48.pr-0
+//-                 .donations-bg-1.donations-bg
+//-                     .inner-d-1.inner-bg
+//-         .row.projects-row.col-4-inner-row
+//-             .col-md-4.pt-default.inner-col-4
+//-                 .donations-count
+//-                     img(src="/images/donations/dm.png", alt="").icon-img
+//-                     p.donations-count-value 
+//-                       | 60,000
+//-                       .overlay-don
+//-                     .donations-count-value-overlay
+//-                     p.donations-count-text Donations Made
+//-             .col-md-4.pt-default.inner-col-4
+//-                 .donations-count
+//-                     img(src="/images/donations/li.png", alt="").icon-img
+//-                     p.donations-count-value 25,000
+//-                         .overlay-don.od-2
+//-                     p.donations-count-text Lives Impacted
+//-             .col-md-4.pt-default.inner-col-4
+//-                 .donations-count
+//-                     img(src="/images/donations/ar.png", alt="").icon-img
+//-                     p.donations-count-value 680,000
+//-                         .overlay-don.od-3
+//-                     p.donations-count-text Amount Raised
+//-         .row.projects-row
+//-             .col-md-6.w-48
+//-                 .donations-bg-2.pro-bg
+//-                     .inner-d-2.inner-bg 
+//-                 .pro-name.pro-name-orange
+//-                     h4 FPAN
+//-             .col-md-6.w-48
+//-                 .donations-bg-3.pro-bg
+//-                     .inner-d-3.inner-bg 
+//-                 .pro-name.pro-name-orange
+//-                     h4 NAS
+//-             .col-md-6.orange-bg.w-48.vertical-align-text.relative-pos.w-res
+//-                 .donations-des
+//-                     p.desc-text
+//-                         | We provide opportunities for our online community to donate, and support local charities to help them achieve their goals.
+//-                 a(href="") 
+//-                   .bottom-btn.btn-donations  
+//-                       h4.bottom-btn-text.btn-text-orange COMPLETED JUNE 2020
+//-                           i.fas.fa-arrow-right.arrow-skillup.don-arrow 
+//-             .col-md-6.w-48
+//-                 .donations-bg-4.pro-bg
+//-                     .inner-d-4.inner-bg 
+//-                 .pro-name.pro-name-orange
+//-                     h4 UNICEF
+//-             .col-md-6.w-48
+//-                 .donations-bg-5.pro-bg
+//-                     .inner-d-5.inner-bg 
+//-                 .pro-name.pro-name-orange
+//-                     h4 FPAN
+//-             .col-md-6.w-48
+//-                 .donations-bg-6.pro-bg
+//-                     .inner-d-6.inner-bg 
+//-                 .pro-name.pro-name-orange
+//-                     h4 NAS
+//-             .col-md-6.w-48
+//-                 .donations-bg-7.pro-bg
+//-                     .inner-d-7.inner-bg 
+//-                 .pro-name.pro-name-orange
+//-                     h4 FPAN
+//-             .col-md-6.w-48
+//-                 .donations-bg-8.pro-bg
+//-                     .inner-d-8.inner-bg 
+//-                 .pro-name.pro-name-orange
+//-                     h4 NAS
+//-             .col-md-6.w-48
+//-                 .donations-bg-9.pro-bg
+//-                     .inner-d-9.inner-bg 
+//-                 .pro-name.pro-name-orange
+//-                     h4 FPAN
+//-             .col-md-6.orange-bg.w-48.vertical-align-text.relative-pos.w-res
+//-                 .donations-des
+//-                     p.desc-text
+//-                         | All donations go towards community driven initiatives in the areas that we assist. With the onest of Covid-19, these comminities still continue to recieve the essentials to protect themselves with your donations.
+//-                 a(href="") 
+//-                   .bottom-btn.btn-donations  
+//-                       h4.bottom-btn-text.btn-text-orange COMPLETED APRIL 2021
+//-                           i.fas.fa-arrow-right.arrow-skillup.don-arrow 
 block content
   style. 
-      .donations-hero{
+      .hero-img{
           background-image: url(/images/donations/hero-new.jpg);
         }
       .inner-d-1{
@@ -59,103 +218,112 @@ block content
       .donations-bg-9:hover .inner-d-9{
         transform: scale(1.08); 
         }
-  .container-fluid    
-    .hero-container
-        .text-center.donations-hero
+  .container.page-container.hero-img-container 
+    .hero-container-new
+        .text-center.hero-img
             .donations-overlay
             h5.story Donations
             p.story Help impact their lives and communities in a tremendous way when you donate. These individuals and groups benefit directly with your kindness and generosity.
          
-  .container-fluid.container-projects
-    .donation-content
+  .container.page-container
+    .skillup-content
         .row.projects-row
-            .col-md-6.orange-bg.w-48.vertical-align-text.relative-pos.w-res
-                .donations-des
-                    h3 Donations
-                    p.desc-text
-                        | A place for our customers to donate and fundraise for our chosen charity partners within each market.
-                a(href="") 
-                  .bottom-btn.btn-donations  
-                      h4.bottom-btn-text.btn-text-orange DONATE NOW
-                          i.fas.fa-arrow-right.arrow-skillup 
-            .col-md-6.w-48.pr-0
-                .donations-bg-1.donations-bg
-                    .inner-d-1.inner-bg
-        .row.projects-row.col-4-inner-row
-            .col-md-4.pt-default.inner-col-4
-                .donations-count
+          .col-md-6.orange-bg-new.vertical-align-text.content-container.relative-pos
+              .skillup-des
+                  h3 Donations
+                  p.desc-text
+                      |  A place for our customers to donate and fundraise for our chosen charity partners within each market.
+              a(href="") 
+                .bottom-btn.btn-donations   
+                    .row 
+                      .col-md-8.btm-btn-text 
+                        h4.bottom-btn-text.btn-text-orange Donate Now
+                      .col-md-2.btm-btn-ar                    
+                        i.fas.fa-arrow-right.arrow-skillup
+          .col-md-6.content-container.cc-r
+              .donations-bg-1.pro-bg
+                  .inner-d-1.inner-bg 
+          .row.col-4-inner-row 
+            .col-md-4.cmd-4 
+              .donations-count
                     img(src="/images/donations/dm.png", alt="").icon-img
                     p.donations-count-value 
                       | 60,000
                       .overlay-don
                     .donations-count-value-overlay
                     p.donations-count-text Donations Made
-            .col-md-4.pt-default.inner-col-4
-                .donations-count
+            .col-md-4.cmd-4  
+              .donations-count
                     img(src="/images/donations/li.png", alt="").icon-img
                     p.donations-count-value 25,000
                         .overlay-don.od-2
                     p.donations-count-text Lives Impacted
-            .col-md-4.pt-default.inner-col-4
-                .donations-count
+            .col-md-4.cmd-4
+              .donations-count
                     img(src="/images/donations/ar.png", alt="").icon-img
                     p.donations-count-value 680,000
                         .overlay-don.od-3
                     p.donations-count-text Amount Raised
-        .row.projects-row
-            .col-md-6.w-48
-                .donations-bg-2.pro-bg
-                    .inner-d-2.inner-bg 
-                .pro-name.pro-name-orange
-                    h4 FPAN
-            .col-md-6.w-48
-                .donations-bg-3.pro-bg
-                    .inner-d-3.inner-bg 
-                .pro-name.pro-name-orange
-                    h4 NAS
-            .col-md-6.orange-bg.w-48.vertical-align-text.relative-pos.w-res
-                .donations-des
-                    p.desc-text
-                        | We provide opportunities for our online community to donate, and support local charities to help them achieve their goals.
-                a(href="") 
-                  .bottom-btn.btn-donations  
-                      h4.bottom-btn-text.btn-text-orange COMPLETED JUNE 2020
-                          i.fas.fa-arrow-right.arrow-skillup.don-arrow 
-            .col-md-6.w-48
-                .donations-bg-4.pro-bg
-                    .inner-d-4.inner-bg 
-                .pro-name.pro-name-orange
-                    h4 UNICEF
-            .col-md-6.w-48
-                .donations-bg-5.pro-bg
-                    .inner-d-5.inner-bg 
-                .pro-name.pro-name-orange
-                    h4 FPAN
-            .col-md-6.w-48
-                .donations-bg-6.pro-bg
-                    .inner-d-6.inner-bg 
-                .pro-name.pro-name-orange
-                    h4 NAS
-            .col-md-6.w-48
-                .donations-bg-7.pro-bg
-                    .inner-d-7.inner-bg 
-                .pro-name.pro-name-orange
-                    h4 FPAN
-            .col-md-6.w-48
-                .donations-bg-8.pro-bg
-                    .inner-d-8.inner-bg 
-                .pro-name.pro-name-orange
-                    h4 NAS
-            .col-md-6.w-48
-                .donations-bg-9.pro-bg
-                    .inner-d-9.inner-bg 
-                .pro-name.pro-name-orange
-                    h4 FPAN
-            .col-md-6.orange-bg.w-48.vertical-align-text.relative-pos.w-res
-                .donations-des
-                    p.desc-text
-                        | All donations go towards community driven initiatives in the areas that we assist. With the onest of Covid-19, these comminities still continue to recieve the essentials to protect themselves with your donations.
-                a(href="") 
-                  .bottom-btn.btn-donations  
-                      h4.bottom-btn-text.btn-text-orange COMPLETED APRIL 2021
-                          i.fas.fa-arrow-right.arrow-skillup.don-arrow 
+          .col-md-6.content-container.cc-l.img-cnt
+              .donations-bg-2.pro-bg
+                  .inner-d-2.inner-bg 
+              .pro-name.pro-name-orange
+                  h4 FPAN
+          .col-md-6.content-container.cc-l.img-cnt
+              .donations-bg-3.pro-bg
+                  .inner-d-3.inner-bg 
+              .pro-name.pro-name-orange
+                  h4 NAS          
+          .col-md-6.orange-bg-new.vertical-align-text.content-container.relative-pos
+              .skillup-des
+                  p.desc-text
+                      | We provide opportunities for our online community to donate, and support local charities to help them achieve their goals.
+              a(href="") 
+                .bottom-btn.btn-donations
+                    .row 
+                      .col-md-8.btm-btn-text  
+                        h4.bottom-btn-text.btn-text-orange COMPLETED JUNE 2020
+                      .col-md-2.btm-btn-ar 
+                        i.fas.fa-arrow-right.arrow-skillup
+          .col-md-6.content-container.cc-r.img-cnt
+              .donations-bg-4.pro-bg
+                  .inner-d-4.inner-bg 
+              .pro-name.pro-name-orange
+                  h4 UNICEF 
+          .col-md-6.content-container.cc-l.img-cnt
+              .donations-bg-5.pro-bg
+                  .inner-d-5.inner-bg 
+              .pro-name.pro-name-orange
+                  h4 FPAN
+          .col-md-6.content-container.cc-l.img-cnt
+              .donations-bg-6.pro-bg
+                  .inner-d-6.inner-bg 
+              .pro-name.pro-name-orange
+                  h4 NAS
+          .col-md-6.content-container.cc-l.img-cnt
+              .donations-bg-7.pro-bg
+                  .inner-d-7.inner-bg 
+              .pro-name.pro-name-orange
+                  h4 FPAN
+          .col-md-6.content-container.cc-l.img-cnt
+              .donations-bg-8.pro-bg
+                  .inner-d-8.inner-bg 
+              .pro-name.pro-name-orange
+                  h4 NAS
+          .col-md-6.content-container.cc-l.img-cnt
+              .donations-bg-9.pro-bg
+                  .inner-d-9.inner-bg 
+              .pro-name.pro-name-orange
+                  h4 FPAN 
+          .col-md-6.orange-bg-new.relative-pos.vertical-align-text.w-res.content-container
+              .skillup-des
+                  p.desc-text
+                      | All donations go towards community driven initiatives in the areas that we assist. With the onest of Covid-19, these comminities still continue to recieve the essentials to protect themselves with your donations.
+              a(href="") 
+                .bottom-btn.btn-donations 
+                    .row 
+                      .col-md-8.btm-btn-text  
+                        h4.bottom-btn-text.btn-text-orange COMPLETED APRIL 2021
+                      .col-md-2.btm-btn-ar
+                        i.fas.fa-arrow-right.arrow-skillup                           
+  .btm-p

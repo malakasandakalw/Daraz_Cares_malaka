@@ -1,5 +1,46 @@
 extends layout
 
+//- block content
+//-   style. 
+//-       .inner-c-1{
+//-           background-image: url(/images/careers/img1-new.JPG);
+//-         }
+//-       .inner-c-2{
+//-         background-image: url(/images/careers/img2-new.jpg);
+//-         }
+      
+//-       .career-bg-1:hover .inner-c-1{
+//-         transform: scale(1.08); 
+//-         }
+//-       .career-bg-2:hover .inner-c-2{
+//-         transform: scale(1.08); 
+//-         }
+      
+        
+//-   .container-fluid.container-projects.cr-page
+//-     .careers-content
+//-       .row.projects-row
+//-           .col-md-6.red-bg.w-48.vertical-align-text.w-res
+//-               .project-des
+//-                   h3 Careers
+//-                   p.desc-text
+//-                       | With Rise Up, Our efforts to support local communities go beyond education - we also strive to create new job opportunities that enable our sellers and partners to prosper.
+//-           .col-md-6.w-48
+//-               .career-bg-1.career-bg
+//-                   .inner-c-1.inner-bg 
+//-           .col-md-6.w-48
+//-               .career-bg-2.career-bg
+//-                   .inner-c-2.inner-bg  
+//-           .col-md-6.red-bg.w-48.relative-pos.vertical-align-text.w-res
+//-               .project-des
+//-                   p.desc-text
+//-                       | To date, we have created over 100,000 jobs for the entrepreneurs who run their businesses on our platform.
+//-                   p.desc-text     
+//-                       | Local tems of 3,000 DEX Heroes accommadate and support our logistic operations.
+//-               a(href="") 
+//-                 .bottom-btn   
+//-                     h4.bottom-btn-text Job Opportunities
+//-                         i.fas.fa-arrow-right.arrow-careers 
 block content
   style. 
       .inner-c-1{
@@ -8,36 +49,36 @@ block content
       .inner-c-2{
         background-image: url(/images/careers/img2-new.jpg);
         }
-      
       .career-bg-1:hover .inner-c-1{
         transform: scale(1.08); 
         }
       .career-bg-2:hover .inner-c-2{
         transform: scale(1.08); 
-        }
-      
-        
-  .container-fluid.container-projects.cr-page
-    .careers-content
-      .row.projects-row
-          .col-md-6.red-bg.w-48.vertical-align-text.w-res
-              .project-des
+        }   
+  .container.page-container#content-top
+    .skillup-content
+        .row.projects-row
+          .col-md-6.red-bg-new.vertical-align-text.w-res.content-container
+              .skillup-des
                   h3 Careers
                   p.desc-text
-                      | With Rise Up, Our efforts to support local communities go beyond education - we also strive to create new job opportunities that enable our sellers and partners to prosper.
-          .col-md-6.w-48
-              .career-bg-1.career-bg
+                      | We have partnered with established academic institutions across the region to deliver credible and well-recognised courses to participants. Our focus is on providing access to entry-level business management and marketing courses to equip beneficiaries with basic entrepreneurial skills that will help them to elevate their careers. All modules are available online to ensure accessibility, with Daraz bearing the cost of course creation and hosting on the platform
+
+          .col-md-6.content-container.cc-r.img-cnt
+              .career-bg-1.skillup-bg
                   .inner-c-1.inner-bg 
-          .col-md-6.w-48
-              .career-bg-2.career-bg
+          .col-md-6.content-container.cc-l.img-cnt
+              .career-bg-2.skillup-bg
                   .inner-c-2.inner-bg  
-          .col-md-6.red-bg.w-48.relative-pos.vertical-align-text.w-res
-              .project-des
+          .col-md-6.red-bg-new.relative-pos.vertical-align-text.w-res.content-container
+              .skillup-des
                   p.desc-text
-                      | To date, we have created over 100,000 jobs for the entrepreneurs who run their businesses on our platform.
-                  p.desc-text     
-                      | Local tems of 3,000 DEX Heroes accommadate and support our logistic operations.
+                      | Through our Skill Up programme, eligible employees are given the opprtunity to attend online courses, ranging from three to six months, as part of our partnership with academic institutions across different markets.
               a(href="") 
-                .bottom-btn   
-                    h4.bottom-btn-text Job Opportunities
-                        i.fas.fa-arrow-right.arrow-careers 
+                .bottom-btn.btn-careers   
+                    .row 
+                      .col-md-8.btm-btn-text 
+                        h4.bottom-btn-text.btn-text-red Job Opportunities
+                      .col-md-2.btm-btn-ar                    
+                        i.fas.fa-arrow-right.arrow-skillup  
+  .btm-p

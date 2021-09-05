@@ -1,8 +1,104 @@
 extends layout
 
+//- block content
+//-   style. 
+//-      .stories-hero{
+//-         background-image: url(/images/stories/str-hero-new.jpg);
+//-       }   
+//-      .bg-1-img{
+//-         background-image: url(/images/stories/img1.png);
+//-       }
+//-      .bg-2-img{
+//-         background-image: url(/images/stories/img2.png);
+//-       }
+//-      .bg-3-img{
+//-         background-image: url(/images/stories/img3.png);
+//-       }
+//-      .stories-sec-last-bg{
+//-         background: url(/images/stories/last.png);
+//-         background-color: rgba(0, 0, 0, 0.356);
+//-         background-position: center;
+//-         background-size: cover;
+//-         background-repeat: no-repeat;
+//-         width: 100%;
+//-         height: 100%;
+//-       }
+//-   .container-fluid    
+//-     .hero-container
+//-         .text-center.stories-hero
+//-             .stories-overlay
+//-             h5.story Stories + News
+//-             p.story Help impact their lives and communities in a tremendous way when you donate. These individuals and groups benefit directly with your kindness and generosity.
+      
+//-   .container-fluid.container-stories
+//-     .stories-content
+//-       .row.story-row
+//-           .col-md-6.story-sec-1.pad-default.res-6
+//-             .bg-1-img
+//-             .bg-1.vertical-align-text
+//-               .stories-des
+//-                 h3 Skill Up
+//-                 p.stories-sec Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut modi enim possimus nisi mollitia. Dolor hic impedit, deleniti vero et libero architecto sunt atque aperiam ipsa exercitationem fugiat explicabo! Illum.
+//-               a(href="") 
+//-                 .stories-bottom-btn   
+//-                       h4.bottom-btn-text Project
+//-                           i.fas.fa-arrow-right.arrow-careers  
+//-           .col-md-6.story-sec-2.pad-default.res-6
+//-             .bg-2-img 
+//-             .bg-2.vertical-align-text
+//-               .stories-des
+//-                 h3 Education
+//-                 p.stories-sec Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut modi enim possimus nisi mollitia. Dolor hic impedit, deleniti vero et libero architecto sunt atque aperiam ipsa exercitationem fugiat explicabo! Illum.
+//-               a(href="") 
+//-                 .stories-bottom-btn   
+//-                       h4.bottom-btn-text Project
+//-                           i.fas.fa-arrow-right.arrow-careers
+//-           .col-md-6.story-sec-3.pad-default.res-6
+//-             .bg-3-img  
+//-             .bg-3.vertical-align-text 
+//-               .stories-des
+//-                 h3 Skill Up
+//-                 p.stories-sec Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut modi enim possimus nisi mollitia. Dolor hic impedit, deleniti vero et libero architecto sunt atque aperiam ipsa exercitationem fugiat explicabo! Illum.
+//-               a(href="") 
+//-                 .stories-bottom-btn   
+//-                       h4.bottom-btn-text Project
+//-                           i.fas.fa-arrow-right.arrow-careers
+//-           .col-md-6.story-sec-4.pad-default.res-6
+//-             .row.sub-secs
+//-               .col-md-6.story-sub-sec-1.story-sub-sec.vertical-align-text 
+//-                 .sub-sec-1.st-sub-sec
+//-                   h3 Subjects to learn
+//-                   p.stories-sec Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut quidem tenetur et praesentium.
+//-               .col-md-6.story-sub-sec-2.story-sub-sec.vertical-align-text 
+//-                 .sub-sec-2.st-sub-sec
+//-                   h3 Join Us
+//-                   p.stories-sec Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut quidem tenetur et praesentium.
+//-                   a(href="") 
+//-                     .stories-bottom-btn   
+//-                     h4.bottom-btn-text Project
+//-                         i.fas.fa-arrow-right.arrow-careers
+//-               .col-md-6.story-sub-sec-3.story-sub-sec.vertical-align-text 
+//-                 .sub-sec-3.st-sub-sec
+//-                   h3(style='padding-right: 20%;') Support Us
+//-                   p.stories-sec Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut quidem tenetur et praesentium.
+//-               .col-md-6.story-sub-sec-4.story-sub-sec.vertical-align-text
+//-                 .sub-sec-4.st-sub-sec
+//-                   h3(style='padding-right: 20%;') Helping Hand
+//-                   p.stories-sec Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut quidem tenetur et praesentium.
+//-   .story-sec-last
+//-     .stories-sec-last-bg
+//-       .stories-last-overlay 
+//-       .col-md-4.stories-last-text  
+//-         h3.white-text Supporting the world's health initiative
+//-         p.white-text.stories-sec.last-story-sec Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+//-         a(href="") 
+//-           .outer.outer-3.slideup
+//-               button.btn.arrow.arrow-3
+//-                     i.fas.fa-arrow-right 
+//-               button.btn.btn-story View Initatives 
 block content
   style. 
-     .stories-hero{
+      .hero-img{
         background-image: url(/images/stories/str-hero-new.jpg);
       }   
      .bg-1-img{
@@ -23,76 +119,90 @@ block content
         width: 100%;
         height: 100%;
       }
-  .container-fluid    
-    .hero-container
-        .text-center.stories-hero
+  .container.page-container.hero-img-container 
+    .hero-container-new
+        .text-center.hero-img
             .stories-overlay
             h5.story Stories + News
             p.story Help impact their lives and communities in a tremendous way when you donate. These individuals and groups benefit directly with your kindness and generosity.
-      
-  .container-fluid.container-stories
+         
+  .container.page-container
     .stories-content
       .row.story-row
-          .col-md-6.story-sec-1.pad-default.res-6
+          .col-md-6.story-sec-1.res-6.mt-10.st-m-sec-r.st-6
             .bg-1-img
             .bg-1.vertical-align-text
               .stories-des
-                h3 Skill Up
+                h3#mono-font.font-40 Skill Up
                 p.stories-sec Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut modi enim possimus nisi mollitia. Dolor hic impedit, deleniti vero et libero architecto sunt atque aperiam ipsa exercitationem fugiat explicabo! Illum.
               a(href="") 
-                .stories-bottom-btn   
-                      h4.bottom-btn-text Project
+                .stories-bottom-btn  
+                      .row 
+                        .col-md-8 
+                          h4.bottom-btn-text#mono-font Project
+                        .col-md-2                       
                           i.fas.fa-arrow-right.arrow-careers  
-          .col-md-6.story-sec-2.pad-default.res-6
+          .col-md-6.story-sec-2.res-6.mt-10.st-m-sec-l
             .bg-2-img 
             .bg-2.vertical-align-text
               .stories-des
-                h3 Education
+                h3#mono-font.font-40 Education
                 p.stories-sec Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut modi enim possimus nisi mollitia. Dolor hic impedit, deleniti vero et libero architecto sunt atque aperiam ipsa exercitationem fugiat explicabo! Illum.
               a(href="") 
                 .stories-bottom-btn   
-                      h4.bottom-btn-text Project
-                          i.fas.fa-arrow-right.arrow-careers
-          .col-md-6.story-sec-3.pad-default.res-6
+                      .row 
+                        .col-md-8 
+                          h4.bottom-btn-text#mono-font Project
+                        .col-md-2                       
+                          i.fas.fa-arrow-right.arrow-careers 
+          .col-md-6.story-sec-3.res-6.mt-10.st-m-sec-r.st-6
             .bg-3-img  
             .bg-3.vertical-align-text 
               .stories-des
-                h3 Skill Up
+                h3#mono-font.font-40 Skill Up
                 p.stories-sec Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut modi enim possimus nisi mollitia. Dolor hic impedit, deleniti vero et libero architecto sunt atque aperiam ipsa exercitationem fugiat explicabo! Illum.
               a(href="") 
                 .stories-bottom-btn   
-                      h4.bottom-btn-text Project
-                          i.fas.fa-arrow-right.arrow-careers
-          .col-md-6.story-sec-4.pad-default.res-6
+                      .row 
+                        .col-md-8 
+                          h4.bottom-btn-text#mono-font Project
+                        .col-md-2                       
+                          i.fas.fa-arrow-right.arrow-careers 
+          .col-md-6.story-sec-4.res-6.mt-10.st-m-sec-l.st-6
             .row.sub-secs
               .col-md-6.story-sub-sec-1.story-sub-sec.vertical-align-text 
                 .sub-sec-1.st-sub-sec
-                  h3 Subjects to learn
+                  h3#mono-font.font-40.st-sub-head Subjects to learn
                   p.stories-sec Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut quidem tenetur et praesentium.
               .col-md-6.story-sub-sec-2.story-sub-sec.vertical-align-text 
                 .sub-sec-2.st-sub-sec
-                  h3 Join Us
+                  h3#mono-font.font-40.st-sub-head Join Us
                   p.stories-sec Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut quidem tenetur et praesentium.
                   a(href="") 
                     .stories-bottom-btn   
-                    h4.bottom-btn-text Project
-                        i.fas.fa-arrow-right.arrow-careers
+                    .row 
+                        .col-md-8.btm-btn-text  
+                          h4.bottom-btn-text#mono-font Project
+                        .col-md-2.btm-btn-ar                        
+                          i.fas.fa-arrow-right.arrow-careers 
               .col-md-6.story-sub-sec-3.story-sub-sec.vertical-align-text 
                 .sub-sec-3.st-sub-sec
-                  h3(style='padding-right: 20%;') Support Us
+                  h3(style='padding-right: 20%;')#mono-font.font-40.st-sub-head Support Us
                   p.stories-sec Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut quidem tenetur et praesentium.
               .col-md-6.story-sub-sec-4.story-sub-sec.vertical-align-text
                 .sub-sec-4.st-sub-sec
-                  h3(style='padding-right: 20%;') Helping Hand
+                  h3(style='padding-right: 20%;')#mono-font.font-40.st-sub-head Helping Hand
                   p.stories-sec Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut quidem tenetur et praesentium.
-  .story-sec-last
-    .stories-sec-last-bg
-      .stories-last-overlay 
-      .col-md-4.stories-last-text  
-        h3.white-text Supporting the world's health initiative
-        p.white-text.stories-sec.last-story-sec Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-        a(href="") 
-          .outer.outer-3.slideup
-              button.btn.arrow.arrow-3
-                    i.fas.fa-arrow-right 
-              button.btn.btn-story View Initatives 
+  .container.page-container.slsc.mt-10  
+    .story-sec-last
+      .stories-sec-last-bg
+        .stories-last-overlay 
+        .col-md-4.stories-last-text  
+          h3.white-text#mono-font.font-40.st-lst-head Supporting the world's health initiative
+          p.white-text.stories-sec.last-story-sec Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          a(href="") 
+            .outer.outer-3.slideup
+                button.btn.arrow.arrow-3
+                      i.fas.fa-arrow-right 
+                button.btn.btn-story#mono-font.story-btn.st-lst-btn View Initatives
+  .btm-p

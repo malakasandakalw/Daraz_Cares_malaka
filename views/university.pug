@@ -1,8 +1,58 @@
 extends layout
 
+//- block content
+//-   style. 
+//-       .university-hero{
+//-           background-image: url(/images/university/hero-new.jpg);
+//-         }
+//-       .inner-u-1{
+//-           background-image: url(/images/university/img-2-new.jpg);
+//-         }
+//-       .inner-u-2{
+//-         background-image: url(/images/university/img-3-.jpg);
+//-         }
+      
+//-       .university-bg-1:hover .inner-u-1{
+//-         transform: scale(1.08); 
+//-         }
+//-       .university-bg-2:hover .inner-u-2{
+//-         transform: scale(1.08); 
+//-         }
+//-   .container-fluid.page-content    
+//-     .hero-container
+//-         .text-center.university-hero
+//-             .university-overlay
+//-             h5.story University
+//-             p.story The purpose of the Skill Up programme is to champion inclusivity and education to uplift communuties and advance local capabilities.
+//-   .container-fluid.container-projects
+//-     .donation-content
+//-       .row.projects-row
+//-           .col-md-6.purple-bg.w-48.vertical-align-text.relative-pos.w-res
+//-               .project-des
+//-                   p.desc-text
+//-                       | Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod cupiditate, amet autem labore cum voluptate porro iste pariatur inventore voluptatem officia nihil sequi quasi ex sint! Expedita laboriosam debitis laudantium!
+//-                   a(href="") 
+//-                     .bottom-btn.btn-university  
+//-                         h4.bottom-btn-text.btn-text-blue Join Us
+//-                             i.fas.fa-arrow-right.arrow-university.uni-arrow-1 
+//-           .col-md-6.w-48
+//-               .university-bg-1.university-bg
+//-                   .inner-u-1.inner-bg 
+//-           .col-md-6.w-48
+//-               .university-bg-2.university-bg
+//-                   .inner-u-2.inner-bg  
+//-           .col-md-6.purple-bg.w-48.relative-pos.vertical-align-text.w-res
+//-               .project-des
+//-                   p.desc-text
+//-                       | Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod cupiditate, amet autem labore cum voluptate porro iste pariatur inventore voluptatem officia nihil sequi quasi ex sint! Expedita laboriosam debitis laudantium!
+//-               a(href="") 
+//-                 .bottom-btn.btn-university  
+//-                     h4.bottom-btn-text.btn-text-blue Read More
+//-                         i.fas.fa-arrow-right.arrow-university.uni-arrow-2 
+
 block content
   style. 
-      .university-hero{
+      .hero-img{
           background-image: url(/images/university/hero-new.jpg);
         }
       .inner-u-1{
@@ -17,35 +67,43 @@ block content
         }
       .university-bg-2:hover .inner-u-2{
         transform: scale(1.08); 
-        }
-  .container-fluid.page-content    
-    .hero-container
-        .text-center.university-hero
+        } 
+  .container.page-container.hero-img-container 
+    .hero-container-new
+        .text-center.hero-img
             .university-overlay
             h5.story University
             p.story The purpose of the Skill Up programme is to champion inclusivity and education to uplift communuties and advance local capabilities.
-  .container-fluid.container-projects
-    .donation-content
-      .row.projects-row
-          .col-md-6.purple-bg.w-48.vertical-align-text.relative-pos.w-res
-              .project-des
-                  p.desc-text
-                      | Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod cupiditate, amet autem labore cum voluptate porro iste pariatur inventore voluptatem officia nihil sequi quasi ex sint! Expedita laboriosam debitis laudantium!
-                  a(href="") 
-                    .bottom-btn.btn-university  
-                        h4.bottom-btn-text.btn-text-blue Join Us
-                            i.fas.fa-arrow-right.arrow-university.uni-arrow-1 
-          .col-md-6.w-48
-              .university-bg-1.university-bg
-                  .inner-u-1.inner-bg 
-          .col-md-6.w-48
-              .university-bg-2.university-bg
-                  .inner-u-2.inner-bg  
-          .col-md-6.purple-bg.w-48.relative-pos.vertical-align-text.w-res
+         
+  .container.page-container
+    .skillup-content
+        .row.projects-row
+          .col-md-6.purple-bg-new.vertical-align-text.w-res.content-container.relative-pos
               .project-des
                   p.desc-text
                       | Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod cupiditate, amet autem labore cum voluptate porro iste pariatur inventore voluptatem officia nihil sequi quasi ex sint! Expedita laboriosam debitis laudantium!
               a(href="") 
                 .bottom-btn.btn-university  
-                    h4.bottom-btn-text.btn-text-blue Read More
-                        i.fas.fa-arrow-right.arrow-university.uni-arrow-2 
+                    .row 
+                      .col-md-8.btm-btn-text 
+                        h4.bottom-btn-text.btn-text-blue Join Us
+                      .col-md-2.btm-btn-ar                     
+                        i.fas.fa-arrow-right.arrow-university.uni-arrow-2
+          .col-md-6.content-container.cc-r.img-cnt
+              .university-bg-1.university-bg
+                  .inner-u-1.inner-bg  
+          .col-md-6.content-container.cc-l.img-cnt
+              .university-bg-2.university-bg
+                  .inner-u-2.inner-bg  
+          .col-md-6.purple-bg-new.relative-pos.vertical-align-text.content-container
+              .project-des
+                  p.desc-text
+                      | Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod cupiditate, amet autem labore cum voluptate porro iste pariatur inventore voluptatem officia nihil sequi quasi ex sint! Expedita laboriosam debitis laudantium!
+              a(href="") 
+                .bottom-btn.btn-university  
+                    .row 
+                      .col-md-8.btm-btn-text 
+                        h4.bottom-btn-text.btn-text-blue Read More
+                      .col-md-2.btm-btn-ar                     
+                        i.fas.fa-arrow-right.arrow-university.uni-arrow-2  
+  .btm-p

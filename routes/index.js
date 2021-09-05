@@ -54,4 +54,7 @@ router.get('/np_timeline', function(req, res, next) {
   res.render('np_timeline', { title: 'Nepal' });
 });
 
+router.get('/default', function(req, res, next) {
+  res.render('default', { title: 'default' });
+});
 module.exports = router;
