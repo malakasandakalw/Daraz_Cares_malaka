@@ -2995,6 +2995,9 @@ h5.story{
     position: relative;
     margin-top: -94px;
   }
+  .story-sec-4{
+    height: 1000px;
+  }
   .w-101{
     padding-top: 0px;
   }
@@ -3024,7 +3027,7 @@ h5.story{
     margin-top: -50px;
 }
   .slsc{
-    margin-top: 415px;
+    margin-top: 14px;
   }
   .stories-bottom-btn{
     padding-left: 50px;
@@ -3534,7 +3537,7 @@ h5.story{
     width: 90% !important;
   }
   .slsc{
-    margin-top: 415px;
+    margin-top: 14px;
   }
   .st-m-sec-l{
     padding-left: 0px;
