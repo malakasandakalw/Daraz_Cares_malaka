@@ -3044,6 +3044,9 @@ h5.story{
     position: unset;
     height: 0%;
   }
+  .sc-1:hover .inner-bg{
+    transform: scale(1) !important;
+  }
   .index-btn{
     font-size: 20px !important;
   }
