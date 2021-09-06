@@ -1613,6 +1613,9 @@ a{
   .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero{
     width: 82%;
   }
+  #myBtn{
+    right: 5%;
+  }
   .navbar-modal {
     top: 2%;
     margin-right: 17.5%;
@@ -1848,6 +1851,12 @@ a{
   .overlay-don{
     width: 70%;
   }
+  .od-2{
+    width: 60%;
+  }
+  .od-3{
+    width: 75%;
+    }
   .life-content{
     margin-top: 5px;
   }
@@ -2124,6 +2133,7 @@ a{
   .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero {
     width: 81%;
   }
+  
   .stories-last-overlay {
     width: 100%;
   }
@@ -2134,12 +2144,15 @@ a{
   .overlay-don{
     height: 70px;
     background: white;
-    width: 78%;
+    width: 75%;
     margin-top: -85px;
     float: right;
     position: relative;
     transition: all 0.3s;
   }
+  .od-3{
+    width: 78%;
+    }
   .overlay {
     width: 60%;
     left: 3%;
@@ -2149,9 +2162,6 @@ a{
 }
   .od-2{
     width: 62%;
-    }
-  .od-3{
-    width: 85%;
     }
     h1 {
       font-size: 63px;
@@ -2785,6 +2795,11 @@ a{
     margin-top: -70px;
     width: 80%;
   }
+  .hover-:hover .overlay {
+    background-color: transparent;
+    width: 0%;
+    left: 80%;
+  }
   .od-2{
     width: 65%;
   }
@@ -3015,6 +3030,13 @@ h5.story{
     text-align: center;
     position: relative;
     margin-top: -94px;
+  }
+  .life-bg-1:hover .inner-l-1{
+    transform: scale(1);
+  }
+  .donations-count{
+    padding-top: 15%;
+    padding-bottom: 15%;
   }
   .story-sec-4{
     height: 1000px;
