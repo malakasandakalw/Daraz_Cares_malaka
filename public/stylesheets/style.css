@@ -142,7 +142,9 @@
 .tl-cnt{
   padding-top: 7%;
 }
-
+.tl-row{
+  padding-top: 25px;
+}
 
 
 @font-face {
@@ -273,11 +275,15 @@ h2{
 .hover-:hover .overlay {
   background-color: transparent;
   width: 0%;
-  left: 50%;
+  left: 60%;
 }
 .hover-:hover .hid-box{
   top: 0;
 }
+.hover-:hover .hid-box-2{
+  top: 0;
+}
+
 .do-text-1{
   font-weight: 900;
   font-size: 2rem;
@@ -340,7 +346,7 @@ h2{
 .pl-300:hover .overlay {
   background-color: transparent;
   width: 0%;
-  left: 50%;
+  left: 70%;
 }
 .pl-300:hover .sliding-up {
   animation: slideInUp; 
@@ -1560,6 +1566,9 @@ h8.nav-list-head{
   transition: all .3s ease-out;
   height: 100%;
 }
+.hid-box-2{
+  transition: all .45s ease-out;
+}
 a{
   text-decoration: none;
   color: white;
@@ -1603,6 +1612,10 @@ a{
   .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero{
     width: 82%;
   }
+  .navbar-modal {
+    top: 2%;
+    margin-right: 17.5%;
+}
   .blue-bg{
     width:  47.8% !important;
   }
@@ -1725,6 +1738,9 @@ a{
   .do-text-1{
     font-size: 1.9rem;
   }
+  .overlay{
+    left: 8.5%;
+  }
   h1{
     font-size: 70px;
   }
@@ -1751,8 +1767,8 @@ a{
     margin-top: 5%;
   }
   .w-101 {
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-left: 150px;
+    padding-right: 150px;
   }
   .bs-1-new{
     width: 50% !important;
@@ -1810,13 +1826,16 @@ a{
     padding-right: 50px;
     padding-left: 50px;
   }
+  .pro-name-home{
+    left: 5%;
+  }
   .overlay{
-    left: 15%;
+    left: 9%;
     height: 10%;
-    margin-top: -70px;
+    margin-top: -80px;
   }
   #content-top {
-    margin-top: 6%;
+    margin-top: 5%;
   }
   #myBtn{
     right: 5%;
@@ -1861,7 +1880,7 @@ a{
   }
   .do-text-1 {
     font-weight: 900;
-    font-size: 2.1rem;
+    font-size: 2rem;
     color: black;
     line-height: 1.5;
   }
@@ -2062,32 +2081,37 @@ a{
     position: relative;
     transition: all 0.3s;
   }
+  .w-101 {
+    padding-left: 120px;
+    padding-right: 90px;
+}
   .od-2{
     width: 60%;
     }
   .od-3{
     width: 80%;
     }
-  .overlay {
-    width: 60%;
-    left: 10%;
-  }
   .stories-last-text{
     padding-right: 0%;
   }
   .home-main-head {
     width: 100%;
-    padding-left: 120px;
-    padding-right: 120px;
-}
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .overlay {
+    width: 60%;
+    left: 3%;
+    margin-top: -75px;
+  }
 }
 @media (max-width: 1380px){
   .stories-last-overlay {
     width: 100%;
   }
   .home-main-head{
-    padding-right: 100px;
-    padding-left: 100px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 }
 @media (max-width: 1340px){
@@ -2111,8 +2135,8 @@ a{
     transition: all 0.3s;
   }
   .overlay {
-    width: 59%;
-    left: 15%;
+    width: 60%;
+    left: 3%;
 }
 .home-empty-col-3{
   width: 10%;
@@ -2123,6 +2147,9 @@ a{
   .od-3{
     width: 85%;
     }
+    h1 {
+      font-size: 63px;
+  }
 }
 
 @media (max-width:1300px) {
@@ -2144,7 +2171,7 @@ a{
     padding-left: 100px;
   }
   .w-101{
-    padding-left: 185px;
+    padding-left: 130px;
   }
   .skill-hero, .university-hero, .donations-hero, .community-hero, #life-hero, .stories-hero {
     margin-left: 120px;
@@ -2169,6 +2196,11 @@ a{
 .tl-pd {
   padding-left: 150px;
 }
+.overlay {
+  width: 60%;
+  left: 9%;
+  margin-top: -70px;
+}
 }
 @media (max-width:1250px){
   .w-101 {
@@ -2181,14 +2213,19 @@ a{
   .stories-last-overlay {
     width: 100%;
   }
+  .overlay {
+    width: 61%;
+    left: 8%;
+    margin-top: -70px;
+  }
 }
 @media (max-width:1200px) {
   .life-content{
     margin-top: -135px;
   }
   .home-main-head{
-    padding-right: 100px;
-    padding-left: 100px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
   .hero-container {
     /* height: 65vh; */
@@ -2210,7 +2247,8 @@ a{
     font-size: 61px
   }
   .w-101 {
-    padding-left: 150px;
+    padding-left: 80px;
+    padding-right: 40px;
 }
   .navbar-modal {
     top: 1%;
@@ -2345,7 +2383,7 @@ a{
   }
   .overlay {
     width: 61%;
-    left: 15%;
+    left: 1%;
   }
   .life-details {
     margin-top: -195px !important;
@@ -2357,6 +2395,10 @@ a{
 @media(max-width:1150px){
   .stories-last-overlay{
     width: 100%;
+  }
+  .overlay {
+    width: 60%;
+    left: 0%;
   }
   .container-projects {
     padding-left: 115px;
@@ -2377,6 +2419,9 @@ a{
     width: 81.5%;
     height: 75%;
   }
+  .do-text-1{
+    font-size: 1.8rem;
+  }
   .stories-last-overlay{
     width: 100%;
   }
@@ -2395,8 +2440,8 @@ a{
     font-size: 58px;
   }
   .overlay {
-    width: 61%;
-    left: 9%;
+    width: 60%;
+    left: 2%;
   }
   .bs-1-new{
     height: 49px;
@@ -2413,10 +2458,17 @@ a{
   #content-top{
     margin-top: 7%;
   }
+  .home-main-head {
+    padding-right: 20px;
+    padding-left: 20px;
+}
 }
 @media(max-width:1024px){
   .life-content{
     margin-top: -125px;
+  }
+  .pro-name-home{
+    left: 5%;
   }
   #footer-logo {
     max-width: 60%;
@@ -2631,6 +2683,9 @@ a{
   .home-main-head {
     padding-right: 0px;
     padding-left: 0px;
+  }
+  .w-101{
+    padding-top: 20px;
   }
   .overlay {
     width: 80%;
@@ -2938,6 +2993,9 @@ h5.story{
     text-align: center;
     position: relative;
     margin-top: -94px;
+  }
+  .w-101{
+    padding-top: 0px;
   }
   .home-main-head{
     padding-right:10px;
@@ -3330,6 +3388,11 @@ h5.story{
   .contact-email{
     padding-left: 6%;
   }
+  .w-100 {
+    height: 350px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 }
 
 @media(max-width:550px){
@@ -3337,6 +3400,11 @@ h5.story{
     height: 550px;
     width: 97.5%;
   }
+  .w-100 {
+    height: 350px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
   .desc-text {
     font-size: 17px;
   }
@@ -3377,6 +3445,11 @@ h5.story{
   .container-stories{
     margin-top: -210px;
     padding-right: 27px;
+  }
+  .w-101{
+    padding-top: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 @media(max-width:520px){
