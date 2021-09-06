@@ -3034,8 +3034,49 @@ h5.story{
   .story-sub-sec{
     width: 98%;
   }
+  .fxd-sec{
+    position: unset;
+    height: 0%;
+  }
 }
 @media(max-width:768px){
+  .fxd-sec{
+    position: unset;
+    height: 0%;
+  }
+  .index-btn{
+    font-size: 20px !important;
+  }
+  .bg-text {
+    font-size: 22px;
+  }
+  .bg-text{
+    padding-right: 130px;
+    max-height: 200px;
+    line-height: 30px;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .stories-last-text{
+    padding-top:20%;
+    padding-left: 4%;
+    padding-right: 4%;
+    opacity: 1;
+    transition: all 0.3s;
+    position: absolute;
+  }
+  .slideup{
+    margin-top: 0%;
+  }
+  .stories-last-overlay{
+    background-size: 200% 100%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-position: left bottom;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.568) 0%, rgba(0,0,0,0.23853291316526615) 25%);
+  }
   .pro-name {
     width: 30%;
     background-color: white;
@@ -3180,7 +3221,7 @@ h5.story{
   }
   .tl-head{
     justify-content: left;
-    padding-left: 14%;
+    padding-left: 0%;
   }
   .l-btn{
     text-align: left;
@@ -3391,6 +3432,16 @@ h5.story{
     padding-left: 6%;
   }
 }
+@media (max-width: 767px){
+  .fxd-sec {
+    position: unset;
+    height: 100%;
+  }
+  .tl-head{
+    justify-content: unset;
+    padding-left: 17%;
+  }
+}
 @media (max-width: 760px){
   #footer-logo{
     max-width: 40%;
@@ -3454,6 +3505,11 @@ h5.story{
     height: 350px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+  footer {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: -100px;
 }
 }
 
@@ -3723,7 +3779,7 @@ h5.story{
   }
   .btn-footer{
     height: 50px;
-    font-size: 16px !important;
+    font-size: 18px !important;
   }
   .arrow-3{
     height: 50px;
@@ -3774,20 +3830,20 @@ h1 {
     padding-top: 220px;
 }
 .button{
-  width: 220px;
-  font-size: 20px;
+  width: 250px;
+  font-size: 18px;
 }
 .bg-section-11:hover .button {
   background-position: right bottom;
-  width: 220px;
+  width: 250px;
 }
 .bg-section-12:hover .button {
   background-position: right bottom;
-  width: 220px;
+  width: 250px;
 }
 .bg-section-13:hover .button {
   background-position: right bottom;
-  width: 220px;
+  width: 250px;
   }
   .container-stories{
     margin-top: -280px;
@@ -3798,5 +3854,38 @@ h1 {
     padding-left: 12px;
     padding-right: 0px;
     margin-top: -50px;
+  }
+  .index-btn{
+    font-size: 20px !important;
+  }
+  .bg-text {
+    font-size: 22px;
+  }
+  .bg-text{
+    padding-right: 60px;
+    max-height: 200px;
+    line-height: 30px;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .stories-last-text{
+    padding-top:20%;
+    padding-left: 4%;
+    padding-right: 4%;
+    opacity: 1;
+    transition: all 0.3s;
+    position: absolute;
+  }
+  .slideup{
+    margin-top: 0%;
+  }
+  .stories-last-overlay{
+    background-size: 200% 100%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-position: left bottom;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.568) 0%, rgba(0,0,0,0.23853291316526615) 25%);
   }
 }
