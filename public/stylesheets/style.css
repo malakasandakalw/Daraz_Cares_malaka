@@ -262,7 +262,7 @@ h2{
   overflow: hidden;
 }
 .hero-image-home:hover {
-  transform: scale(1.05);  
+  transform: scale(2);  
 }
 .home-heading{
   width: 80%;
