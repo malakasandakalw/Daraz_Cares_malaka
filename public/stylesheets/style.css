@@ -3038,6 +3038,10 @@ h5.story{
     position: unset;
     height: 0%;
   }
+  .bg-text-holder {
+    margin-left: 50px;
+    width: 100%;
+  }
 }
 @media(max-width:768px){
   .fxd-sec{
@@ -3444,6 +3448,13 @@ h5.story{
     justify-content: unset;
     padding-left: 17%;
   }
+  .bg-text-holder {
+    margin-left: 110px;
+    width: 100%;
+  }
+  .pro-name-home {
+    left: 15%;
+}
 }
 @media (max-width: 760px){
   #footer-logo{
@@ -3467,6 +3478,13 @@ h5.story{
 @media (max-width: 660px){
   .inner-col-4 {
     width: 30.7%;
+  }
+  .bg-text-holder {
+    margin-left: 60px;
+    width: 100%;
+  }
+  .pro-name-home {
+    left: 8%;
   }
   .btn-story {
     width: 220px;
@@ -3809,7 +3827,7 @@ h5.story{
     padding-left: 15px;
   }
   .home-main-head {
-    padding-left: 15px;
+    padding-left: 5px;
 }
 h1 {
   font-size: 40px;
