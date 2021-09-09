@@ -1,3 +1,64 @@
+.font-new{
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600 !important;
+}
+.overlay-remove {
+  background-color: transparent !important;
+  width: 0% !important;
+  left: 63% !important;
+  transition: all 0.8s !important;
+}
+.hid-box-1-top{
+  top: 0% !important;
+  transition: all .6s ease-out !important;
+}
+.hid-box-2-top{
+  top: 0% !important;
+  transition: all .75s ease-out !important;
+}
+.bg-text-full{
+  max-height: 300px !important;
+  transition: all 0.5s ease-in !important;
+}
+.button-full{
+  background-position: right bottom !important;
+  width: 310px !important;
+}
+.h-ar-full{
+  width: 70px !important;
+}
+
+
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+.content-vid {
+  position: fixed;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+#myBtn-2 {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
 .page-container{
   width: 100% !important;
   padding-bottom: 0px;
@@ -102,7 +163,12 @@
 }
 .font-40{
   font-size: 40px !important;
-  font-weight: 400 !important;
+  font-weight: 400;
+}
+.font-40-sub{
+  font-size: 40px !important;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 .font-45{
   font-size: 35px !important;
@@ -155,7 +221,12 @@
 .n-m-cnt{
   box-shadow: 0px 0px 14px 8px #2b29291f;
 }
-
+.vid-plybck{
+  width: 100%;
+}
+.ls-0{
+  letter-spacing: 0px;
+}
 
 
 @font-face {
@@ -283,17 +354,17 @@ h2{
   width: 100%;
   margin-top: 50px;
 }
-.hover-:hover .overlay {
+/* .hover-:hover .overlay {
   background-color: transparent;
   width: 0%;
   left: 60%;
-}
-.hover-:hover .hid-box{
+} */
+/* .hover-:hover .hid-box{
   top: 0;
 }
 .hover-:hover .hid-box-2{
   top: 0;
-}
+} */
 
 .do-text-1{
   font-weight: 900;
@@ -451,19 +522,19 @@ h2{
   font-size: 20px;
   font-weight: 600;
 }
-.bg-section-11:hover .bg-text{
+/* .bg-section-11:hover .bg-text{
   max-height: 160px;
   transition: max-height 0.3s ease-in;
-}
-.bg-section-11:hover .button{
+} */
+/* .bg-section-11:hover .button{
   background-position: right bottom;
   width: 310px;
 }
 .bg-section-11:hover .arrow-1{
   width: 70px;
-}
+} */
 
-.bg-section-12:hover .bg-text{
+/* .bg-section-12:hover .bg-text{
   max-height: 160px;
   transition: max-height 0.3s ease-in;
 }
@@ -473,8 +544,8 @@ h2{
 }
 .bg-section-12:hover .arrow-2{
   width: 70px;
-}
-.outer-2{
+} */
+/* .outer-2{
   transition: padding 0.3s;
 }
 .bg-section-12:hover .outer-2{
@@ -499,7 +570,7 @@ h2{
 .bg-section-13:hover .outer-3{
   padding-top: 55px;
   transition: 0.3s;
-}
+} */
 
 
 /* projects_page */
@@ -1295,7 +1366,7 @@ footer{
   width: 84.5%;
 }
 .video-ply-btn{
-  background:transparent;
+  /* background:transparent; */
   padding-left: 1%;
   border-radius: 100%;
   padding-right: 1%;
@@ -1304,22 +1375,25 @@ footer{
   transition: background 0.3s;
 }
 #play-btn{
-  font-size: 30px;
-  color: transparent;
+  font-size: 40px;
+  color: #339019;
+  margin-left: 5px;
+  margin-top: 0px;
+  /* color: transparent; */
   border-radius: 100px;
   transition: all 0.3s;
 }
 .play-button-bg{
   border: 0px;
   border-radius: 100%;
-  padding: 10px;
-  background-color: transparent;
+  padding: 30px;
+  background-color: #ffffff9e;
 }
-.play-button-bg:hover{
-  background-color: transparent;
-}
+/* .play-button-bg:hover{
+  background-color: white;
+} */
 .play-button-bg:focus{
-  background-color: transparent;
+  background-color: #ffffff9e;
   box-shadow:transparent;
 }
 .modal-content {
@@ -1842,6 +1916,9 @@ a{
     margin-bottom: 20px;
     padding-right: 50px;
     padding-left: 50px;
+  }
+  .bg-text{
+    padding-right: 0px;
   }
   .pro-name-home{
     left: 5%;
@@ -2421,7 +2498,7 @@ a{
     width: 86% !important;
   }
   .overlay {
-    width: 61%;
+    width: 65%;
     left: 1%;
   }
   .life-details {
@@ -2436,7 +2513,7 @@ a{
     width: 100%;
   }
   .overlay {
-    width: 60%;
+    width: 65%;
     left: 0%;
   }
   .container-projects {
@@ -2508,8 +2585,17 @@ a{
 }
 }
 @media(max-width:1024px){
+  .overlay-remove {
+    background-color: transparent !important;
+    width: 0% !important;
+    left: 70% !important;
+    transition: all 0.8s !important;
+  }
   .life-content{
     margin-top: 5px;
+  }
+  .bg-text{
+    padding-right: 20px;
   }
   .pro-name-home{
     left: 5%;
@@ -2737,7 +2823,7 @@ a{
     padding-top: 20px;
   }
   .overlay {
-    width: 80%;
+    width: 90%;
     left: 0%;
     height: 10%;
     margin-top: -60px;

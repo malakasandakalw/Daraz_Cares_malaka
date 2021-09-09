@@ -70,9 +70,23 @@ block content
       .life-bg-2:hover .inner-l-2{
         transform: scale(1.08); 
         }   
-  .container.page-container.hero-img-container 
-    .hero-container-new
-        .text-center.vid-thumbnail.vertical-align-text#life-hero.thumbnail-new
+  .container.page-container.hero-img-container(data-aos='fade-up') 
+    
+    .hero-container-new.vertical-align-text
+        video(muted autoplay control).vid-plybck#myVideo
+          source(src='/images/vid/life.mp4' type='video/mp4')
+        .content-vid
+          .video-ply-btn
+                button.btn.play-button-bg(type='button' data-toggle='modal' data-target='#VideoModal')
+                  i.fas.fa-play#play-btn
+  #VideoModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.modal-fullscreen(role='document')
+      .modal-content
+        .modal-body#yt-player
+          button.close#btn-close(type='button' data-dismiss='modal' aria-label='Close' onclick="javascript::player.api('pause')")
+            span(aria-hidden='true') ×
+          iframe(src='https://www.youtube.com/embed/-3oE1-AXZXU' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;' allowfullscreen='')
+        //- .text-center.vid-thumbnail.vertical-align-text#life-hero.thumbnail-new
             .video-ply-btn
               button.btn.play-button-bg(type='button' data-toggle='modal' data-target='#VideoModal')
                 i.fas.fa-play#play-btn
@@ -87,19 +101,19 @@ block content
   .container.page-container.life-content
     .skillup-content
         .row.projects-row
-          .col-md-6.dark-purple-new.vertical-align-text.w-res.content-container.relative-pos
+          .col-md-6.dark-purple-new.vertical-align-text.w-res.content-container.relative-pos(data-aos='fade-up') 
               .skillup-des
                   h3 Life at Daraz
                   p.desc-text
                       | As part of our Daraz Cares programme, we introduced Skill Up to provide education opportunities to our large blue collar workforce and individuals from disadvantaged backgrounds and equip them with the skills needed for success.We have partnered with established academic institutions across the region, such as Horizon University in Sri Lanka, to deliver credible and well-recognised courses to participants.
 
-          .col-md-6.content-container.cc-r.img-cnt
+          .col-md-6.content-container.cc-r.img-cnt(data-aos='fade-up') 
               .life-bg-1.skillup-bg.sc-1
                   .inner-l-1.inner-bg 
-          .col-md-6.content-container.cc-l.img-cnt
+          .col-md-6.content-container.cc-l.img-cnt(data-aos='fade-up') 
               .life-bg-2.skillup-bg.sc-1
                   .inner-l-2.inner-bg  
-          .col-md-6.dark-purple-new.relative-pos.vertical-align-text.w-res.content-container
+          .col-md-6.dark-purple-new.relative-pos.vertical-align-text.w-res.content-container(data-aos='fade-up') 
               .skillup-des
                   p.desc-text
                       | Our focus is to provide access to entry-level business management and marketing courses to equip beneficiaries with basic entrepreneurial skills that will help elevate their careers past the prospects currently present.

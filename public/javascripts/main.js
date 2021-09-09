@@ -33,3 +33,17 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+$(window).scroll(function() {    
+  var scroll = $(window).scrollTop();
+  if (scroll >= 300) {
+      $(".overlay").addClass("overlay-remove");
+      $(".hid-box-1").addClass("hid-box-1-top");
+      $(".hid-box-2").addClass("hid-box-2-top");
+  }
+  if (scroll >= 1200) {
+    $(".bg-text").addClass("bg-text-full");
+    $(".button").addClass("button-full");
+    $(".h-ar").addClass("h-ar-full");   
+  }
+}); 
